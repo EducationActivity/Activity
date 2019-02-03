@@ -1,0 +1,92 @@
+package com.tryeverything.entity;
+
+import java.io.Serializable;
+
+public class Parents implements Serializable {
+    private Integer parentsId;
+    private String name;
+    private Integer sex;
+    private String phone;
+    private String password;
+    private String email;
+    private String address;
+    private String kindergarten;
+
+    public Integer getParentsId() {
+        return parentsId;
+    }
+
+    public void setParentsId(Integer parentsId) {
+        this.parentsId = parentsId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getKindergarten() {
+        return kindergarten;
+    }
+
+    public void setKindergarten(String kindergarten) {
+        this.kindergarten = kindergarten;
+    }
+
+    @Override
+    public String toString() {
+        return "Parents{" +
+                "parentsId=" + parentsId +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", phone='" + phone + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", kindergarten='" + kindergarten + '\'' +
+                '}';
+    }
+}

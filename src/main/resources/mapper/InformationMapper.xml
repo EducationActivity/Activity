@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.InformationDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Information" useGeneratedKeys="true" keyProperty="informationId">
+        <![CDATA[
+          insert into t_information(information_id,activity_address,site,reward_type,reward_count,reward_content,decorate,`size`,content,additional_paid_item) values (#{informationId},#{activityAddress},#{site},#{rewardType},#{rewardCount},#{rewardContent},#{decorate},#{size},#{content},#{additionalPaidItem})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Information">
+        <![CDATA[
+          update t_information
+        ]]>
+        <set>
+            <if test="activityAddress != null and activityAddress != ''">
+                activity_address = #{activityAddress},
+            </if>
+            <if test="site != null and site != ''">
+                site = #{site},
+            </if>
+            <if test="rewardType != null">
+              reward_type = #{rewardType},
+            </if>
+            <if test="rewardCount != null">
+                reward_count = #{rewardCount},
+            </if>
+            <if test="rewardContent != null">
+                reward_content = #{rewardContent},
+            </if>
+            <if test="decorate != null">
+                decorate = #{decorate},
+            </if>
+            <if test="size != null and size != ''">
+                `size` = #{siez},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="additionalPaidItem != null and additionalPaidItem != ''">
+                additional_paid_item = #{additionalPaidItem},
+            </if>
+        </set>
+        where information_id = #{informationId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_information where information_id = #{informationId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Information">
+        <![CDATA[
+          select * from t_information;
+        ]]>
+    </select>
+</mapper>

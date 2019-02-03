@@ -1,0 +1,22 @@
+<sitemesh>
+	<mime-type>text/html</mime-type>
+	<mapping path="/*" decorator="/WEB-INF/views/common/main.jsp"></mapping>
+	<mapping path="//login.do" exclue="true"/>
+	<mapping path="/login.do" exclue="true"/>
+	<mapping path="/sysUser/login.do" exclue="true"/>
+	<mapping path="/sysUser/loginOut.do" exclue="true"/>
+	<mapping path="/supplier/loginPage.do" exclue="true"/>
+	<!--<mapping path="//index.do" exclue="true"/>-->
+	<mapping path="/index.do" exclue="true"/>
+	<mapping path="/franchisee/login.do" exclue="true"/>
+	<mapping path="/supplier/login.do" exclue="true"/>
+	<mapping path="/franchisee/myAccount.do" exclue="true"/>
+	<mapping path="/franchisee/activityToConfirm.do" exclue="true"/>
+	<mapping path="/franchisee/activityConfirmationAdded.do" exclue="true"/>
+	<mapping path="/kindergarten/schedule1.do" exclue="true"/>
+	<!--<mapping path="/kindergarten/schedule.do" exclue="true"/>-->
+	<mapping path="/kindergarten/franchiseeListPage.do" exclue="true"/>
+	<mapping path="/activityPhotos/franchiseeListPage.do" exclue="true"/>
+
+	<mapping path="/franchisee/account.do" exclue="true"/>
+</sitemesh>

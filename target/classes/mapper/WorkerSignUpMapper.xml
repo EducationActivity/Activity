@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.WorkerSignUpDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.WorkerSignUp">
+        <![CDATA[
+            insert into t_worker_sign_up(id,worker_id,sign_up_id) values (#{id},#{workerId},#{signUpId})
+        ]]>
+    </insert>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.WorkerSignUp">
+      <![CDATA[
+        select worker_id,sign_up_id from t_worker_sign_up where id = #{id}
+      ]]>
+    </select>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_worker_sign_up where id = #{id}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.WorkerSignUp">
+        <![CDATA[
+          select id,worker_id,sign_up_id from t_worker_sign_up
+        ]]>
+    </select>
+</mapper>

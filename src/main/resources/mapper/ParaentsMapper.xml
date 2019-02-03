@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ParentsDAO">
+    <update id="update" parameterType="com.tryeverything.entity.Parents">
+        <![CDATA[
+        update t_parents
+    ]]>
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="kindergarten != null and kindergarten != ''">
+                kindergarten = #{kindergarten}
+            </if>
+        </set>
+        where parents_id = #{parentsId}
+    </update>
+    <select id="listAll" resultType="com.tryeverything.entity.Parents">
+           <![CDATA[
+             select * from t_parents;
+           ]]>
+    </select>
+    <delete id="removeById" parameterType="java.lang.Integer">
+        delete from t_parents where parents_id = #{parentsId}
+    </delete>
+</mapper>

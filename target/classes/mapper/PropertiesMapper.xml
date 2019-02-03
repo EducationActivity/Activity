@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.PropertiesDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Properties">
+        <![CDATA[
+          insert into t_properties(game_properties_id,game_properties,`describe`) values (#{gamePropertiesId},#{gameProperties},#{describe})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Properties">
+        <![CDATA[
+          update t_properties
+        ]]>
+        <set>
+            <if test="gameProperties != null and gameProperties != ''">
+                game_properties = #{gameProperties},
+            </if>
+            <if test="describe != null and describe != ''">
+                `describe` = #{describe}
+            </if>
+        </set>
+        where game_properties_id = #{gamePropertiesId}
+    </update>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Properties">
+        <![CDATA[
+            select * from t_properties;
+        ]]>
+    </select>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+            delete from t_properties where game_properties_id = #{gamePropertiesId}
+        ]]>
+    </delete>
+</mapper>

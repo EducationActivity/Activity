@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ActivityDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Activity" keyProperty="activityId" keyColumn="activity_id" useGeneratedKeys="true">
+        <![CDATA[
+          insert into t_activity(activity_id,activity_name,theme_id) values (#{activityId},#{activityName},#{themeId})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Activity">
+        <![CDATA[
+          update t_activity
+        ]]>
+        <set>
+            <if test="activityName != null and activityName != ''">
+                activity_name = #{activityName},
+            </if>
+            <if test="themeId != null">
+                theme_id = #{themeId}
+            </if>
+        </set>
+        where activity_id = #{activityId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_activity where activity_id = #{activityId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Activity">
+        <![CDATA[
+          select * from t_activity
+        ]]>
+    </select>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Activity">
+        select activity_name,theme from t_activity where activity_id = #{#activityId}
+    </select>
+
+    <select id="getId" parameterType="java.lang.String" resultType="com.tryeverything.entity.Activity">
+        select activity_name,theme from t_activity where activity_id = #{#activityId}
+    </select>
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.StaffingDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Staffing">
+        <![CDATA[
+            insert into t_staffing(staffing_id,activity_address,rehearsal_time) values (#{staffingId},#{activityAddress},#{rehearsalTime})
+        ]]>
+    </insert>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Staffing">
+      <![CDATA[
+        select activity_address,rehearsalTime from t_staffing where staffing_id = #{staffingId}
+      ]]>
+    </select>
+
+    <update id="update" parameterType="com.tryeverything.entity.Staffing">
+        <![CDATA[
+          update t_staffing
+        ]]>
+        <set>
+        <if test="activityAddress != null and activityAddress != ''">
+            activity_address = #{activityAddress}
+        </if>
+        <if test="rehearsal_time != null">
+          rehearsal_time = #{rehearsalTime}
+        </if>
+    </set>
+        where staffing_id = #{staffingId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_staffing where staffing_id = #{staffingId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Staffing">
+        <![CDATA[
+          select staffing_id,activity_address,rehearsal_time from t_taffing
+        ]]>
+    </select>
+</mapper>
