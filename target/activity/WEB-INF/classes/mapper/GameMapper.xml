@@ -3,7 +3,7 @@
 <mapper namespace="com.tryeverything.dao.GameDAO">
     <insert id="save" parameterType="com.tryeverything.entity.Game" useGeneratedKeys="true" keyProperty="gameId" keyColumn="game_id">
         <![CDATA[
-          insert into t_game(game_id,game_name,game_properties,theme_id,game_purpose,game_object,game_picture_id,number_of_people,play_time,standard,stores_list,`work`,material_standard,link_the_material,merchant,playing_method,rule,teacher_viedo,work_viedo) values (#{gameId},#{gameName},#{gameProperties},#{gameObject},#{gamePictureId},,#{themeId},#{gamePurpose},#{gameObject},#{numberOfPeople},#{playTime},#{standard},#{storesList},#{work},#{materialStandard},#{linkTheMaterial},#{merchant},#{playingMethod},#{rule},#{teacherViedo},#{workViedo})
+          insert into t_game(game_id,game_name,game_properties_id,theme_id,game_purpose,game_object,game_picture,number_of_people,play_time,standard,stores_list,`work`,material_standard,link_the_material,merchant,playing_method,rule,teacher_viedo,work_viedo) values (#{gameId},#{gameName},#{gamePropertiesId},#{themeId},#{gamePurpose},#{gameObject},#{gamePicture},#{numberOfPeople},#{playTime},#{standard},#{storesList},#{work},#{materialStandard},#{linkTheMaterial},#{merchant},#{playingMethod},#{rule},#{teacherViedo},#{workViedo})
         ]]>
     </insert>
 
@@ -15,14 +15,14 @@
             <if test="gameName != null and gameName != ''">
                 game_name = #{gameName},
             </if>
-            <if test="gameProperties != null">
-                game_properties_id = #{gamePropertiesId}
+            <if test="gamePropertiesId != null">
+                game_properties_id = #{gamePropertiesId},
             </if>
             <if test="themeId != null">
                 theme_id = #{themeId},
             </if>
             <if test="gamePurpose != null and gamePurpose != ''">
-                game_purpose = #{gamePurpose}
+                game_purpose = #{gamePurpose},
             </if>
             <if test="gameObject != null and gameObject != ''">
                 game_object = #{gameObject},

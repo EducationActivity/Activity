@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.PermissionDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Permission">
+        <![CDATA[
+          insert into t_permission(permission_id,permission_name,remarks) values (#{permissionId},#{permissionName},#{remarks})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Permission">
+        <![CDATA[
+          update t_permission
+        ]]>
+        <set>
+            <if test="permissionName != null and permission != ''">
+                permission_name = #{permissionName},
+            </if>
+            <if test="remarks != null and remarks != ''">
+                remarks = #{remarks}
+            </if>
+        </set>
+        where permission_id = #{permissionId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_permission where permission_id = #{permissionId}
+        ]]>
+    </delete>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.UserRole">
+        <![CDATA[
+          select permission_name,remarks from t_permission where permission_id = #{permissionId}
+        ]]>
+    </select>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Permission">
+        <![CDATA[
+          select * from t_permission
+        ]]>
+    </select>
+
+    <select id="queryPermission" resultType="java.lang.String">
+        <![CDATA[
+          select p.permission_name from t_permission p, t_sys_user su, t_user_role ur, t_role_permission rp
+        where su.user_id = ur.user_id and ur.role_id = rp.role_id and p.permission_id = rp.permission_id and su.phone = #{phone}
+        ]]>
+    </select>
+</mapper>

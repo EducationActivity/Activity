@@ -22,6 +22,7 @@
 <link href="${basePath }static/css/style.default.css" rel="stylesheet">
 
 <link href="${basePath}static/css/bootstrap-table.min.css" rel="stylesheet">
+<link href="${basePath}static/css/bootstrap-treeview.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="${basePath}static/css/fileinput.min.css" rel="stylesheet">
 <link href="${basePath}static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 <link href="${basePath}static/css/bootstrap-select.min.css" rel="stylesheet">
@@ -33,6 +34,7 @@
 <script src="${basePath}static/js/respond.min.js"></script>
 
 <script src="${basePath}static/js/jquery-1.9.1.min.js"></script>
+<script src="${basePath}static/js/bootstrap-treeview.js"></script>
 <script src="${basePath}static/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="${basePath}static/js/jquery.validate.min.js"></script>
 <script src="${basePath}static/js/bootstrap.min.js"></script>
@@ -98,8 +100,17 @@
 				</li>
 				<li class="nav-parent"><a href="#"><i class="fa fa-file-text"></i> <span>活动管理</span></a>
 					<ul class="children">
-						<li class=""><a href="${basePath}classInformation/listPage.do"><i class="fa fa-caret-right"></i>方案门卡模板列表</a></li>
+						<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>方案模板列表</a></li>
 					</ul>
+					<%--<ul class="children">--%>
+						<%--<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>门卡模板列表</a></li>--%>
+					<%--</ul>--%>
+					<ul class="children">
+						<li class=""><a href="${basePath}attendanceCard/listPage.do"><i class="fa fa-caret-right"></i>游园卡模板列表</a></li>
+					</ul>
+					<%--<ul class="children">--%>
+						<%--<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>邀请函模板列表</a></li>--%>
+					<%--</ul>--%>
 					<ul class="children">
 						<li class=""><a href="${basePath}figure/listPage.do"><i class="fa fa-caret-right"></i>人偶列表</a></li>
 					</ul>

@@ -134,9 +134,9 @@
     </div>
 </div>
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document" style="width:800px">
         <div class="modal-content">
-            <form id="form1">
+            <form id="form1" enctype="multipart/form-data" class="form-horizontal">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel1">活动游戏修改</h4>
@@ -144,48 +144,96 @@
                 <div class="modal-body">
                     <input type="hidden" id="gameId" name="gameId">
                     <div class="form-group">
-                        <label for="gameName">游戏名称</label>
-                        <input type="text" class="form-control" id="gameName1" name="gameName" placeholder="请输入活动游戏的名称"/>
+                        <label class="col-sm-2 control-label" for="gameName">游戏名称：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="gameName1" name="gameName" placeholder="请输入活动游戏的名称"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="gamePropertiesId">游戏属性：</label>
+                        <div class="col-sm-4">
+                            <select class="selectpicker show-tick form-control" id="gamePropertiesId1" name="gamePropertiesId" title="请选择游戏属性" data-live-search="true">
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="gamePurpose">游戏目的</label>
-                        <input type="text" class="form-control" id="gamePurpose1" name="gamePurpose" placeholder="请输入游戏目的"/>
+                        <label class="col-sm-2 control-label" for="gamePurpose">游戏目的：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="gamePurpose1" name="gamePurpose" placeholder="请输入游戏目的"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="gameObject">游戏适用对象：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="gameObject1" name="gameObject" placeholder="请输入游戏适用对象"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="gameObject">游戏适用对象</label>
-                        <input type="text" class="form-control" id="gameObject1" name="gameObject" placeholder="请输入游戏适用对象"/>
+                        <label class="col-sm-2 control-label" for="numberOfPeople">场地及人数要求：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="numberOfPeople1" name="numberOfPeople" placeholder="请输入场地及人数要求"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="playTime">游戏时间：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="playTime1" name="playTime" placeholder="请输入游戏时间"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="numberOfPeople">场地及人数要求</label>
-                        <input type="text" class="form-control" id="numberOfPeople1" name="numberOfPeople" placeholder="请输入场地及人数要求"/>
+                        <label class="col-sm-2 control-label" for="standard">场地布置标准：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="standard1" name="standard" placeholder="场地布置标准"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="storesList">游戏物料清单：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="storesList1" name="storesList" placeholder="请选择游戏物料清单"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="playTime">游戏时间</label>
-                        <input type="text" class="form-control" id="playTime1" name="playTime" placeholder="请输入游戏时间"/>
+                        <label class="col-sm-2 control-label" for="work">工作人员数量：</label>
+                        <div class="col-sm-4">
+                            <input type="Number" class="form-control" id="work1" name="work" placeholder="请填写需要的工作人员数量"/>
+                        </div>
+
+                        <label class="col-sm-2 control-label" for="materialStandard">制作物料标准：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="materialStandard1" name="materialStandard" placeholder="请输入材料标准"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="standard">场地布置标准</label>
-                        <input type="text" class="form-control" id="standard1" name="standard" placeholder="请输入场地布置标准"/>
+
+                        <label class="col-sm-2 control-label" for="linkTheMaterial">联系的材料：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="linkTheMaterial1" name="linkTheMaterial" placeholder="请输入联系的材料"/>
+                        </div>
+
+                        <label class="col-sm-2 control-label" for="merchant">适用商家：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="merchant1" name="merchant" placeholder="请输入适用商家描述"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="storesList">游戏物料清单</label>
-                        <input type="text" class="form-control" id="storesList1" name="storesList" placeholder="请选择游戏物料清单"/>
+                        <label class="col-sm-2 control-label" for="playingMethod">玩法详解：</label>
+                        <div class="col-sm-4">
+                            <input type="textarea" class="form-control" id="playingMethod1" name="playingMethod" placeholder="请输入玩法详解"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="rule">规则：</label>
+                        <div class="col-sm-4">
+                            <input type="textarea" class="form-control" id="rule1" name="rule" placeholder="请输入规则描述"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="work">工作人员</label>
-                        <input type="text" class="form-control" id="work1" name="work" placeholder="请选择公作人员"/>
+                        <label class="col-sm-2 control-label" for="gamePicture">游戏图片：</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="file-loading" id="gamePicture1" name="gPicture" placeholder="请选择相对应的游戏图片"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="materialStandard">材料标准</label>
-                        <input type="text" class="form-control" id="materialStandard1" name="materialStandard" placeholder="请输入材料标准"/>
+                        <label class="col-sm-2 control-label" for="teacherViedo">教师培训视频：</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-loading" id="teacherViedo1" name="tViedo" placeholder="请选择教师培训视频"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="linkTheMaterial">联系的材料</label>
-                        <input type="text" class="form-control" id="linkTheMaterial1" name="linkTheMaterial" placeholder="请输入游戏联系的材料"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="playingMethod">玩法详解</label>
-                        <input type="text" class="form-control" id="playingMethod1" name="playingMethod" placeholder="请输入游戏玩法详解"/>
+                        <label class="col-sm-2 control-label" for="workViedo">兼职培训视频：</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-loading" id="workViedo1" name="wViedo" placeholder="请输入操作"/>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
@@ -214,7 +262,9 @@
         msgSelected:"{n} {files} select",
     };
     $("#teacherViedo").fileinput(viedoOptions);
+    $("#teacherViedo1").fileinput(viedoOptions);
     $("#workViedo").fileinput(viedoOptions);
+    $("#workViedo1").fileinput(viedoOptions);
     //设置时间控件
     var option = {
         language: 'zh-CN',//显示中文
@@ -303,7 +353,15 @@
             field: 'gamePicture',
             title: '游戏图片',
             visible:true,
-            align:'center'
+            align:'center',
+            formatter:function(value,row,index){
+                var s;
+                var url = row.gamePicture;
+                if(url != null && url != ""){
+                    s = '<a class ="view" href="javascript:void(0)"><img src="'+basePath+url+'" class="file-preview-image" style="width:160px;height:80px;max-width:100%;max-height:100%"/></a>';
+                }
+                return s;
+            },
         },{
             field: 'gameObject',
             title: '游戏适用对象',
@@ -456,7 +514,9 @@
                     url: basePath + "game/update.do",
                     type:"post",
                     dataType:"json",
-                    data: $("#form1").serialize(),
+                    data: new FormData($("#form1")[0]),
+                    processData: false,
+                    contentType: false,
                     success: function(data){
                         $('#update').modal('hide')
                         window.location.reload();
@@ -475,7 +535,10 @@
         var a = $("#table").bootstrapTable('getSelections');
         $('#gameId').val(a[0].gameId);
         $('#gameName1').val(a[0].gameName);
+        $('#gamePropertiesId1').val(a[0].gamePropertiesId);
+        $('#themeId1').val(a[0].themeId);
         $('#gamePurpose1').val(a[0].gamePurpose);
+        // $('#gamePicture1').val(a[0].gamePicture);
         $('#gameObject1').val(a[0].gameObject);
         $('#numberOfPeople1').val(a[0].numberOfPeople);
         $('#playTime1').val(a[0].playTime);
@@ -485,7 +548,9 @@
         $('#materialStandard1').val(a[0].materialStandard);
         $('#linkTheMaterial1').val(a[0].linkTheMaterial);
         $('#playingMethod1').val(a[0].playingMethod);
-        $('#operation1').val(a[0].operation);
+        $('#rule1').val(a[0].rule);
+        // $('#teacherViedo1').val(a[0].teacherViedo);
+        // $('#workViedo1').val(a[0].workViedo);
         $('#update').modal('show');
     };
      function remove() {

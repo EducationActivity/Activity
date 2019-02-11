@@ -52,7 +52,7 @@ public class GameController {
 
     @RequestMapping("add")
     @ResponseBody
-    public ControllerStatusVO add(HttpServletRequest request, @Param("game")Game game, @Param("gPicture")MultipartFile gPicture, @Param("tViedo") MultipartFile tViedo, @Param("wViedo") MultipartFile wViedo){
+    public ControllerStatusVO add(@Param("request") HttpServletRequest request, @Param("game")Game game, @Param("gPicture")MultipartFile gPicture, @Param("tViedo") MultipartFile tViedo, @Param("wViedo") MultipartFile wViedo){
         ControllerStatusVO statusVO = null;
         try{
             String fileName = gPicture.getOriginalFilename();
@@ -67,7 +67,7 @@ public class GameController {
 
             String fileName2 = wViedo.getOriginalFilename();
             if(fileName2 != null && !"".equals(fileName2)){
-                game.setWorkViedo(UploadImageUtil.uploadViedo(request,gPicture,fileName2));
+                game.setWorkViedo(UploadImageUtil.uploadViedo(request,wViedo,fileName2));
             }
             gameService.save(game);
             GameOperation gameOperation = new GameOperation();
@@ -83,9 +83,23 @@ public class GameController {
 
     @RequestMapping("update")
     @ResponseBody
-    public ControllerStatusVO update(Game game){
+    public ControllerStatusVO update(@Param("request") HttpServletRequest request, @Param("game")Game game, @Param("gPicture")MultipartFile gPicture, @Param("tViedo") MultipartFile tViedo, @Param("wViedo") MultipartFile wViedo){
         ControllerStatusVO statusVO = null;
         try{
+            String fileName = gPicture.getOriginalFilename();
+            if(fileName != null && !"".equals(fileName)){
+                game.setGamePicture(UploadImageUtil.uploadImage(request,gPicture,fileName));
+            }
+
+            String fileName1 = tViedo.getOriginalFilename();
+            if(fileName1 != null && !"".equals(fileName1)){
+                game.setTeacherViedo(UploadImageUtil.uploadViedo(request,tViedo,fileName1));
+            }
+
+            String fileName2 = wViedo.getOriginalFilename();
+            if(fileName2 != null && !"".equals(fileName2)){
+                game.setWorkViedo(UploadImageUtil.uploadViedo(request,wViedo,fileName2));
+            }
             gameService.update(game);
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.GAME_UPDATE_SUCCESS);
         }catch (Exception e){

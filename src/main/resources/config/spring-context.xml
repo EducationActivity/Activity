@@ -12,7 +12,7 @@
     <context:property-placeholder location="classpath:config/jdbc.properties" ignore-unresolvable="true"/>
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${jdbc.driverClassName}" />
-        <property name="url" value="${jdbc.driverUrl}" />
+        <property name="url" value="${jdbc.driverUrl}"/>
         <property name="username" value="${jdbc.user}" />
         <property name="password" value="${jdbc.password}" />
 
@@ -73,8 +73,11 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
     <!-- 配置文件上传 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize"><value>102400</value></property>
+        <property name="maxUploadSize"><value>204857600</value></property>
+        <!-- 最大的内存大小（40960） -->
+        <property name="maxInMemorySize" value="40960" />
         <property name="defaultEncoding"><value>UTF-8</value></property>
     </bean>
+
 
 </beans>

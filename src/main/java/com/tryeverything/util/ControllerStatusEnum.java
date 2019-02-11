@@ -161,7 +161,21 @@ public enum ControllerStatusEnum {
     PROPERTIES_UPDATE_SUCCESS(130,"success","游戏属性修改成功"),
     PROPERTIES_UPDATE_FAIL(131,"fail","游戏属性修改失败"),
     PROPERTIES_REMOVE_SUCCESS(132,"success","游戏属性删除成功"),
-    PROPERTIES_REMOVE_FAIL(133,"fail","游戏属性删除失败");
+    PROPERTIES_REMOVE_FAIL(133,"fail","游戏属性删除失败"),
+
+    SCHEME_ADD_SUCCESS(134,"success","方案模板新增成功"),
+    SCHEME_ADD_FAIL(135,"fail","方案模板新增失败"),
+    SCHEME_UPDATE_SUCCESS(136,"success","方案模板修改成功"),
+    SCHEME_UPDATE_FAIL(138,"fail","方案模板修改失败"),
+    SCHEME_REMOVE_SUCCESS(139,"success","方案模板删除成功"),
+    SCHEME_REMOVE_FAIL(140,"fail","方案模板删除失败"),
+
+    ATTENDANCECARD_ADD_SUCCESS(141,"success","游园卡模板新增成功"),
+    ATTENDANCECARD_ADD_FAIL(142,"fail","游园卡模板新增失败"),
+    ATTENDANCECARD_UPDATE_SUCCESS(143,"success","游园卡模板修改成功"),
+    ATTENDANCECARD_UPDATE_FAIL(144,"fail","游园卡模板修改失败"),
+    ATTENDANCECARD_REMOVE_SUCCESS(145,"success","游园卡模板删除成功"),
+    ATTENDANCECARD_REMOVE_FAIL(146,"fail","游园卡模板删除失败");
 
 
     private Integer code;

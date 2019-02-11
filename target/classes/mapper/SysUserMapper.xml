@@ -11,7 +11,7 @@
 	</insert>
     <select id="findUserBase" resultType="com.tryeverything.entity.SysUser">
 		<![CDATA[
-		select user_id,login_name,user_name,user_password,phone,email,address from t_sys_user u
+		select user_id,login_name,user_name,user_password,phone,email,address,status,`type` from t_sys_user u
 	 			where u.login_name = #{loginName}
 			   	and u.user_password = #{userPassword}
 		]]>
@@ -60,6 +60,13 @@
 	</delete>
 
 	<select id="listAll" resultType="com.tryeverything.entity.SysUser">
-		select user_id,login_name,user_name,phone,email,address from t_sys_user where `type` = '0'
+		select user_id,login_name,user_name,user_password,phone,email,address,status,`type` from t_sys_user where `type` = '0'
 	</select>
+
+	<select id="queryUser" resultType="com.tryeverything.entity.SysUser">
+		<![CDATA[
+			select user_id,login_name,user_name,user_password,phone,email,address,status,`type` from t_sys_user where phone = #{phone} and userPassword = #{userPassword}
+		]]>
+	</select>
+
 </mapper>

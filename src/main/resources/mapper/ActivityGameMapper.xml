@@ -9,7 +9,7 @@
 
     <delete id="removeById" parameterType="java.lang.Integer">
         <![CDATA[
-          delete from t_theme_game where game_id = #{gameId}
+          delete from t_activity_game where game_id = #{gameId}
         ]]>
     </delete>
 

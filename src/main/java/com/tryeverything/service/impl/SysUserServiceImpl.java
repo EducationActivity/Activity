@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Set;
 
 @Service
 public class SysUserServiceImpl extends AbstractBaseService implements SysUserService {
@@ -29,6 +30,13 @@ public class SysUserServiceImpl extends AbstractBaseService implements SysUserSe
 	public void updateUserPws(SysUser sysUserBase) throws Exception {
 		sysUserDao.updateUserPws(sysUserBase);
 	}
-	
-	
+
+	@Override
+	public SysUser queryUser(String phone,String userPassword) {
+		return sysUserDao.queryUser(phone,userPassword);
+	}
+
+
+
+
 }

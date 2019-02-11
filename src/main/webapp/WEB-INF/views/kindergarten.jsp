@@ -23,389 +23,260 @@
 
 </table>
 <div class="modal fade" id="kindergartenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document" style="width: 800px;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <h4 class="modal-title" id="myModalLabel">幼儿园信息新增</h4>
             </div>
             <div class="modal-body">
-                <form id="kindergartenForm" class="form-horizontal">
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="kindergartenName">名称:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="kindergartenName" name="kindergartenName" placeholder="请输入你要新增的幼儿园名称">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="linkman">联系人:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="linkman" name="linkman" placeholder="请输入园方联系人">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="phone">联系电话:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请输入联系人电话">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label">性质:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <label class="radio-inline">
-                            <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten" value="0">公立
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten1" value="1">私立
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="teachingFeatures">教学特色:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="teachingFeatures" name="teachingFeatures" placeholder="请输入你幼儿园的教学特色">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="kindergartenAddress">地址:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="kindergartenAddress" name="kindergartenAddress" placeholder="请输入幼儿园所在地址">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label clalss="control-label" for="remark">备注:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="remark" name="remark" placeholder="请输入备注">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="activityLeader">负责人:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="activityLeader" name="activityLeader" placeholder="请输入活动负责人"/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="themeId">活动主题:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <select class="selectpicker show-tick form-control" id="themeId" name="themeId" placeholder="请选择活动主题" data-live-search="true" required="true">
-
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="activityName">活动名称:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="activityName" name="activityName" placeholder="请输入活动名称"/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="activityTime">活动时间:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="activityTime" name="activityTime" placeholder="请选择活动时间"/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="activityAddress">活动地址:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="activityAddress" name="activityAddress" placeholder="请输入活动地址">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-2">
-                        <label class="control-label" for="createDate">收到时间:</label>
-                    </div>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="createDate" name="createDate" placeholder="请选择收到活动时间"/>
-                    </div>
-                </div>
-                </form>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>下一步</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form id="form1" enctype="multipart/form-data" class="form-horizontal" action="">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel1">幼儿园信息修改</h4>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" id="kindergartenId" name="kindergartenId">
+                <form id="kindergartenForm" role="form" class="form-horizontal">
+                    <fieldset>
+                        <legend align="center">幼儿园基础信息描述</legend>
+                    </fieldset>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="kindergartenName">名称:</label>
+                        <label for="kindergartenName" class="col-sm-2 control-label">幼儿园名字：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="kindergartenName" name="kindergartenName" placeholder="请输入你要新增的幼儿园名称">
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="kindergartenName1" name="kindergartenName" placeholder="请输入你要新增的幼儿园名称">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="linkman">联系人:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="linkman1" name="linkman" placeholder="请输入园方联系人">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="phone">联系电话:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="phone1" name="phone" placeholder="请输入联系人电话">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label">性质:</label>
-                        </div>
-                        <div class="col-md-10" id="natureOfKindergarten4">
+                        <label class="col-sm-2 control-label">幼儿园性质：</label>
+                        <div class="col-sm-4">
                             <label class="radio-inline">
-                                <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten2" value="0">公立
+                                <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten" value="0">公办
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten3" value="1">私立
+                                <input type="radio" name="natureOfKindergarten" id="natureOfKindergarten1" value="1">民办
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="teachingFeatures">教学特色:</label>
+                        <label class="col-sm-2 control-label" for="kindergartenAddress">地址：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="kindergartenAddress" name="kindergartenAddress" placeholder="请输入幼儿园所在地址">
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="teachingFeatures1" name="teachingFeatures" placeholder="请输入你幼儿园的教学特色">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="kindergartenAddress">地址:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="kindergartenAddress1" name="kindergartenAddress" placeholder="请输入幼儿园所在地址">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label clalss="control-label" for="remark">备注:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="remark1" name="remark" placeholder="请输入备注">
+                        <label class="col-sm-2 control-label" for="teachingFeatures">幼儿园教学特色：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="teachingFeatures" name="teachingFeatures" placeholder="请输入你幼儿园的教学特色">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="activityLeader">负责人:</label>
+                        <label  for="linkman" class="col-sm-2 control-label">幼儿园联系人：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="linkman" name="linkman" placeholder="请输入园方联系人">
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="activityLeader1" name="activityLeader" placeholder="请输入活动负责人"/>
+                        <label class="col-sm-2 control-label" for="phone">联系电话：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="请输入联系人电话">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="themeId">活动主题:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <select class="selectpicker show-tick form-control" id="themeId1" name="themeId" placeholder="请输入活动主题" data-live-search="true" required="true">
+                        <label class="col-sm-2 control-label" for="themeId">活动主题：</label>
+                        <div class="col-sm-4">
+                            <select class="selectpicker show-tick form-control" id="themeId" name="themeId" placeholder="请选择活动主题" data-live-search="true" required="true" onselect="0">
 
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="activityName">活动名称:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="activityName1" name="activityName" placeholder="请输入活动名称"/>
+                        <label class="col-sm-2 control-label" for="activityTime">活动时间：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="activityTime" name="activityTime" placeholder="请选择活动时间"/>
                         </div>
                     </div>
+                    <br/>
+                    <fieldset>
+                        <legend align="center">基础信息描述</legend>
+                    </fieldset>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="activityTime">活动时间:</label>
+                        <label for="activityAddress" class="col-sm-2 control-label">活动地址：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="activityAddress" name="kindergartenName" placeholder="请输入你此次活动的活动地址">
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="activityTime1" name="activityTime" placeholder="请选择活动时间" readonly/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="activityAddress">活动地址:</label>
-                        </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="activityAddress1" name="activityAddress" placeholder="请输入活动地址">
+                        <label class="col-sm-2 control-label" for="activityName">活动名称:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="activityName" name="activityName" placeholder="请输入活动名称"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label class="control-label" for="createDate">收到时间:</label>
+                        <label class="col-sm-2 control-label">场地：</label>
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="site" id="site" value="0">室内
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="site" id="site1" value="1">室外
+                            </label>
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="createDate1" name="createDate" placeholder="请选择收到活动时间" readonly/>
+
+                        <label class="col-sm-2 control-label" for="rewardType">颁奖类型：</label>
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType" value="0">奖牌
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType1" value="1">奖杯
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType2" value="2">奖状
+                            </label>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>下一步</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel3">班级信息新增</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="classForm" enctype="multipart/form-data" class="form-horizontal">
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="headcount">幼儿园总人数</label>
+                        <label class="col-sm-2 control-label" for="rewardCount">数量：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="rewardCount" name="rewardCount" placeholder="请输入需要颁发的奖励的数量">
                         </div>
-                        <div class="col-md-10">
+
+                        <label for="rewardContent" class="col-sm-2 control-label">奖杯或奖牌文字内容：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="rewardContent" name="rewardContent" placeholder="奖杯或奖牌文字内容">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="decorate" class="col-sm-2 control-label">宣传布置：</label>
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="decorate" id="decorate" value="0">喷绘
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="decorate" id="decorate1" value="1">横幅
+                            </label>
+                        </div>
+
+                        <label class="col-sm-2 control-label" for="additionalPaidItem">另收费项目:</label>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem" value="0"/>摄影</label>
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem1" value="1"/>摄像</label>
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem2" value="2"/>航拍</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="size">尺寸：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="size" name="size" placeholder="请输入喷绘的尺寸大小"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="content">内容：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="content" name="remark" placeholder="请输入喷绘/横幅的内容"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="createDate">收到时间：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="createDate" name="createDate" placeholder="请选择收到活动时间"/>
+                        </div>
+                        <label class="col-sm-2 control-label" for="remark">备注：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="remark" name="remark" placeholder="请选择要填的备注"/>
+                        </div>
+                    </div>
+                    <br/>
+                    <fieldset>
+                        <legend align="center">班级信息描述</legend>
+                    </fieldset>
+                    <%--<div class="form-group">--%>
+                    <%--<label class="col-sm-1 control-label" for="quantity">小班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople" name="numberOfPeople">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="quantity">中班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity1" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople1" name="numberOfPeople">--%>
+                    <%--</div>--%>
+
+                    <%--<label class="col-sm-1 control-label" for="quantity">大班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity2" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople2" name="numberOfPeople">--%>
+                    <%--</div>--%>
+                    <%--</div>--%>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="activityLeader">活动负责人：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="activityLeader" name="activityLeader" placeholder="请输入活动负责人">
+                        </div>
+                        <label class="col-sm-2 control-label" for="headcount">幼儿园总人数：</label>
+                        <div class="col-sm-4">
                             <input type="Number" class="form-control" id="headcount" name="headcount" placeholder="请输入幼儿园总人数">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="numberOfContract">合同约定人数</label>
-                        </div>
-                        <div class="col-md-10">
+                        <label class="col-sm-2 control-label" for="numberOfContract">合同约定人数：</label>
+                        <div class="col-sm-4">
                             <input type="Number" class="form-control" id="numberOfContract" name="numberOfContract" placeholder="请输入合同约定人数">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="numberOfTeachers">教师人数</label>
-                        </div>
-                        <div class="col-md-10">
+                        <label class="col-sm-2 control-label" for="numberOfTeachers">教师人数：</label>
+                        <div class="col-sm-4">
                             <input type="Number" class="form-control" id="numberOfTeachers" name="numberOfTeachers" placeholder="请输入教师人数">
                         </div>
                     </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                    <button type="button" id="btn_class" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>下一步</button>
-                </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="ringModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel4">环境创设新增</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="ringForm" enctype="multipart/form-data" class="form-horizontal">
+                    <br/>
+                    <fieldset>
+                        <legend align="center">环境创设描述</legend>
+                    </fieldset>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="archwayId">拱门类型</label>
-                        </div>
-                        <div class="col-md-10">
+                        <label class="col-sm-2" for="archwayId">拱门类型：</label>
+                        <div class="col-sm-4">
                             <select class="selectpicker show-tick form-control" id="archwayId" name="archwayId" title="请选择拱门类型" data-live-search="true">
 
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="numberOfBalloon">气柱数量</label>
-                        </div>
-                        <div class="col-md-10">
+                        <label class="col-sm-2" for="numberOfBalloon">气柱数量：</label>
+                        <div class="col-sm-4">
                             <input type="Number" class="form-control" id="numberOfBalloon" name="numberOfBalloon" placeholder="请输入气球立柱数量"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="colorOfBalloon">气柱颜色</label>
+                        <label class="col-sm-2" for="colorOfBalloon">布置气球颜色：</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="colorOfBalloon" name="colorOfBalloon" placeholder="请输入布置气球颜色"/>
                         </div>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="colorOfBalloon" name="colorOfBalloon" placeholder="请输入气球立柱颜色"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <label for="figureId">人偶类型</label>
-                        </div>
-                        <div class="col-md-10">
+                        <label class="col-sm-2" for="figureId">人偶类型：</label>
+                        <div class="col-sm-4">
                             <select class="selectpicker show-tick form-control" id="figureId" name="figureId" title="请选择人偶" data-live-search="true">
 
                             </select>
                         </div>
                     </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                    <button type="button" id="btn_ring" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>提交</button>
-                </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title" id="myModalLabel2">活动游戏新增</h4>
-            </div>
-            <div class="modal-body">
-                <form id="gameForm" enctype="multipart/form-data" class="form-horizontal">
+                    <br/>
+                    <fieldset>
+                        <legend align="center">活动游戏选择</legend>
+                    </fieldset>
                     <div class="form-group">
-                        <label class="col-md-2 control-label">游戏名</label>
-                        <div class="col-md-10">
+                        <label class="col-sm-2 control-label">游戏名：</label>
+                        <div class="col-sm-10">
                             <input type="text" class="form-control" id="gameId" name="gameId" placeholder="选择这次活动的游戏" readonly/>
                         </div>
                     </div>
-                    <div id="tree">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">活动：</label>
+                        <div class="col-sm-10" id="tree">
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_submit1" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>提交</button>
+                        </div>
                     </div>
                 </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <script>
     //设置时间控件
     var option = {
@@ -553,14 +424,30 @@
         }
     }
 
-    window.onload = function (ev) {
+    //设置时间控件
+    var option = {
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd',//显示格式
+        minView: 2,//最精准的时间选择为日期  0-分 1-时 2-日 3-月
+        autoclose: true,//选中自动关闭
+        clearBtn:true,
+        todayBtn: true//显示今日按钮
+    }
+    $('#activityTime').datetimepicker(option);
+    $('#activityTime1').datetimepicker(option);
+
+    $('#createDate').datetimepicker(option);
+    $('#createDate1').datetimepicker(option);
+
+    $(function () {
         select();
         select2();
         select3();
-    }
+        // select4();
+    })
     function select(){
         $.ajax({
-            url: basePath + "activityTheme/listAll.do?ran=Match.Random()",
+            url: "${basePath}activityTheme/listAll.do?ran="+Math.random(),
             dataType: "json",
             success: function (data) {
                 var h = "";
@@ -574,12 +461,10 @@
                 $("#themeId1").selectpicker('refresh');
             }
         });
-
     }
-
     function select2(){
         $.ajax({
-            url: basePath + "archway/listAll.do?ran=Match.Random()",
+            url: "${basePath}archway/listAll.do?ran="+Math.random(),
             dataType: "json",
             success: function (data) {
                 var h = "";
@@ -593,11 +478,10 @@
                 $("#archwayId1").selectpicker('refresh')
             }
         });
-
     }
     function select3(){
         $.ajax({
-            url: basePath + "figure/listAll.do?ran=Match.Random()",
+            url:"${basePath}figure/listAll.do?ran="+Math.random(),
             dataType: "json",
             success: function (data) {
                 var h = "";
@@ -613,10 +497,13 @@
         });
     }
 
-    function validateForm2(){
+    function validateForm(){
         return $("#kindergartenForm").validate({
             rules: {
                 kindergartenName: {
+                    required:true
+                },
+                natureOfKindergarten:{
                     required:true
                 },
                 linkman: {
@@ -632,7 +519,7 @@
                 activityLeader:{
                     required:true
                 },
-                themeId:{
+                theme:{
                     required:true
                 },
                 activityName:{
@@ -641,69 +528,15 @@
                 activityTime:{
                     required:true
                 },
+                teachingFeatures:{
+                    required:true
+                },
                 activityAddress:{
                     required:true
                 },
                 createDate:{
                     required:true
-                }
-            },
-            messages: {
-                kindergartenName: {
-                    required:"幼儿园名称不能为空"
                 },
-                linkman: {
-                    required:"园方联系人不能为空"
-                },
-                phone: {
-                    required:"联系人电话不能为空",
-                    rangelength:"手机号码为11位"
-                },
-                kindergartenAddress:{
-                    required:"幼儿园地址不能为空"
-                },
-                activityLeader:{
-                    required:"活动负责人不能为空"
-                },
-                themeId:{
-                    required:"活动主题不能为空"
-                },
-                activityName:{
-                    required:"活动名称不能为空"
-                },
-                activityTime:{
-                    required:"活动时间不能为空"
-                },
-                activityAddress:{
-                    required:"活动地址不能为空"
-                },
-                createDate:{
-                    required:"收到活动时间不能为空"
-                }
-            },
-            errorElement: "em",
-            errorPlacement: function ( error, element ) {
-                // Add the `help-block` class to the error element
-                error.addClass( "help-block" );
-                if ( element.prop( "type" ) === "checkbox" ) {
-                    error.insertAfter( element.parent( "label" ) );
-                } else {
-                    error.insertAfter( element );
-                }
-            },
-            highlight: function ( element, errorClass, validClass ) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-error" ).removeClass( "has-success" );
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-success" ).removeClass( "has-error" );
-            }
-        });
-    }
-
-
-    function validateForm3(){
-        return $("#classForm").validate({
-            rules: {
                 headcount: {
                     required:true
                 },
@@ -712,9 +545,52 @@
                 },
                 numberOfTeachers: {
                     required:true,
+                },
+                colorOfBalloon: {
+                    required:true
+                },
+                figureId: {
+                    required:true
                 }
             },
             messages: {
+                kindergartenName: {
+                    required: "幼儿园名称不能为空"
+                },
+                linkman: {
+                    required: "园方联系人不能为空"
+                },
+                natureOfKindergarten:{
+                    required:"幼儿园性质不能为空"
+                },
+                phone: {
+                    required: "联系人电话不能为空",
+                    rangelength: "手机号码为11位"
+                },
+                kindergartenAddress: {
+                    required: "幼儿园地址不能为空"
+                },
+                activityLeader: {
+                    required: "活动负责人不能为空"
+                },
+                theme: {
+                    required: "活动主题不能为空"
+                },
+                activityName: {
+                    required: "活动名称不能为空"
+                },
+                activityTime: {
+                    required: "活动时间不能为空"
+                },
+                teachingFeatures:{
+                    required:"幼儿园的特色不能为空"
+                },
+                activityAddress: {
+                    required: "活动地址不能为空"
+                },
+                createDate: {
+                    required: "收到活动时间不能为空"
+                },
                 headcount: {
                     required:"幼儿园总人数不能为空"
                 },
@@ -723,78 +599,44 @@
                 },
                 numberOfTeachers: {
                     required:"教师人数不能为空"
-                }
-            },
-            errorElement: "em",
-            errorPlacement: function ( error, element ) {
-                // Add the `help-block` class to the error element
-                error.addClass( "help-block" );
-                if ( element.prop( "type" ) === "checkbox" ) {
-                    error.insertAfter( element.parent( "label" ) );
-                } else {
-                    error.insertAfter( element );
-                }
-            },
-            highlight: function ( element, errorClass, validClass ) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-error" ).removeClass( "has-success" );
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-success" ).removeClass( "has-error" );
-            }
-        });
-    }
-
-    function validateForm4(){
-        return $("#ringForm").validate({
-            rules: {
-                colorOfBalloon: {
-                    required:true
                 },
-                figureId: {
-                    required:true
-                }
-            },
-            messages: {
                 colorOfBalloon: {
                     required:"气球颜色不能为空"
                 },
                 figureId: {
                     required:"人偶类型不能为空"
                 }
+
             },
             errorElement: "em",
             errorPlacement: function ( error, element ) {
                 // Add the `help-block` class to the error element
                 error.addClass( "help-block" );
-                if ( element.prop( "type" ) === "checkbox" ) {
-                    error.insertAfter( element.parent( "label" ) );
+                // if ( element.prop( "type" ) === "checkbox" ) {
+                //     error.insertAfter( element.parent( "label" ) );
+                if(element.is(':radio') || element.is(':checkbox')){
+                    var eid = element.attr('name');
+                    error.appendTo(element.parent("label"));
                 } else {
                     error.insertAfter( element );
                 }
             },
             highlight: function ( element, errorClass, validClass ) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-error" ).removeClass( "has-success" );
+                $( element ).parents( ".col-sm-4" ).addClass( "has-error" ).removeClass( "has-success" );
             },
             unhighlight: function (element, errorClass, validClass) {
-                $( element ).parents( ".col-md-10" ).addClass( "has-success" ).removeClass( "has-error" );
+                $( element ).parents( ".col-sm-4" ).addClass( "has-success" ).removeClass( "has-error" );
             }
-        });
+        } );
     }
-
-
-    //注册表单验证
-    $(validateForm2());
-
-    $(validateForm3());
-
-    $(validateForm4());
-
     var kindergarten = [];
+    var information = [];
     var classInformation = [];
     var ringDescription = [];
     var game = [];
     function add(){
-        $("#kindergartenModal").modal("show");
+        $("kindergartenModal").modal("show");
+        getTree();
         $("#btn_submit").on("click",function(){
             if(validateForm().form()){
                 // var kindergartenId = $("#kindergartenId").val();
@@ -802,63 +644,64 @@
                 var linkman = $("#linkman").val();
                 var phone = $("#phone").val();
                 var natureOfKindergarten = $("input[name='natureOfKindergarten']:checked").val();
-                // $('#natureOfKindergarten input:radio:checked').val();
                 var teachingFeatures = $("#teachingFeatures").val();
                 var kindergartenAddress = $("#kindergartenAddress").val();
-                var remark = $("#remark").val();
-                var activityLeader = $("#activityLeader").val();
                 var themeId = $("#themeId").selectpicker('val');
                 var activityName = $("#activityName").val();
                 var activityTime = $("#activityTime").val();
                 var activityAddress = $("#activityAddress").val();
+                var remark = $("#remark").val();
+                var activityLeader = $("#activityLeader").val();
                 var createDate = $("#createDate").val();
                 kindergarten.push({"kindergartenName":kindergartenName,"linkman":linkman,"phone":phone,"natureOfKindergarten":natureOfKindergarten,"teachingFeatures":teachingFeatures,"kindergartenAddress":kindergartenAddress,"remark":remark,"activityLeader":activityLeader,"themeId":themeId,"activityName":activityName,"activityTime":activityTime,"activityAddress":activityAddress,"createDate":createDate});
-                $('#kindergartenModal').modal("hide");
-                $("#classModal").modal("show");
-                classAdd();
-                return true;
-            }else{
-                return false;
-            }
-        });
-    }
 
+                var site = $("input[name='natureOfKindergarten']:checked").val();
+                var rewardType = $("input[name='rewardType']:checked").val();
+                var rewardCount = $("#rewardCount").val();
+                var rewardContent = $("#rewardContent").val();
+                var decorate = $("input[name='decorate']:checked").val();
+                var size = $("#size").val();
+                var content = $("#content").val();
+                var additionalPaidItem = $("input[name='additionalPaidItem']:checkbox").val();
+                information.push({"site":site,"rewardType":rewardType,"rewardCount":rewardCount,"rewardContent":rewardContent,"decorate":decorate,"size":size,"content":content,"additionalPaidItem":additionalPaidItem});
 
-    function classAdd(){
-        $("#btn_class").on("click",function(){
-            if(validateForm1().form()){
-                // var classInformationId = $('#classInformationId').val();
                 var headcount = $('#headcount').val();
                 var numberOfContract = $('#numberOfContract').val();
                 var numberOfTeachers = $('#numberOfTeachers').val();
                 classInformation.push({"headcount":headcount,"numberOfContract":numberOfContract,"numberOfTeachers":numberOfTeachers});
-                $('#classModal').modal('hide');
-                $("#ringModal").modal("show");
-                ringDescriptionAdd();
-                return true;
-            }else{
-                return false;
-            }
-        });
-    }
-    function ringDescriptionAdd(){
-        $("#add").modal("show");
-        $("#btn_ring").on("click",function(){
-            if(validateForm2().form()){
-                // var ringDescriptionId = $('#ringDescriptionId').val();
+
                 var archwayId = $('#archwayId').val();
                 var numberOfBalloon = $('#numberOfBalloon').val();
                 var colorOfBalloon = $('#colorOfBalloon').val();
                 var figureId = $('#figureId').val();
-
                 ringDescription.push({"archwayId":archwayId,"numberOfBalloon":numberOfBalloon,"colorOfBalloon":colorOfBalloon,"figureId":figureId})
-                $('#ringModal').modal('hide');
-                $('#gameModal').modal('show');
+
+                var jsonStr = {};
+                var userId = "${franchiseeId}";
+                if(userId == null && userId == ""){
+                    userId = "${user.userId}";
+                }
+                jsonStr["kindergarten"] = kindergarten;
+                jsonStr["information"] = information;
+                jsonStr["classInformation"] = classInformation;
+                jsonStr["ringDescription"] = ringDescription;
+                jsonStr["game"] = game;
+                console.log(jsonStr);
+                $.ajax({
+                    url: "${basePath}kindergarten/add.do?userId="+userId,
+                    type: "post",
+                    dataType: "json",
+                    data: JSON.stringify(jsonStr),
+                    contentType : "application/json;charsetset=UTF-8",
+                    success: function (data){
+                        alert(data.message);
+                        window.location.href = "${basePath}franchisee/activityToConfirm.do";
+                    }
+                })
                 return true;
             }else{
                 return false;
             }
-
         });
     }
 
@@ -901,6 +744,7 @@
             }
         })
     }
+
     function nameValue(name){
         for(var i in game){
             if(name.length==0){
@@ -911,155 +755,6 @@
 
         }
         $("#gameId").val(name);
-    }
-
-    $("#btn_submit1").on("click",function () {
-        if(validateForm3().form()){
-            var jsonStr = {};
-            var userId = "${franchisee}";
-            if(userId == null && userId == ""){
-                userId = "${user.userId}";
-            }
-            jsonStr["kindergarten"] = kindergarten;
-            jsonStr["classInformation"] = classInformation;
-            jsonStr["ringDescription"] = ringDescription;
-            jsonStr["game"] = game;
-            console.log(jsonStr);
-            $.ajax({
-                url: basePath + "kindergarten/add.do?userId="+userId,
-                type: "post",
-                dataType: "json",
-                data: JSON.stringify(jsonStr),
-                contentType : "application/json;charsetset=UTF-8",
-                success: function (data){
-                    alert(data.message);
-                    $("#gameModal"). modal(hide);
-                }
-            })
-        }
-    })
-
-    function addSchedule(){
-        var a = $("#table").bootstrapTable('getSelections');
-
-        if(a.length<=0){
-            alert("请选中行")
-        }else if(a.length>1){
-            alert("请选中一行");
-        }else{
-            var kindergartenId = a[0].kindergartenId;
-            $.ajax({
-                url: basePath + "kindergarten/addSchedule.do?kindergartenId="+kindergartenId,
-                type: "post",
-                dataType: "json",
-                contentType : "application/json;charsetset=UTF-8",
-                success: function (data){
-                    alert(data.message);
-                }
-            })
-
-        }
-    }
-
-    function schedule(){
-        var a = $("#table").bootstrapTable('getSelections');
-        if(a.length<=0){
-            alert("请选中行")
-        }else if(a.length>1){
-            alert("请选中一行");
-        }else{
-            var kindergartenId = a[0].kindergartenId;
-            window.location.href = "${basePath}kindergarten/schedule.do?kindergartenId="+kindergartenId;
-
-        }
-    }
-
-    $('#ringModal').on('hidden.bs.modal', function () {
-        getTree();
-    });
-
-    $('#gameModal').on('hidden.bs.modal', function () {
-        window.location.reload();
-    })
-
-
-    function update() {
-        var a = $("#table").bootstrapTable('getSelections');
-        if (a.length <= 0) {
-            alert("请选中行")
-        } else if (a.length > 1) {
-            alert("请选中一行");
-        } else {
-            editInfo();
-            $("#btn_update").on("click", function () {
-                var kindergartenId = $("#kindergartenId").val();
-                var kindergartenName = $("#kindergartenName1").val();
-                var linkman = $("#linkman1").val();
-                var phone = $("#phone1").val();
-                var natureOfKindergarten = $('#natureOfKindergarten4 input:radio:checked').val();
-                var teachingFeatures = $("#teachingFeatures").val();
-                var kindergartenAddress = $("#kindergartenAddress1").val();
-                var remark = $("#remark1").val();
-                var activityLeader = $("#activityLeader1").val();
-                var theme = $("#theme1").val();
-                var activityName = $("#activityName1").val();
-                var activityTime = $("#activityTime1").val();
-                var activityAddress = $("#activityAddress1").val();
-                var createDate = $("#createDate1").val();
-                $.ajax({
-                    type: "post",
-                    dataType: "json",
-                    url: basePath + "kindergarten/update.do?kindergartenId=" + kindergartenId,
-                    data: {
-                        kindergartenName: kindergartenName,
-                        linkman: linkman,
-                        phone: phone,
-                        natureOfKindergarten: natureOfKindergarten,
-                        teachingFeatures: teachingFeatures,
-                        kindergartenAddress: kindergartenAddress,
-                        remark: remark,
-                        activityLeader: activityLeader,
-                        theme: theme,
-                        activityName: activityName,
-                        activityTime: activityTime,
-                        activityAddress: activityAddress,
-                        createDate: createDate
-                    },
-                    success: function (data) {
-                        $('#update').modal('hide')
-                        window.location.reload();
-                        alert(data.message);
-                    },
-                    error: function (data) {
-                        window.location.reload();
-                        alert(data.message);
-                    }
-                });
-            });
-        }
-    }
-
-    function editInfo() {
-        var a = $("#table").bootstrapTable('getSelections');
-        $('#kindergartenId').val(a[0].kindergartenId);
-        $('#linkman1').val(a[0].linkman);
-        $('#kindergartenName1').val(a[0].kindergartenName);
-        $('#phone1').val(a[0].phone);
-        if (a[0].natureOfKindergarten == 0) {
-            $("#natureOfKindergarten2").prop('checked', true);
-        } else if (a[0].natureOfKindergarten == 1) {
-            $("#natureOfKindergarten3").prop('checked', true);
-        }
-        $("#teachingFeatures1").val(a[0].teachingFeatures);
-        $('#kindergartenAddress1').val(a[0].kindergartenAddress);
-        $('#remark1').val(a[0].remark);
-        $('#activityLeader1').val(a[0].activityLeader);
-        $('#theme1').selectpicker('val', a[0].theme);
-        $('#activityName1').val(a[0].activityName);
-        $("#activityTime1").val(changeDateFormat(a[0].activityTime));
-        $('#activityAddress1').val(a[0].activityAddress);
-        $('#createDate1').val(changeDateFormat(a[0].createDate));
-        $('#update').modal('show');
     }
 
     function remove() {

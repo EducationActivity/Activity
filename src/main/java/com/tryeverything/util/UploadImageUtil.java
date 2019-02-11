@@ -59,6 +59,26 @@ public class UploadImageUtil {
         return path;
     }
 
+    public static String uploadPdf(HttpServletRequest request,MultipartFile file, String fileName){
+        String path = "";
+        try {
+            String pathRoot = request.getServletContext().getRealPath("");
+            String uploadPath = "/static/uploadPdf/";
+            fileName = fileName.substring(fileName.lastIndexOf(".") + 1);
+            String newfileName = new SimpleDateFormat("yyy-MM-dd-HH-mm-ss").format(new Date((new Long(String.valueOf(new Date().getTime()))))) + UUIDUtils.getUUID() + "." + fileName;
+            path = uploadPath + newfileName;
+            //创建file实例
+            File uploadPPT = new File(pathRoot + path);
+            if (!uploadPPT.getParentFile().exists()) {
+                uploadPPT.getParentFile().mkdirs();
+            }
+            file.transferTo(uploadPPT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return path;
+    }
+
     public static String thumbnailUploadImage(MultipartFile file, int width, int height, String uploadPath, String realUploadPath){
         //缩略图实际存储路径
         String des = realUploadPath + "/thum"+file.getOriginalFilename();
