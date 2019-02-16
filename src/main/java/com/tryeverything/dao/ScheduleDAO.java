@@ -6,6 +6,5 @@ import java.util.List;
 
 @Repository
 public interface ScheduleDAO extends BaseDAO{
-    List<Object> listById(Integer id);
     void deletedById(Integer id);
 }

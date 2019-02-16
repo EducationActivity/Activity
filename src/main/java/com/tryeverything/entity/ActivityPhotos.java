@@ -8,7 +8,7 @@ import java.util.Date;
 public class ActivityPhotos implements Serializable {
     private Integer activityPhotosId;
     private Integer kindergartenId;
-    private Integer themeId;
+    private Integer activityId;
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date time;
 
@@ -28,12 +28,12 @@ public class ActivityPhotos implements Serializable {
         this.kindergartenId = kindergartenId;
     }
 
-    public Integer getThemeId() {
-        return themeId;
+    public Integer getActivityId() {
+        return activityId;
     }
 
-    public void setThemeId(Integer themeId) {
-        this.themeId = themeId;
+    public void setActivityId(Integer activityId) {
+        this.activityId = activityId;
     }
 
     public Date getTime() {
@@ -49,7 +49,7 @@ public class ActivityPhotos implements Serializable {
         return "ActivityPhotos{" +
                 "activityPhotosId=" + activityPhotosId +
                 ", kindergartenId=" + kindergartenId +
-                ", themeId=" + themeId +
+                ", activityId=" + activityId +
                 ", time=" + time +
                 '}';
     }

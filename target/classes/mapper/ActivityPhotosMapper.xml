@@ -4,7 +4,7 @@
 
     <insert id="save" parameterType="com.tryeverything.entity.ActivityPhotos" useGeneratedKeys="true" keyColumn="activityPhotosId" keyProperty="activityPhotosId">
         <![CDATA[
-          insert into t_activity_photos(activity_photos_id,kindergarten_id,`time`) values (#{activityPhotosId},#{kindergartenId},now())
+          insert into t_activity_photos(activity_photos_id,activity_id,kindergarten_id,`time`) values (#{activityPhotosId},#{activityId},#{kindergartenId},now())
         ]]>
     </insert>
     <update id="update" parameterType="com.tryeverything.entity.ActivityPhotos">
@@ -12,6 +12,9 @@
           update t_activity_photos
         ]]>
         <set>
+            <if test="activityId != null">
+                activity_id = #{activityId},
+            </if>
             <if test="kindergartenId != null">
                 kindergarten_id = #{kindergartenId},
             </if>
@@ -34,9 +37,9 @@
         ]]>
     </delete>
 
-    <select id="listAll" resultType="com.tryeverything.entity.ActivityPhotos">
+    <select id="listAll" resultType="com.tryeverything.vo.ActivityPhotosVO">
         <![CDATA[
-          select * from t_activity_photos;
+          select ap.activity_photos_id,ap.activity_id,ap.kindergarten_id,ap.`time`,a.activity_name,a.theme_id,a.activity_leader,a.activity_time,a.activity_address,k.kindergarten_name,k.teaching_features,k.fees from t_activity_photos ap left join t_activity a on ap.activity_id = a.activity_id left join t_kindergarten k on k.kindergarten_id = ap.kindergarten_id;
         ]]>
     </select>
 </mapper>

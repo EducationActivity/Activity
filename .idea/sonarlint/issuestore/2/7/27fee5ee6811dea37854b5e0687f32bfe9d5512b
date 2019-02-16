@@ -1,0 +1,17 @@
+
+ssquid:UselessImportCheck	"CRemove this unused import 'com.tryeverything.util.UploadImageUtil'.(¸×Üûÿÿÿÿ8„ºÜƒ-
+isquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(ç«ƒ‹8´©ß±-
+Fsquid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-
+nsquid:CommentedOutCodeLinec"<This block of commented-out lines of code should be removed.(©’°†úÿÿÿÿ8´©ß±-
+Gsquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-
+ksquid:UselessImportCheck
+"@Remove this unused import 'com.tryeverything.vo.ActivityGameVO'.(•Ù‡8ÉÆõª-
+[
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ºû×Êüÿÿÿÿ8´©ß±-
+msquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8ÃÜƒ-
+csquid:S1854I"ERemove this useless assignment to local variable "activityMaterials".(µãû¶8Àñï°-
+?squid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S1481I"6Remove this unused "activityMaterials" local variable.(µãû¶8Àñï°-
+|squid:UselessImportCheck"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ8ŞõÖƒ-
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8§üÍƒ-
+Fsquid:S1148j"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–©¦°-

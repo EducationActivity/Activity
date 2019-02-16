@@ -40,13 +40,13 @@
 
     <delete id="deleteById" parameterType="java.lang.Integer">
         <![CDATA[
-          delete from t_schedule s,t_kindergarten_schedule ks where ks.schedule_id = s.schedule_id and ks.kindergarten_id = #{kindergartenId}
+          delete from t_schedule s,t_activity_schedule a where a.schedule_id = s.schedule_id and a.activity_id = #{activityId}
         ]]>
     </delete>
 
     <select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Schedule">
         <![CDATA[
-            select s.schedule_id,s.activity_schedule,s.readiness_time,s.finish_time,s.executor,s.content,ac.schedule_id,ac.kindergarten_id from t_schedule s,t_kindergarten_schedule ac where s.schedule_id=ac.schedule_id and ac.kindergarten_id = #{kindergartenId}
+            select s.schedule_id,s.activity_schedule,s.readiness_time,s.finish_time,s.executor,s.content from t_schedule s,t_activity_schedule a where s.schedule_id=a.schedule_id and a.activity_id = #{activityId}
         ]]>
     </select>
 

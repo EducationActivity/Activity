@@ -3,8 +3,7 @@
 <mapper namespace="com.tryeverything.dao.KindergartenDAO">
     <insert id="save" parameterType="com.tryeverything.entity.Kindergarten" useGeneratedKeys="true" keyColumn="kindergarten_id" keyProperty="kindergartenId">
         <![CDATA[
-          insert into t_kindergarten(kindergarten_name,linkman,phone,nature_of_kindergarten,teaching_features,kindergarten_address,remark,activity_leader,
-          theme_id,activity_name,activity_time,activity_address,create_date) values (#{kindergartenName},#{linkman},#{phone},#{natureOfKindergarten},#{teachingFeatures},#{kindergartenAddress},#{remark},#{activityLeader},#{themeId},#{activityName},#{activityTime},#{activityAddress},#{createDate})
+          insert into t_kindergarten(kindergarten_name,linkman,phone,nature_of_kindergarten,teaching_features,kindergarten_address,fees,remark) values (#{kindergartenName},#{linkman},#{phone},#{natureOfKindergarten},#{teachingFeatures},#{kindergartenAddress},#{fees},#{remark})
         ]]>
     </insert>
 
@@ -22,35 +21,20 @@
             <if test="phone != null and phone != ''">
                 phone = #{phone},
             </if>
-            <if test="teachingFeatures != null and teachingFeatures != ''">
-                teachingFeatures = #{teachingFeatures},
-            </if>
             <if test="natureOfKindergarten != null">
                 nature_of_kindergarten = #{natureOfKindergarten},
+            </if>
+            <if test="teachingFeatures != null and teachingFeatures != ''">
+                teaching_features = #{teachingFeatures},
             </if>
             <if test="kindergartenAddress != null and kindergartenAddress != ''">
                 kindergarten_address = #{kindergartenAddress},
             </if>
+            <if test="fees != null and fees != ''">
+                fees = #{fees},
+            </if>
             <if test="remark != null and remark != ''">
-                remark = #{remark},
-            </if>
-            <if test="activityLeader != null and activityLeader != ''">
-                activity_leader = #{activityLeader},
-            </if>
-            <if test="theme != null and theme != ''">
-                themeId = #{themeId},
-            </if>
-            <if test="activityName != null and activityName != ''">
-                activity_name = #{activityName},
-            </if>
-            <if test="activityTime != null">
-                activity_time = #{activityTime},
-            </if>
-            <if test="activityAddress != null and activityAddress != ''">
-                activity_address = #{activityAddress},
-            </if>
-            <if test="createDate != null">
-                create_date = #{createDate}
+                remark = #{remark}
             </if>
         </set>
         where kindergarten_id = #{kindergartenId}
@@ -58,16 +42,16 @@
 
     <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Kindergarten">
         <![CDATA[
-          select kindergarten_id,kindergarten_name,linkman,phone,nature_of_kindergarten,kindergarten_address,remark,activity_leader,
-          theme_id,activity_name,activity_time,activity_address,create_date from t_kindergarten where kindergarten_id = #{kindergartenId}
+          select kindergarten_id,kindergarten_name,linkman,phone,nature_of_kindergarten,teaching_features,kindergarten_address,fees,remark from t_kindergarten where kindergarten_id = #{kindergartenId}
         ]]>
     </select>
+
     <select id="listById" parameterType="java.lang.String" resultType="com.tryeverything.entity.Kindergarten">
         <![CDATA[
-          select kindergarten_id,kindergarten_name,linkman,phone,nature_of_kindergarten,kindergarten_address,remark,activity_leader,
-          theme_id,activity_name,activity_time,activity_address,create_date from t_kindergarten where kindergarten_id = #{kindergartenId}
+          select kindergarten_id,kindergarten_name,linkman,phone,nature_of_kindergarten,teaching_features,kindergarten_address,fees,remark from t_kindergarten where kindergarten_id = #{kindergartenId}
         ]]>
     </select>
+
     <delete id="removeById" parameterType="java.lang.Integer">
         delete from t_kindergarten where kindergarten_id = #{kindergartenId}
     </delete>
@@ -75,6 +59,6 @@
     <select id="listAll" resultType="com.tryeverything.entity.Kindergarten">
       <![CDATA[
         select * from t_kindergarten;
-        ]]>
+      ]]>
     </select>
 </mapper>

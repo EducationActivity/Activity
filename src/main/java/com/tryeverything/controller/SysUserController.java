@@ -71,7 +71,7 @@ public class SysUserController {
 
     @RequestMapping("updateUserPws")
     @ResponseBody
-    public ControllerStatusVO updataUserPws(String userPassword,Integer userId, HttpServletRequest request) throws Exception{
+    public ControllerStatusVO updataUserPws(String userPassword,String userId, HttpServletRequest request) throws Exception{
         ControllerStatusVO statusVO = null;
         try {
             SysUser sysUser = new SysUser();

@@ -617,6 +617,9 @@
         $("#gameId").val(name);
     }
 
+
+
+
     function remove() {
         var a = $("#table").bootstrapTable('getSelections');
         if (a.length <= 0) {

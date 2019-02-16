@@ -13,16 +13,8 @@ public class Kindergarten implements Serializable {
     private Integer natureOfKindergarten;
     private String teachingFeatures;
     private String kindergartenAddress;
+    private String fees;
     private String remark;
-    private String activityLeader;
-    private Integer themeId;
-    private String activityName;
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date activityTime;
-    private String activityAddress;
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    private Date createDate;
-
 
     public Integer getKindergartenId() {
         return kindergartenId;
@@ -80,60 +72,20 @@ public class Kindergarten implements Serializable {
         this.kindergartenAddress = kindergartenAddress;
     }
 
+    public String getFees() {
+        return fees;
+    }
+
+    public void setFees(String fees) {
+        this.fees = fees;
+    }
+
     public String getRemark() {
         return remark;
     }
 
     public void setRemark(String remark) {
         this.remark = remark;
-    }
-
-    public String getActivityLeader() {
-        return activityLeader;
-    }
-
-    public void setActivityLeader(String activityLeader) {
-        this.activityLeader = activityLeader;
-    }
-
-    public Integer getThemeId() {
-        return themeId;
-    }
-
-    public void setThemeId(Integer themeId) {
-        this.themeId = themeId;
-    }
-
-    public String getActivityName() {
-        return activityName;
-    }
-
-    public void setActivityName(String activityName) {
-        this.activityName = activityName;
-    }
-
-    public Date getActivityTime() {
-        return activityTime;
-    }
-
-    public void setActivityTime(Date activityTime) {
-        this.activityTime = activityTime;
-    }
-
-    public String getActivityAddress() {
-        return activityAddress;
-    }
-
-    public void setActivityAddress(String activityAddress) {
-        this.activityAddress = activityAddress;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
     }
 
     @Override
@@ -146,13 +98,8 @@ public class Kindergarten implements Serializable {
                 ", natureOfKindergarten=" + natureOfKindergarten +
                 ", teachingFeatures='" + teachingFeatures + '\'' +
                 ", kindergartenAddress='" + kindergartenAddress + '\'' +
+                ", fees='" + fees + '\'' +
                 ", remark='" + remark + '\'' +
-                ", activityLeader='" + activityLeader + '\'' +
-                ", themeId='" + themeId + '\'' +
-                ", activityName='" + activityName + '\'' +
-                ", activityTime=" + activityTime +
-                ", activityAddress='" + activityAddress + '\'' +
-                ", createDate=" + createDate +
                 '}';
     }
 }

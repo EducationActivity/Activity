@@ -18,7 +18,8 @@
 </head>
 <body>
 
-<button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
+<button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 游戏新增</button>
+<button href="#" class="btn btn-info btn-xs plus" onclick="addOperation()"><i class="fa fa-plus"></i> 游戏操作新增</button>
 <table id="table">
 
 </table>
@@ -74,9 +75,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="work">工作人员数量：</label>
+                        <label class="col-sm-2 control-label" for="work">工作人员：</label>
                         <div class="col-sm-4">
-                            <input type="Number" class="form-control" id="work" name="work" placeholder="请填写需要的工作人员数量"/>
+                            <input type="text" class="form-control" id="work" name="work" placeholder="请填写需要的工作人员数量"/>
                         </div>
 
                         <label class="col-sm-2 control-label" for="materialStandard">制作物料标准：</label>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="form-group">
 
-                        <label class="col-sm-2 control-label" for="linkTheMaterial">联系的材料：</label>
+                        <label class="col-sm-2 control-label" for="linkTheMaterial">环节物料：</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" id="linkTheMaterial" name="linkTheMaterial" placeholder="请输入联系的材料"/>
                         </div>
@@ -185,9 +186,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label" for="work">工作人员数量：</label>
+                        <label class="col-sm-2 control-label" for="work">工作人员：</label>
                         <div class="col-sm-4">
-                            <input type="Number" class="form-control" id="work1" name="work" placeholder="请填写需要的工作人员数量"/>
+                            <input type="text" class="form-control" id="work1" name="work" placeholder="请填写需要的工作人员"/>
                         </div>
 
                         <label class="col-sm-2 control-label" for="materialStandard">制作物料标准：</label>
@@ -197,9 +198,9 @@
                     </div>
                     <div class="form-group">
 
-                        <label class="col-sm-2 control-label" for="linkTheMaterial">联系的材料：</label>
+                        <label class="col-sm-2 control-label" for="linkTheMaterial">环节物料：</label>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="linkTheMaterial1" name="linkTheMaterial" placeholder="请输入联系的材料"/>
+                            <input type="text" class="form-control" id="linkTheMaterial1" name="linkTheMaterial" placeholder="请输入环节物料"/>
                         </div>
 
                         <label class="col-sm-2 control-label" for="merchant">适用商家：</label>
@@ -340,7 +341,7 @@
             align: 'center'
         }, {
             field: 'themeId',
-            title: '游戏属性',
+            title: '适合主题类型',
             visible:false,
             align: 'center'
         }, {
@@ -369,7 +370,7 @@
             align:'center'
         },{
             field: 'numberOfPeople',
-            title: '产地及人数要求',
+            title: '场地及人数要求',
             visible:true,
             align:'center'
         },{
@@ -379,7 +380,7 @@
             align:'center'
         }, {
             field: 'standard',
-            title: '场地布置标准',
+            title: '教室布置标准',
             visible:false,
             align:'center'
         }, {
@@ -399,7 +400,12 @@
             align:'center'
         },  {
             field: 'linkTheMaterial',
-            title: '联系的材料',
+            title: '环节物料',
+            visible:true,
+            align:'center'
+        }, {
+            field: 'merchant',
+            title: '适用商家描述',
             visible:true,
             align:'center'
         },{
@@ -454,7 +460,25 @@
     }
 
     function details(){
-
+        // var a = $("#table").bootstrapTable('getSelections');
+        // if (a.length <= 0) {
+        //     alert("请选中行");
+        // } else if (a.length > 1){
+        //     alert("请选中一行");
+        // }else {
+        //     var gameId = a[0].gameId;
+        //     $.ajax({
+        //         type:"post",
+        //         cache: false,
+        //         dataType:"json",
+        //         url: basePath+"operation/listById.do?operationId="+gameId,
+        //         success(data){
+        //             if(data.length>0){
+        //                 $()
+        //             }
+        //         }
+        //     })
+        // }
     }
      function add(){
          $("#add").modal("show");
@@ -480,6 +504,17 @@
              });
          });
      };
+
+    function addOperation(){
+        var a = $("#table").bootstrapTable('getSelections');
+        if (a.length <= 0) {
+            alert("请选中行");
+        } else if (a.length > 1){
+            alert("请选中一行");
+        }else {
+            window.location.href = basePath+"operation/listPage.do?gameId="+a[0].gameId;
+        }
+    }
     window.onload = function (ev) {
         select()
     }
@@ -518,13 +553,13 @@
                     processData: false,
                     contentType: false,
                     success: function(data){
+                        alert(data.message);
                         $('#update').modal('hide')
                         window.location.reload();
-                        alert(data.message);
                     },
                     error: function(data){
-                        $('#table').bootstrapTable("refresh");
                         alert(data.message);
+                        $('#table').bootstrapTable("refresh");
                     }
                 });
             });
@@ -549,6 +584,7 @@
         $('#linkTheMaterial1').val(a[0].linkTheMaterial);
         $('#playingMethod1').val(a[0].playingMethod);
         $('#rule1').val(a[0].rule);
+        $('#merchant1').val(a[0].merchant);
         // $('#teacherViedo1').val(a[0].teacherViedo);
         // $('#workViedo1').val(a[0].workViedo);
         $('#update').modal('show');

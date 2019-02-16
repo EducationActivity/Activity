@@ -25,7 +25,7 @@
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <input type="hidden" name="kindergartenId" id="kindergartenId" value="${kindergarten.kindergartenId}">
+            <input type="hidden" name="activityId" id="activityId" value="${activity.activityId}">
             <form id="form" enctype="multipart/form-data">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -104,7 +104,7 @@
 
 <script>
     $('#table').bootstrapTable({
-        url: basePath + 'schedule/getById.do?kindergartenId='+${kindergarten.kindergartenId},                      //请求后台的URL（*）
+        url: basePath + 'schedule/getById.do?activityId='+${activityId},                      //请求后台的URL（*）
         method: 'GET',                      //请求方式（*）
         dataType: "json",
         pagination: true,
@@ -192,11 +192,11 @@
             var finishTime = $("#finishTime").val();
             var executor = $("#executor").val();
             var content = $("#content").val();
-            var kindergartenId = $("#kindergartenId").val()
+            var activityId = $("#activityId").val();
             $.ajax({
                 type: "post",
                 dataType: "json",
-                url: basePath + "schedule/add.do?kindergartenId=" + kindergartenId,
+                url: basePath + "schedule/add.do?activityId=" + activityId,
                 data: {
                     activitySchedule: activitySchedule,
                     readinessTime:readinessTime,

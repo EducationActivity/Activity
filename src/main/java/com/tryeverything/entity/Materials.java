@@ -7,11 +7,17 @@ import java.util.Date;
 public class Materials implements Serializable {
     private Integer materialId;
     private String materialName;
+    private Integer themeId;
     private String materialPicture;
     private String supplier;
     private String introduce;
     private Integer materialCount;
     private BigDecimal materialPrice;
+    private Integer inventoryQuantity;
+    private Integer theDelivery;
+    private Integer nowTheInventory;
+    private String unit;
+    private String remark;
     private Date createDate;
 
     public Integer getMaterialId() {
@@ -28,6 +34,14 @@ public class Materials implements Serializable {
 
     public void setMaterialName(String materialName) {
         this.materialName = materialName;
+    }
+
+    public Integer getThemeId() {
+        return themeId;
+    }
+
+    public void setThemeId(Integer themeId) {
+        this.themeId = themeId;
     }
 
     public String getMaterialPicture() {
@@ -70,6 +84,46 @@ public class Materials implements Serializable {
         this.materialPrice = materialPrice;
     }
 
+    public Integer getInventoryQuantity() {
+        return inventoryQuantity;
+    }
+
+    public void setInventoryQuantity(Integer inventoryQuantity) {
+        this.inventoryQuantity = inventoryQuantity;
+    }
+
+    public Integer getTheDelivery() {
+        return theDelivery;
+    }
+
+    public void setTheDelivery(Integer theDelivery) {
+        this.theDelivery = theDelivery;
+    }
+
+    public Integer getNowTheInventory() {
+        return nowTheInventory;
+    }
+
+    public void setNowTheInventory(Integer nowTheInventory) {
+        this.nowTheInventory = nowTheInventory;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
     public Date getCreateDate() {
         return createDate;
     }
@@ -83,11 +137,17 @@ public class Materials implements Serializable {
         return "Materials{" +
                 "materialId=" + materialId +
                 ", materialName='" + materialName + '\'' +
+                ", themeId=" + themeId +
                 ", materialPicture='" + materialPicture + '\'' +
                 ", supplier='" + supplier + '\'' +
                 ", introduce='" + introduce + '\'' +
                 ", materialCount=" + materialCount +
                 ", materialPrice=" + materialPrice +
+                ", inventoryQuantity=" + inventoryQuantity +
+                ", theDelivery=" + theDelivery +
+                ", nowTheInventory=" + nowTheInventory +
+                ", unit='" + unit + '\'' +
+                ", remark='" + remark + '\'' +
                 ", createDate=" + createDate +
                 '}';
     }

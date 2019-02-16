@@ -81,87 +81,89 @@
 			<h5 class="sidebartitle">
 			<ul class="nav nav-pills nav-stacked nav-bracket menu">
 				<li class=""><a href="#"><i class="fa fa-home"></i> <span>主页</span></a></li>
-				<li class="nav-parent"><a href="#"><i class="fa fa-file"></i> <span>活动确认管理</span></a>
+				<li class="nav-parent"><a href="#"><i class="fa fa-file"></i> <span>活动流程管理</span></a>
 					<ul class="children">
-						<li class=""><a href="${basePath}activity/listPage.do"><i class="fa fa-caret-right"></i>活动列表</a></li>
+						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>幼儿园信息确认管理</a></li>
 					</ul>
 					<ul class="children">
-						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>幼儿园信息进度列表</a></li>
+                        <li class=""><a href="${basePath}activity/listPage.do"><i class="fa fa-caret-right"></i>活动信息确认管理</a></li>
+                    </ul>
+					<ul class="children">
+						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>幼儿园活动方案管理</a></li>
 					</ul>
 					<ul class="children">
-						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>活动信息物料列表</a></li>
+						<li class=""><a href="${basePath}activityMaterials/listActivityMaterials.do"><i class="fa fa-caret-right"></i>活动物料信息管理</a></li>
 					</ul>
 					<ul class="children">
-						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>活动人员安排列表</a></li>
+						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>活动人员安排管理</a></li>
 					</ul>
 					<ul class="children">
-						<li class=""><a href="${basePath}activityPhotos/listPage.do"><i class="fa fa-caret-right"></i>活动图片信息列表</a></li>
+						<li class=""><a href="${basePath}activityPhotos/listPage.do"><i class="fa fa-caret-right"></i>活动图片信息管理</a></li>
 					</ul>
 				</li>
-				<li class="nav-parent"><a href="#"><i class="fa fa-file-text"></i> <span>活动管理</span></a>
-					<ul class="children">
-						<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>方案模板列表</a></li>
+				<li class="nav-parent"><a href="#"><i class="fa fa-file-text"></i> <span>活动内容管理</span></a>
+                    <ul class="children">
+                        <li class="children"><a href="${basePath}activityTheme/listPage.do"><i class="fa fa-caret-right"></i>活动主题游戏管理</a></li>
+                    </ul>
+                    <ul class="children">
+                        <li class="children"><a href="${basePath}properties/listPage.do"><i class="fa fa-caret-right"></i>游戏属性管理(子菜单)</a></li>
+                    </ul>
+                    <ul class="children">
+						<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>活动方案模板管理</a></li>
 					</ul>
 					<%--<ul class="children">--%>
 						<%--<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>门卡模板列表</a></li>--%>
 					<%--</ul>--%>
 					<ul class="children">
-						<li class=""><a href="${basePath}attendanceCard/listPage.do"><i class="fa fa-caret-right"></i>游园卡模板列表</a></li>
+						<li class=""><a href="${basePath}attendanceCard/listPage.do"><i class="fa fa-caret-right"></i>活动游园卡模板管理</a></li>
 					</ul>
 					<%--<ul class="children">--%>
 						<%--<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>邀请函模板列表</a></li>--%>
 					<%--</ul>--%>
 					<ul class="children">
-						<li class=""><a href="${basePath}figure/listPage.do"><i class="fa fa-caret-right"></i>人偶列表</a></li>
+						<li class=""><a href="${basePath}figure/listPage.do"><i class="fa fa-caret-right"></i>活动人偶管理</a></li>
 					</ul>
 					<ul class="children">
-						<li class=""><a href="${basePath}archway/listPage.do"><i class="fa fa-caret-right"></i>拱门列表</a></li>
+						<li class=""><a href="${basePath}archway/listPage.do"><i class="fa fa-caret-right"></i>活动拱门管理</a></li>
 					</ul>
-					<ul class="children">
-						<li class=""><a href="${basePath}activityTheme/listPage.do"><i class="fa fa-caret-right"></i>活动主题游戏列表</a></li>
-					</ul>
-					<ul class="children">
-						<li class=""><a href="${basePath}properties/listPage.do"><i class="fa fa-caret-right"></i>游戏属性列表</a></li>
-					</ul>
+
                 </li>
 
 				<li class="nav-parent"><a href="#"><i class="fa fa-bitcoin"></i> <span>加盟商管理</span></a>
 					<ul class="children">
-						<li class=""><a href="${basePath}franchisee/listPage.do"><i class="fa fa-caret-right"></i>加盟商列表</a></li>
+						<li class=""><a href="${basePath}franchisee/listPage.do"><i class="fa fa-caret-right"></i>加盟商信息管理</a></li>
 					</ul>
                     <ul class="children">
-                        <li class=""><a href="#"><i class="fa fa-caret-right"></i>加盟商活动表</a></li>
+                        <li class=""><a href="#"><i class="fa fa-caret-right"></i>加盟商活动管理</a></li>
                     </ul>
                     <ul class="children">
-                        <li class=""><a href="#"><i class="fa fa-caret-right"></i>加盟商课程表</a></li>
+                        <li class=""><a href="#"><i class="fa fa-caret-right"></i>加盟商课程管理</a></li>
                     </ul>
 				</li>
 				<li class="nav-parent"><a href="#"><i class="fa fa-won"></i> <span>供应商管理</span></a>
                     <ul class="children">
-                        <li class=""><a href="${basePath}supplier/listPage.do"><i class="fa fa-caret-right"></i>供应商列表</a></li>
+                        <li class=""><a href="${basePath}supplier/listPage.do"><i class="fa fa-caret-right"></i>供应商管理</a></li>
 					</ul>
-				</li>
-				<li class="nav-parent"><a href="#"><i class="fa fa-rouble"></i> <span>供应链管理</span></a>
-					<ul class="children">
-						<li class=""><a href="${basePath}materials/listPage.do"><i class="fa fa-caret-right"></i>物料列表</a></li>
-					</ul>
-					<ul class="children">
-						<li class=""><a href="${basePath}course/listPage.do"><i class="fa fa-caret-right"></i>课程列表</a></li>
-					</ul>
-					<ul class="children">
-						<li class=""><a href="${basePath}courseType/listPage.do"><i class="fa fa-caret-right"></i>课程类型列表</a></li>
-					</ul>
+                    <ul class="children">
+                        <li class=""><a href="${basePath}materials/listPage.do"><i class="fa fa-caret-right"></i>物料管理</a></li>
+                    </ul>
+                    <ul class="children">
+                        <li class=""><a href="${basePath}course/listPage.do"><i class="fa fa-caret-right"></i>课程管理</a></li>
+                    </ul>
+                    <ul class="children">
+                        <li class=""><a href="${basePath}courseType/listPage.do"><i class="fa fa-caret-right"></i>课程类型管理(子菜单)</a></li>
+                    </ul>
 				</li>
 				<li class="nav-parent"><a href="#"><i class="fa fa-youtube-square"></i> <span>幼儿园管理</span></a>
 					<ul class="children">
 						<li class=""><a href="${basePath}kindergarten/listPage.do"><i class="fa fa-caret-right"></i>幼儿园信息列表</a></li>
 					</ul>
 				</li>
-				<li class="nav-parent"><a href="#"><i class="fa fa-youtube-square"></i> <span>家长管理</span></a>
-					<ul class="children">
-						<li class=""><a href="${basePath}parents/listPage.do"><i class="fa fa-caret-right"></i>家长信息列表</a></li>
-					</ul>
-				</li>
+				<%--<li class="nav-parent"><a href="#"><i class="fa fa-youtube-square"></i> <span>家长管理</span></a>--%>
+					<%--<ul class="children">--%>
+						<%--<li class=""><a href="${basePath}parents/listPage.do"><i class="fa fa-caret-right"></i>家长信息列表</a></li>--%>
+					<%--</ul>--%>
+				<%--</li>--%>
 				<%--<li class="nav-parent"><a href="#"><i class="fa fa-file-text"></i> <span>新闻管理</span></a>--%>
 					<%--<ul class="children">--%>
 						<%--<li class=""><a href="#"><i class="fa fa-caret-right"></i>新闻列表</a></li>--%>

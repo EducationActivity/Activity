@@ -4,7 +4,6 @@ import com.tryeverything.entity.SysUser;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.Set;
 
 @Repository
 public interface SysUserDao extends BaseDAO{

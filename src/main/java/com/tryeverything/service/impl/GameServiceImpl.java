@@ -21,4 +21,8 @@ public class GameServiceImpl extends AbstractBaseService implements GameService 
         this.gameDAO = gameDAO;
     }
 
+    @Override
+    public List<Object> listByActivityId(Integer activityId) {
+        return gameDAO.listByActivityId(activityId);
+    }
 }

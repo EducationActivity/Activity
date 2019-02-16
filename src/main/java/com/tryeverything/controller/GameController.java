@@ -1,10 +1,10 @@
 package com.tryeverything.controller;
 
 import com.tryeverything.entity.Game;
-import com.tryeverything.entity.GameOperation;
 import com.tryeverything.service.ActivityGameService;
 import com.tryeverything.service.GameOperationService;
 import com.tryeverything.service.GameService;
+import com.tryeverything.service.OperationService;
 import com.tryeverything.util.ControllerStatusEnum;
 import com.tryeverything.util.ControllerStatusVO;
 import com.tryeverything.util.UploadImageUtil;
@@ -31,6 +31,9 @@ public class GameController {
     @Resource
     private GameOperationService gameOperationService;
 
+    @Resource
+    private OperationService operationService;
+
 
     @RequestMapping("listPage")
     public String listPage(Integer themeId, Map<String,Object> map){
@@ -38,10 +41,23 @@ public class GameController {
         return "game";
     }
 
+    @RequestMapping("listActivityPage")
+    public String listActivityPage(Integer activityId, Map<String,Object> map){
+        map.put("activityId",activityId);
+        return "activity_game";
+    }
+
+
     @RequestMapping("listAll")
     @ResponseBody
     public List<Object> listAll(){
         return gameService.listAll();
+    }
+
+    @RequestMapping("listByActivityId")
+    @ResponseBody
+    public List<Object> listByActivityId(Integer activityId){
+        return gameService.listByActivityId(activityId);
     }
 
     @RequestMapping("listById")
@@ -70,9 +86,6 @@ public class GameController {
                 game.setWorkViedo(UploadImageUtil.uploadViedo(request,wViedo,fileName2));
             }
             gameService.save(game);
-            GameOperation gameOperation = new GameOperation();
-            gameOperation.setGameId(game.getGameId());
-            gameOperationService.save(gameOperation);
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.GAME_ADD_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();
@@ -108,6 +121,7 @@ public class GameController {
         }
         return statusVO;
     }
+
 
     @RequestMapping("remove")
     @ResponseBody

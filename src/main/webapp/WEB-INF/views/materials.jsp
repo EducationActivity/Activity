@@ -37,6 +37,15 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="themeId" class="col-md-2 control-label">物料类别</label>
+                        <div class="col-md-10">
+                            <select class="selectpicker show-tick form-control" id="themeId" name="themeId" placeholder="请选择物料适用主题" data-live-search="true" required="true">
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <div class="col-md-2">
                             <label for="materialPicture" class="control-label">选择物料图片</label>
                         </div>
@@ -62,10 +71,50 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-2">
-                            <label for="materialCount" class="control-label">物料数量</label>
+                            <label for="materialCount" class="control-label">原库存</label>
                         </div>
                         <div class="col-md-10">
                             <input type="Number" class="form-control" id="materialCount" name="materialCount" placeholder="请输入物料数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="inventoryQuantity" class="control-label">入库数量</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="inventoryQuantity" name="inventoryQuantity" placeholder="请输入入库数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="theDelivery" class="control-label">出库数量</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="theDelivery" name="theDelivery" placeholder="请输入出库数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="nowTheInventory" class="control-label">现库存</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="nowTheInventory" name="nowTheInventory" placeholder="现库存数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="unit" class="control-label">单位</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="unit" name="unit" placeholder="请输入物料单位">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="remark" class="control-label">备注</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="remark" name="remark" placeholder="请输入物料备注">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -96,6 +145,14 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="themeId1" class="col-md-2 control-label">物料类别</label>
+                        <div class="col-md-10">
+                            <select class="selectpicker show-tick form-control" id="themeId1" name="themeId" placeholder="请选择物料适用主题" data-live-search="true" required="true">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-md-2">
                             <label for="materialPicture" class="control-label">选择物料图片</label>
                         </div>
@@ -121,10 +178,50 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-2">
-                            <label for="materialCount" class="control-label">物料数量</label>
+                            <label for="materialCount" class="control-label">原库存</label>
                         </div>
                         <div class="col-md-10">
                             <input type="Number" class="form-control" id="materialCount1" name="materialCount" placeholder="请输入物料数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="inventoryQuantity1" class="control-label">入库数量</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="inventoryQuantity1" name="inventoryQuantity" placeholder="请输入入库数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="theDelivery1" class="control-label">出库数量</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="theDelivery1" name="theDelivery" placeholder="请输入出库数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="nowTheInventory1" class="control-label">现库存</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="Number" class="form-control" id="nowTheInventory1" name="nowTheInventory" placeholder="现库存数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="unit1" class="control-label">单位</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="unit1" name="unit" placeholder="请输入物料单位">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="remark1" class="control-label">备注</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="remark1" name="remark" placeholder="请输入物料备注">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -203,6 +300,11 @@
             title: '物料名称',
             visible:true,
             align: 'center'
+        },{
+            field: 'themeId',
+            title: '适用主题',
+            visible:true,
+            align: 'center'
         }, {
             field: 'materialPicture',
             title: '物料图片',
@@ -225,7 +327,32 @@
             align: 'center'
         },  {
             field: 'materialCount',
-            title: '物料数量',
+            title: '原库存',
+            visible:true,
+            align: 'center'
+        },{
+            field: 'inventoryQuantity',
+            title: '入库数量',
+            visible:true,
+            align: 'center'
+        },{
+            field: 'theDelivery',
+            title: '出库数量',
+            visible:true,
+            align: 'center'
+        },{
+            field: 'nowTheInventory',
+            title: '现库存',
+            visible:true,
+            align: 'center'
+        },{
+            field: 'unit',
+            title: '单位',
+            visible:true,
+            align: 'center'
+        },{
+            field: 'remark',
+            title: '备注',
             visible:true,
             align: 'center'
         }, {
@@ -281,6 +408,28 @@
             var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }
+    }
+
+    window.onload = function (ev) {
+        select()
+    }
+    function select(){
+        $.ajax({
+            url: basePath + "activityTheme/listAll.do?ran=Match.Random()",
+            dataType: "json",
+            success: function (data) {
+                var h = "";
+                for (var i = 0; i < data.length; i++) {
+                    h += "<option value='"+data[i].themeId+"'>"+data[i].themeName+"</option>";//用appendTo声明是给谁的值
+                }
+                $("#themeId").append(h);
+                $("#themeId1").append(h);
+                // 缺一不可  
+                $('#themeId').selectpicker('refresh');
+                $("#themeId1").selectpicker('refresh');
+            }
+        });
+
     }
      function add(){
          $("#add").modal("show");
@@ -340,10 +489,16 @@
         var a = $("#table").bootstrapTable('getSelections');
         $('#materialId').val(a[0].materialId);
         $('#materialName1').val(a[0].materialName);
+        $('#themeId1').val(a[0].themeId);
         // $('#materialPicture1').val(a[0].materialPicture);
          $('#introduce1').val(a[0].introduce);
          $('#materialPrice1').val(a[0].materialPrice);
          $('#materialCount1').val(a[0].materialCount);
+         $('#inventoryQuantity1').val(a[0].inventoryQuantity);
+         $('#theDelivery1').val(a[0].theDelivery);
+         $('#nowTheInventory1').val(a[0].nowTheInventory);
+         $('#unit1').val(a[0].unit);
+         $('#remark1').val(a[0].remark);
          $('#createDate1').val(changeDateFormat(a[0].createDate));//
         $('#update').modal('show');
     };

@@ -3,7 +3,7 @@ package com.tryeverything.entity;
 import java.io.Serializable;
 
 public class SysUser implements Serializable {
-    private Integer userId;
+    private String userId;
     private String loginName;
     private String userName;
     private String userPassword;
@@ -13,11 +13,11 @@ public class SysUser implements Serializable {
     private Integer status;
     private Integer type;
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -88,7 +88,7 @@ public class SysUser implements Serializable {
     @Override
     public String toString() {
         return "SysUser{" +
-                "userId=" + userId +
+                "userId='" + userId + '\'' +
                 ", loginName='" + loginName + '\'' +
                 ", userName='" + userName + '\'' +
                 ", userPassword='" + userPassword + '\'' +

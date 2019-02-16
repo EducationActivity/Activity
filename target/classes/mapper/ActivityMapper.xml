@@ -3,7 +3,7 @@
 <mapper namespace="com.tryeverything.dao.ActivityDAO">
     <insert id="save" parameterType="com.tryeverything.entity.Activity" keyProperty="activityId" keyColumn="activity_id" useGeneratedKeys="true">
         <![CDATA[
-          insert into t_activity(activity_id,activity_name,theme_id) values (#{activityId},#{activityName},#{themeId})
+          insert into t_activity(activity_id,activity_name,theme_id,activity_leader,activity_time,activity_address,create_date,remark) values (#{activityId},#{activityName},#{themeId},#{activityLeader},#{activityTime},#{activityAddress},#{createDate},#{remark})
         ]]>
     </insert>
 
@@ -16,7 +16,22 @@
                 activity_name = #{activityName},
             </if>
             <if test="themeId != null">
-                theme_id = #{themeId}
+                theme_id = #{themeId},
+            </if>
+            <if test="activityLeader != null and activityLeader != ''">
+                activity_leader = #{activityLeader},
+            </if>
+            <if test="activityTime != null">
+                activity_time = #{activityTime},
+            </if>
+            <if test="activityAddress != null and activityAddress != ''">
+                activity_address = #{activityAddress},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark}
             </if>
         </set>
         where activity_id = #{activityId}
@@ -26,19 +41,65 @@
         <![CDATA[
           delete from t_activity where activity_id = #{activityId}
         ]]>
-    </delete>
+     </delete>
 
-    <select id="listAll" resultType="com.tryeverything.entity.Activity">
+    <select id="listAll" resultType="com.tryeverything.vo.KindergartenActivityVO">
         <![CDATA[
-          select * from t_activity
+          select a.*,k.linkman,k.phone,k.kindergarten_name,k.kindergarten_address,k.teaching_features,k.fees from t_activity a left join t_activity_confirmation ac on a.activity_id = ac.activity_id left join t_kindergarten k on ac.kindergarten_id = k.kindergarten_id
         ]]>
     </select>
 
     <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Activity">
-        select activity_name,theme from t_activity where activity_id = #{#activityId}
+        select activity_id,activity_name,theme_id,activity_leader,activity_time,activity_address,create_date,remark from t_activity where activity_id = #{#activityId}
     </select>
 
     <select id="getId" parameterType="java.lang.String" resultType="com.tryeverything.entity.Activity">
-        select activity_name,theme from t_activity where activity_id = #{#activityId}
+        select activity_id,activity_name,theme_id,activity_leader,activity_time,activity_address,create_date,remark from t_activity where activity_id = #{#activityId}
     </select>
+
+    <select id="listPagerCriteria" resultType="com.tryeverything.entity.Activity">
+        <![CDATA[
+		select * from t_activity
+		where activity_id = #{activityId}
+		]]>
+        limit #{pager.beginIndex}, #{pager.pageSize}
+    </select>
+
+    <select id="countCriteria" resultType="long">
+        <![CDATA[
+		select count(activity_id) from t_activity
+		where activity_id = #{activity.baid}
+		]]>
+    </select>
+
+    <sql id="activityCriteria">
+        <if test="query != null and query.themeId != null">
+            and a.theme_id like concat('%', #{query.themeId} ,'%')
+        </if>
+        <if test="query != null and query.activityName != null and query.activityName != ''">
+            and a.activity_name like concat('%', #{query.activityName} ,'%')
+        </if>
+        <if test="query != null and query.kindergartenName != null and query.kindergartenName != ''">
+            and k.kindergarten_name like concat('%', #{query.kindergartenName} ,'%')
+        </if>
+        <if test="query != null and query.activityTime != null and query.activityTime != ''">
+            and a.activity_time like concat('%', #{query.activityTime} ,'%')
+        </if>
+        <if test="query != null and query.activityLeader != null and query.activityLeader != ''">
+            and a.activity_leader like concat('%', #{query.activityLeader} ,'%')
+        </if>
+    </sql>
+
+    <!--<select id="listPagerCriteria" resultType="com.tryeverything.vo.KindergartenActivityVO">-->
+        <!--select a.activity_id,a.activity_name,a.theme_id,a.activityLeader,a.activity_address,a.create_date,a.remark,k.kindergarten_id as huid,h.phone as phone,h.huname as huname,h.email as email,ru.ruid as ruid from t_role r,t_roleuser ru,-->
+        <!--t_huser h where ru.ruid = ruid and ru.rid = r.rid and ru.huid = h.huid-->
+
+        <!--<include refid="roleUserQuery_criteria"/>-->
+        <!--limit #{pager.beginIndex},#{pager.pageSize}-->
+    <!--</select>-->
+
+    <!--<select id="countCriteria" resultType="Long">-->
+<!--&#45;&#45;         select count(ru.ruid) from t_roleuser ru,t_role r,t_huser h where ru.ruid = ruid and ru.rid = r.rid and ru.huid = h.huid-->
+<!--&#45;&#45;         <include refid="roleUserQuery_criteria"/>-->
+    <!--</select>-->
 </mapper>

@@ -6,6 +6,6 @@ import java.util.List;
 
 @Repository
 public interface GameDAO extends BaseDAO {
-    List<Object> listById(Integer activityId);
+    List<Object> listByActivityId(Integer activityId);
 
 }

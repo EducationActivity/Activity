@@ -6,8 +6,19 @@ public class ActivityMaterials implements Serializable {
     private Integer id;
     private Integer activityId;
     private Integer materialId;
+    private String projectName;
     private String materialName;
     private Integer materialCount;
+    private String unit;
+
+    public ActivityMaterials() {
+
+    }
+
+    public ActivityMaterials(String projectName,String materialName) {
+        this.projectName = projectName;
+        this.materialName = materialName;
+    }
 
     public Integer getId() {
         return id;
@@ -33,6 +44,14 @@ public class ActivityMaterials implements Serializable {
         this.materialId = materialId;
     }
 
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
     public String getMaterialName() {
         return materialName;
     }
@@ -49,14 +68,25 @@ public class ActivityMaterials implements Serializable {
         this.materialCount = materialCount;
     }
 
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
     @Override
     public String toString() {
         return "ActivityMaterials{" +
                 "id=" + id +
                 ", activityId=" + activityId +
                 ", materialId=" + materialId +
+                ", projectName='" + projectName + '\'' +
                 ", materialName='" + materialName + '\'' +
                 ", materialCount=" + materialCount +
+                ", unit='" + unit + '\'' +
                 '}';
     }
 }

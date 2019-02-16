@@ -891,7 +891,6 @@
                     alert(data.message);
                 }
             })
-
         }
     }
 
@@ -903,8 +902,11 @@
             alert("请选中一行");
         }else{
             var kindergartenId = a[0].kindergartenId;
-            window.location.href = "${basePath}kindergarten/schedule1.do?kindergartenId="+kindergartenId;
-
+            if(data.length>0){
+                window.location.href = "${basePath}kindergarten/schedule1.do?kindergartenId="+kindergartenId;
+            }else{
+                alert("还没有生成活动进度,请先去生成活动进度");
+            }
         }
     }
 

@@ -1,6 +1,7 @@
 package com.tryeverything.controller;
 
 import com.tryeverything.entity.Activity;
+import com.tryeverything.entity.Kindergarten;
 import com.tryeverything.service.ActivityService;
 import com.tryeverything.service.GameService;
 import com.tryeverything.util.ControllerStatusEnum;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("activity")
@@ -20,6 +22,12 @@ public class ActivityController {
 
     @Resource
     private GameService gameService;
+
+    @RequestMapping("schedule")
+    public String schedule(Map<String,Object> map, Integer activityId){
+        map.put("activityId",activityId);
+        return "schedule";
+    }
 
     @RequestMapping("listPage")
     public String listPage(){
@@ -31,6 +39,7 @@ public class ActivityController {
     public List<Object> listAll(){
         return activityService.listAll();
     }
+
 
     @RequestMapping("add")
     @ResponseBody

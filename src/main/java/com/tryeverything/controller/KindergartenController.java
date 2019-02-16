@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.tryeverything.entity.*;
+import com.tryeverything.entity.ActivitySchedule;
 import com.tryeverything.service.*;
 import com.tryeverything.util.ControllerStatusEnum;
 import com.tryeverything.util.ControllerStatusVO;
@@ -38,13 +39,16 @@ public class KindergartenController {
     private RingDescriptionService ringDescriptionService;
 
     @Resource
-    private KindergartenScheduleService kindergartenScheduleService;
+    private ActivityScheduleService activityScheduleService;
 
     @Resource
     private ActivityConfirmationService confirmationService;
 
     @Resource
     private InformationService informationService;
+
+    @Resource
+    private ActivityConfirmationService activityConfirmationService;
 
 
     @RequestMapping("schedule")
@@ -103,12 +107,7 @@ public class KindergartenController {
                     kindergarten1.setTeachingFeatures(teachingFeatures);
                     kindergarten1.setKindergartenAddress(kindergartenAddress);
                     kindergarten1.setRemark(remark);
-                    kindergarten1.setActivityLeader(activityLeader);
-                    kindergarten1.setThemeId(themeId);
-                    kindergarten1.setActivityName(activityName);
-                    kindergarten1.setActivityTime(activityTime);
-                    kindergarten1.setActivityAddress(activityAddress);
-                    kindergarten1.setCreateDate(createDate);
+
 
                     kindergartenService.save(kindergarten1);
                     kindergartenId = kindergarten1.getKindergartenId();
@@ -116,6 +115,14 @@ public class KindergartenController {
                     Activity activity = new Activity();
                     activity.setActivityName(activityName);
                     activity.setThemeId(themeId);
+
+                    activity.setActivityLeader(activityLeader);
+                    activity.setThemeId(themeId);
+                    activity.setActivityName(activityName);
+                    activity.setActivityTime(activityTime);
+                    activity.setActivityAddress(activityAddress);
+                    activity.setCreateDate(createDate);
+                    activity.setRemark(remark);
 
                     activityService.save(activity);
                     activityId = activity.getActivityId();
@@ -214,13 +221,15 @@ public class KindergartenController {
 
     @RequestMapping("addSchedule")
     @ResponseBody
-    public ControllerStatusVO addSchedule(Integer kindergartenId){
+    public ControllerStatusVO addSchedule(Integer activityId){
         ControllerStatusVO statusVO = null;
         try{
             Schedule schedule = new Schedule();
-            Kindergarten kindergarten = (Kindergarten) kindergartenService.getById(kindergartenId);
-            KindergartenSchedule kindergartenSchedule = new KindergartenSchedule();
-            kindergartenSchedule.setKindergartenId(kindergarten.getKindergartenId());
+            Activity activity = (Activity) activityService.getById(activityId);
+//            ActivityConfirmation activityConfirmation = (ActivityConfirmation) activityConfirmationService.getById(activityId);
+//            Kindergarten kindergarten = (Kindergarten) kindergartenService.getById(activityConfirmation.getKindergartenId());
+            ActivitySchedule activitySchedule = new ActivitySchedule();
+            activitySchedule.setActivityId(activityId);
             Map<String,Integer> map = new LinkedHashMap<>();
             map.put("明确活动时间",1);
             map.put("创建活动群",1);
@@ -244,20 +253,16 @@ public class KindergartenController {
             for(Map.Entry<String, Integer> m:map.entrySet()){
                 schedule.setActivitySchedule(m.getKey());
                 Calendar rightNow = Calendar.getInstance();
-                if(kindergarten.getCreateDate() != null){
-                    rightNow.setTime(kindergarten.getCreateDate());
+                if(activity.getCreateDate() != null){
+                    rightNow.setTime(activity.getCreateDate());
                     rightNow.add(Calendar.DAY_OF_YEAR,m.getValue());//日期加10天
                     Date date = rightNow.getTime();
                     schedule.setReadinessTime(date);
                 }
                 scheduleService.save(schedule);
-                kindergartenSchedule.setScheduleId(schedule.getScheduleId());
-                kindergartenScheduleService.save(kindergartenSchedule);
+                activitySchedule.setScheduleId(schedule.getScheduleId());
+                activityScheduleService.save(activitySchedule);
             }
-            Activity activity = new Activity();
-            activity.setActivityName(kindergarten.getActivityName());
-            activity.setThemeId(kindergarten.getThemeId());
-            activityService.save(activity);
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.SCHEDULE_ADD_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();

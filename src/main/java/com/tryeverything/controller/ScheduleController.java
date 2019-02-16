@@ -1,8 +1,8 @@
 package com.tryeverything.controller;
 
-import com.tryeverything.entity.KindergartenSchedule;
+import com.tryeverything.entity.ActivitySchedule;
 import com.tryeverything.entity.Schedule;
-import com.tryeverything.service.KindergartenScheduleService;
+import com.tryeverything.service.ActivityScheduleService;
 import com.tryeverything.service.ScheduleService;
 import com.tryeverything.util.ControllerStatusEnum;
 import com.tryeverything.util.ControllerStatusVO;
@@ -20,20 +20,18 @@ public class ScheduleController {
     private ScheduleService scheduleService;
 
     @Resource
-    private KindergartenScheduleService kindergartenScheduleService;
+    private ActivityScheduleService activityScheduleService;
 
     @RequestMapping("add")
     @ResponseBody
-    public ControllerStatusVO add(Schedule schedule,Integer kindergartenId){
+    public ControllerStatusVO add(Schedule schedule,Integer activityId){
         ControllerStatusVO statusVO = null;
         try{
             scheduleService.save(schedule);
-            KindergartenSchedule kindergartenSchedule = new KindergartenSchedule();
-            kindergartenSchedule.setScheduleId(schedule.getScheduleId());
-            System.out.println(kindergartenId);
-            kindergartenSchedule.setKindergartenId(kindergartenId);
-            kindergartenSchedule.setScheduleId(schedule.getScheduleId());
-            kindergartenScheduleService.save(kindergartenSchedule);
+            ActivitySchedule activitySchedule = new ActivitySchedule();
+            activitySchedule.setScheduleId(schedule.getScheduleId());
+            activitySchedule.setActivityId(activityId);
+            activityScheduleService.save(activitySchedule);
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.SCHEDULE_ADD_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();
@@ -74,8 +72,8 @@ public class ScheduleController {
 
     @RequestMapping("getById")
     @ResponseBody
-    public List<Object> getById(Integer kindergartenId){
-        return scheduleService.listById(kindergartenId);
+    public List<Object> getById(Integer activityId){
+        return scheduleService.listById(activityId);
     }
 
 }

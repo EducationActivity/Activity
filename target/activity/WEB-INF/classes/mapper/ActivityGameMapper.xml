@@ -15,13 +15,13 @@
 
     <select id="listAll" resultType="com.tryeverything.entity.ActivityGame">
         <![CDATA[
-          select * from t_theme_game
+          select * from t_activity_game
         ]]>
     </select>
 
-    <select id="listById" resultType="com.tryeverything.entity.ActivityGame">
+    <select id="listById" resultType="com.tryeverything.vo.ActivityGameVO">
         <![CDATA[
-          select * from t_theme_game
+          select ag.activity_id,ag.game_id,ac.information_id,ci.headcount,ci.number_of_contract,g.game_name,g.stores_list,g.work,g.merchant from t_activity_game ag left join t_activity_confirmation ac on ag.activity_id = ac.activity_id left join t_game g on ag.game_id = g.game_id left join t_class_information ci on ci.class_information_id = ac.class_information_id where ag.activity_id = #{activityId}
         ]]>
     </select>
 </mapper>

@@ -1,15 +1,16 @@
 
-`squid:UselessImportCheck"<Remove this unused import 'com.alibaba.fastjson.JSONObject'.(äýµ
-csquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(Ûö®„
-Ksquid:EmptyStatementUsageCheck%"Remove this empty statement.(•Õ¦ªÿÿÿÿÿ
-Csquid:S1264t",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
-?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148z"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-@squid:S1148‰"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-@squid:S1148ª"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-fsquid:S3027C"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çðºäùÿÿÿÿ
-Xsquid:S1075A"ARefactor your code to get this URI from a customizable parameter.(¯úÆ
-?squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-rsquid:S1450#"VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ
 Xsquid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú
+Ksquid:S1264‘",Replace this "for" loop with a "while" loop.(ƒÖˆÎ8ìÈíÒŽ-
+fsquid:S3027C"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çðºäùÿÿÿÿ
+?squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Xsquid:S1075A"ARefactor your code to get this URI from a customizable parameter.(¯úÆ
+osquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(ÓÁ¿žýÿÿÿÿ8Á¶ÏÒŽ-
+?squid:S1148z"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+`squid:UselessImportCheck"<Remove this unused import 'com.alibaba.fastjson.JSONObject'.(äýµ
+@squid:S1148²"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Csquid:S1264t",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
+Ksquid:EmptyStatementUsageCheck%"Remove this empty statement.(•Õ¦ªÿÿÿÿÿ
+rsquid:S1450#"VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ
+csquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(Ûö®„

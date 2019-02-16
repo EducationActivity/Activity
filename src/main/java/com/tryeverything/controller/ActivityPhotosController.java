@@ -110,7 +110,7 @@ public class ActivityPhotosController {
             activityPhotosService.save(activityPhotos);
             Integer activityPhotosId = activityPhotos.getActivityPhotosId();
             for (int i=0;i<a.size();i++){
-                picturesService.updateById((Integer)a.get(i),activityPhotosId);
+                picturesService.updateById(a.get(i),activityPhotosId);
             }
             Iterator<Integer> it = a.iterator();
             for(;it.hasNext();) {
@@ -127,17 +127,25 @@ public class ActivityPhotosController {
 
     @RequestMapping(value = "update")
     @ResponseBody
-    public ControllerStatusVO update(ActivityPhotos activityPhotos,String time){
+    public ControllerStatusVO update(ActivityPhotos activityPhotos){
         ControllerStatusVO statusVO = null;
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-        Date timeDate=null;
-        try {
-            timeDate= sdf.parse(time);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        activityPhotos.setTime(timeDate);
+//        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+//        Date timeDate=null;
+//        try {
+//            timeDate= sdf.parse(time);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        activityPhotos.setTime(timeDate);
         try{
+            for (int i=0;i<a.size();i++){
+                picturesService.updateById(a.get(i),activityPhotos.getActivityPhotosId());
+            }
+            Iterator<Integer> it = a.iterator();
+            for(;it.hasNext();) {
+                it.next();
+                it.remove();
+            }
             activityPhotosService.update(activityPhotos);
             statusVO = ControllerStatusVO.status(ControllerStatusEnum.ACTIVITY_PHOTOS_UPDATE_SUCCESS);
         }catch (Exception e){

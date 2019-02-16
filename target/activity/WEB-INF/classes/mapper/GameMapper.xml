@@ -83,6 +83,14 @@
     </select>
 
     <select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Game">
-         select g.game_id,g.game_name,g.game_properties_id,g.theme_id,g.game_purpose,g.game_object,g.game_picture,g.number_of_people,g.play_time,g.standard,g.stores_list,g.work,g.material_standard,g.link_the_material,g.playing_method,g.teacher_viedo,g.work_viedo from t_game g,t_activity_theme t where g.theme_id = t.theme_id and t.theme_id = #{themeId}
+        <![CDATA[
+          select g.game_id,g.game_name,g.game_properties_id,g.theme_id,g.game_purpose,g.game_object,g.game_picture,g.number_of_people,g.play_time,g.standard,g.stores_list,g.work,g.material_standard,g.link_the_material,g.playing_method,g.rule,g.merchant,g.teacher_viedo,g.work_viedo from t_game g,t_activity_theme t where g.theme_id = t.theme_id and t.theme_id = #{themeId}
+        ]]>
+    </select>
+
+    <select id="listByActivityId" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Game">
+        <![CDATA[
+          select g.game_id,g.game_name,g.game_properties_id,g.theme_id,g.game_purpose,g.game_object,g.game_picture,g.number_of_people,g.play_time,g.standard,g.stores_list,g.work,g.material_standard,g.link_the_material,g.playing_method,g.rule,g.merchant,g.teacher_viedo,g.work_viedo from t_game g,t_activity_game ag where g.game_id = ag.game_id and ag.activity_id = #{activityId}
+       ]]>
     </select>
 </mapper>

@@ -249,7 +249,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="panel panel-primary leftMenu">
 					<div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
 						<h4 class="panel-title">
-							活动信息
+							活动流程管理
 							<span class="glyphicon glyphicon-chevron-down right"></span>
 						</h4>
 					</div>
@@ -258,7 +258,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="list-group-item">
 								<button class="menu-item-left">
                                     <a href="${basePath}franchisee/activityToConfirm.do" target="mainframe">
-                                         <p class="glyphicon glyphicon-triangle-right">活动确认单</p>
+                                         <p class="glyphicon glyphicon-triangle-right">活动信息确认列表</p>
                                     </a>
 								</button>
 							</li>
@@ -303,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="panel panel-primary leftMenu">
 					<div class="panel-heading" id="collapseListGroupHeading3" data-toggle="collapse" data-target="#collapseListGroup3" role="tab" >
 						<h4 class="panel-title">
-							分组3
+							活动信息管理
 							<span class="glyphicon glyphicon-chevron-down right"></span>
 						</h4>
 					</div>

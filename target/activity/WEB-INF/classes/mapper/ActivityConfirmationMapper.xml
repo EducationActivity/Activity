@@ -7,30 +7,10 @@
         ]]>
     </insert>
 
-    <select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.ActivityConfirmation">
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.ActivityConfirmation">
         <![CDATA[
-          select user_id,kindergarten_id,information_id,class_information_id,ring_description_id,activity_id from t_activity_confirmation where
+          select user_id,kindergarten_id,information_id,class_information_id,ring_description_id,activity_id from t_activity_confirmation where activity_id = #{activityId}
         ]]>
-        <set>
-            <if test="userId != null">
-                user_id = #{userId},
-            </if>
-            <if test="kindergartenId != null">
-                kindergarten_id = #{kindergartenId},
-            </if>
-            <if test="informationId != null">
-                information_id = #{informationId},
-            </if>
-            <if test="classInformationId != null">
-                classInformation_id = #{classInformationId},
-            </if>
-            <if test="ringDescriptionId != null">
-                ringDescription_id = #{ringDescriptionId},
-            </if>
-            <if test="activityId != null">
-                activity_id = #{activityId}
-            </if>
-        </set>
     </select>
 
     <delete id="removeById" parameterType="java.lang.Integer">
@@ -44,4 +24,5 @@
           select * from t_activity_confirmation
         ]]>
     </select>
+
 </mapper>
