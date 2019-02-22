@@ -22,7 +22,7 @@ public class UploadImageUtil {
         OutputStream os = null;
         String path = "";
         try {
-            String pathRoot = request.getServletContext().getRealPath("");
+            String pathRoot = request.getSession().getServletContext().getRealPath("");
             String uploadPath = "/static/uploadImage/";
             fileName = fileName.substring(fileName.lastIndexOf(".") + 1);
             String newfileName = new SimpleDateFormat("yyy-MM-dd-HH-mm-ss").format(new Date((new Long(String.valueOf(new Date().getTime()))))) + UUIDUtils.getUUID() + "." + fileName;
@@ -42,7 +42,7 @@ public class UploadImageUtil {
     public static String uploadViedo(HttpServletRequest request,MultipartFile file, String fileName){
         String path = "";
         try {
-            String pathRoot = request.getServletContext().getRealPath("");
+            String pathRoot = request.getSession().getServletContext().getRealPath("");
             String uploadPath = "/static/uploadViedo/";
             fileName = fileName.substring(fileName.lastIndexOf(".") + 1);
             String newfileName = new SimpleDateFormat("yyy-MM-dd-HH-mm-ss").format(new Date((new Long(String.valueOf(new Date().getTime()))))) + UUIDUtils.getUUID() + "." + fileName;
@@ -62,7 +62,7 @@ public class UploadImageUtil {
     public static String uploadPdf(HttpServletRequest request,MultipartFile file, String fileName){
         String path = "";
         try {
-            String pathRoot = request.getServletContext().getRealPath("");
+            String pathRoot = request.getSession().getServletContext().getRealPath("");
             String uploadPath = "/static/uploadPdf/";
             fileName = fileName.substring(fileName.lastIndexOf(".") + 1);
             String newfileName = new SimpleDateFormat("yyy-MM-dd-HH-mm-ss").format(new Date((new Long(String.valueOf(new Date().getTime()))))) + UUIDUtils.getUUID() + "." + fileName;

@@ -15,44 +15,9 @@
     <title>活动物料列表</title>
 </head>
 <body>
-<button href="#" class="btn btn-info btn-xs plus" onclick="addMaterial()"><i class="fa fa-plus"></i> 生成物料</button>
-<button href="#" class="btn btn-info btn-xs plus" onclick="materials()"><i class="fa fa-plus"></i> 物料详情</button>
-
 <table id="table">
 
 </table>
-
-<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form id="form1" class="form-horizontal" enctype="multipart/form-data">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel1">活动物料信息修改</h4>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" id="materialId" name="materialId">
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- 显示大图模态框 -->
-<div class="modal fade text-center" id="showImgModal">
-    <div class="modal-dialog modal-lg" style="display: inline-block; width: auto;">
-        <div class="modal-content">
-            <div id="img_show">
-
-            </div>
-            <%--<img id="showImage" src="">--%>
-        </div>
-    </div>
-</div>
 <script>
     //加载表格,由于bootstrap的刷新也在这,所以先销毁一下表格在加载表示刷新
     $("#table").bootstrapTable('destroy');
@@ -126,7 +91,9 @@
         $("#showImgModal").modal();
     }
      function operateFormatter(){
-         return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><span class="glyphicon glyphicon-pencil">编辑</span></button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
+         return '<button href="#" class="btn btn-info btn-xs plus" onclick="addMaterial()"><i class="fa fa-plus"></i> 生成物料</button>\n' +
+             '<button href="#" class="btn btn-info btn-xs plus" onclick="materials()"><i class="fa fa-plus"></i> 物料详情</button>\n' +
+             '<button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
      };
 
     //修改——转换日期格式(时间戳转换为datetime格式)
@@ -149,27 +116,7 @@
         }
     }
 
-    window.onload = function (ev) {
-        select()
-    }
-    function select(){
-        $.ajax({
-            url: basePath + "activityTheme/listAll.do?ran=Match.Random()",
-            dataType: "json",
-            success: function (data) {
-                var h = "";
-                for (var i = 0; i < data.length; i++) {
-                    h += "<option value='"+data[i].themeId+"'>"+data[i].themeName+"</option>";//用appendTo声明是给谁的值
-                }
-                $("#themeId").append(h);
-                $("#themeId1").append(h);
-                // 缺一不可  
-                $('#themeId').selectpicker('refresh');
-                $("#themeId1").selectpicker('refresh');
-            }
-        });
 
-    }
     function addMaterial(){
         var a = $("#table").bootstrapTable('getSelections');
         if(a.length<=0){
@@ -184,9 +131,9 @@
                 dataType: "json",
                 contentType : "application/json;charsetset=UTF-8",
                 success: function (data){
-                    // if(data.length>0){
-                    //     alert("该活动已生成物料单，不用重复新增")
-                    // }else{
+                    if(data.length>0){
+                        alert("该活动已生成物料单，不用重复新增")
+                    }else{
                         $.ajax({
                             url: "${basePath}activityMaterials/addMaterials.do?activityId="+activityId,
                             type: "post",
@@ -196,7 +143,7 @@
                                 alert(data.message);
                             }
                         })
-                    // }
+                    }
                 }
             })
         }
@@ -217,85 +164,15 @@
                 contentType : "application/json;charsetset=UTF-8",
                 success: function (data){
                     if(data.length>0){
-                        window.location.href = "${basePath}material/material.do?activityId="+activityId;
+                        window.location.href = "${basePath}activityMaterials/activityMaterials.do?activityId="+activityId;
                     }else{
                         alert("还没有生成活动物流单,请先去生成活动物料单");
                     }
                 }
             })
         }
+
     }
-     function add(){
-         $("#add").modal("show");
-         $("#btn_submit").on("click",function(){
-             $.ajax({
-                 type:"post",
-                 cache: false,
-                 dataType:"json",
-                 url: "${basePath}activityMaterials/add.do",
-                 data:new FormData($("#form")[0]),
-                 processData: false,
-                 contentType: false,
-                 success: function(data) {
-                     $('#add').modal('hide');
-                     window.location.reload();
-                     alert(data.message);
-                 },
-                 fail: function (data) {
-                     $('#table').bootstrapTable("refresh");
-                     alert(data.message);
-                 }
-             });
-         });
-     };
-
-     function update() {
-        var a = $("#table").bootstrapTable('getSelections');
-        if (a.length <= 0) {
-            alert("请选中行");
-        } else if (a.length > 1){
-            alert("请选中一行");
-        }else{
-            editInfo();
-            $("#btn_update").on("click",function(){
-                $.ajax({
-                    url: "${basePath}materials/update.do",
-                    type:"post",
-                    dataType:"json",
-                    data: new FormData($("#form1")[0]),
-                    processData: false,
-                    contentType: false,
-                    success: function(data){
-                        $('#update').modal('hide');
-                        window.location.reload();
-                        alert(data.message);
-                    },
-                    error: function(data){
-                        $('#table').bootstrapTable("refresh");
-                        alert(data.message);
-                    }
-                });
-            });
-        }
-    };
-
-     function editInfo() {
-        var a = $("#table").bootstrapTable('getSelections');
-        $('#materialId').val(a[0].materialId);
-        $('#materialName1').val(a[0].materialName);
-        $('#themeId1').val(a[0].themeId);
-        // $('#materialPicture1').val(a[0].materialPicture);
-         $('#introduce1').val(a[0].introduce);
-         $('#materialPrice1').val(a[0].materialPrice);
-         $('#materialCount1').val(a[0].materialCount);
-         $('#inventoryQuantity1').val(a[0].inventoryQuantity);
-         $('#theDelivery1').val(a[0].theDelivery);
-         $('#nowTheInventory1').val(a[0].nowTheInventory);
-         $('#unit1').val(a[0].unit);
-         $('#remark1').val(a[0].remark);
-         $('#createDate1').val(changeDateFormat(a[0].createDate));//
-        $('#update').modal('show');
-    };
      function remove() {
          var a = $("#table").bootstrapTable('getSelections');
          if (a.length <= 0) {
@@ -303,11 +180,11 @@
          } else if (a.length > 1) {
              alert("请选中一行");
          } else {
-             var materialId = a[0].materialId;
+             var activityId = a[0].activityId;
              $.ajax({
                  dataType: "json",
                  type: "post",
-                 url: "${basePath}materials/remove.do?materialId=" + materialId,
+                 url: "${basePath}activityMaterials/removeList.do?activityId=" + activityId,
                  context: document.body,
                  success: function(){
                      alert("删除成功");

@@ -62,6 +62,8 @@ public class ActivityPhotosController {
         try{
         for (MultipartFile s : files) {
             String pathRoot = request.getSession().getServletContext().getRealPath("");
+
+            System.out.println(pathRoot);
             String uploadPath = "/static/uploadImage/";
             String houzhui=s.getOriginalFilename();
             houzhui=houzhui.substring(houzhui.lastIndexOf(".")+1);
