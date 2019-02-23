@@ -4053,3 +4053,9 @@ footer .footer-logo {
 .activity_search_item>a:hover{
   color:#4db6ac;
 }
+.b-expect{
+
+	padding-top:356px;
+	padding-bottom:177px;
+	background:url("../media/components/b-expect/b-expect.jpg") no-repeat 50% 0;
+}

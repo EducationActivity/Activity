@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2019/2/16
-  Time: 9:25
+  Date: 2019/2/23
+  Time: 20:44
   To change this template use File | Settings | File Templates.
 --%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -179,7 +179,7 @@
                             </li>
                             <li><a href="${basePath}casePage.do">案例展示</a></li>
                             <li><a href="${basePath}contact.do">联系我们</a></li>
-                            <li><a href="${basePath}expect.do">敬请期待</a></li>
+							<li><a href="${basePath}expect.do">敬请期待</a></li>
                             <%--<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages<b class="caret"></b></a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li><a href="404.html" >Page 404</a></li>
@@ -196,199 +196,161 @@
         </div>
     </header>
     <%--end header--%>
-
-
-
-    <section class="page-name background-bg" data-image-src="${basePath}static/image/breadcrumb.jpg">
-        <div class="overlay">
-            <div class="section-padding">
-                <div class="container">
-                    <form action="#" class="course-search-form">
-                        <input type="text" name="search" id="search" class="search" placeholder="Find a activity or a game ">
-                        <input type="submit" name="submit" id="search-submit" class="sreach-submit">
-                    </form><!-- /.course-search-form -->
-                </div><!-- /.container -->
-            </div><!-- /.section-padding -->
-        </div><!-- /.overlay -->
-    </section><!-- /.page-name -->
-
-
-    <section class="courses">
+	 <div class="b-title-page area-bg area-bg_dark parallax">
+        <div class="area-bg__inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
+                <h1 class="b-title-page__title">活动剪影--案例展示</h1>
+                <ol class="breadcrumb">
+                  <li><a href="home.html">主页</a></li>
+                  <li class="active">活动剪影</li>
+                </ol>
+                <!-- end breadcrumb-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end b-title-page-->
+	
+    <section class="portfolio text-center">
         <div class="section-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="course-title">物料名称</h2><!-- /.course-title -->
-                        <div class="course-meta">
-                            <span class="meta-details">
-                                <img class="rounded-circle float-left" src="${basePath}static/image/avatar/2.png" alt="Avatar">
 
-                                <span class="meta-id">说明</span>
-                                <a class="name" href="#">这是干什么用的</a>
-                            </span>
-                            <span class="meta-details">
-                                <span class="meta-id">类别</span>
-                                <span>水世界 塑料</span>
-                            </span>
-                            <span class="meta-details">
-                                <span class="meta-id">欢迎度</span>
-                                <span class="rating">
-                                    <input type="hidden" class="rating-tooltip-manual" data-filled="fas fa-star" data-empty="far fa-star" value="4.5" data-fractions="5"/>
-                                    <span>(2,543 Ratings)</span>
-                                </span><!-- /.rating -->
-                            </span>
-                        </div>
-                        <img class="radius" src="${basePath}static/image/single.jpg" alt="Course Image">
+                <ul class="filter">
+                    <li><a class="active" href="#" data-filter="*">All works</a></li>
+                    <li><a href="#" data-filter=".cat-1">Courses</a></li>
+                    <li><a href="#" data-filter=".cat-2">Research</a></li>
+                    <li><a href="#" data-filter=".cat-3">Publications</a></li>
+                </ul>
 
-                        <div class="course-single-details">
-                            <h4 class="title">物品描述</h4>
-                            <p>
-                                <strong>
-                                    The office assistant wasthe boss’s man,spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never once yet been ill
-                                </strong>
-                            </p>
+                <div class="portfolio-items">
+                    <div class="item cat-1">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/1.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                            <p>
-                                His boss would certainly come round with the doctor from the medical insurance company, accuse his parents of having a lazy son, and accept the doctor’s recommendation not to make any claim as the doctor believed that no-one was ever ill but that many were workshy. And what’s more, would he have been entirely wrong in this case? Gregor did in fact, apart from excessive sleepiness after sleeping for so long, feel completely well and even felt much hungrier than usual.
-                            </p>
+                    <div class="item cat-2">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/2.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                            <p>
-                                He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven. There was a cautious knock at the door near his head. Gregor, somebody called – it was his mother – it’s quarter to seven. Didn’t you want to go somewhere? That gentle voice, Gregor was shocked when he heard his own voice answering, it could hardly be recognised as the voice he had had before
-                            </p>
+                    <div class="item cat-3">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/3.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                            <h4 class="title">物品其他说明</h4>
-                            <div class="curriculum-details">
-                                <div class="content-table">
-                                    <span class="title">Getting Started: Itroduction</span>
-                                    <ul class="content-list">
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="far fa-file"></i> Photoshop Interface - just the useful stuff!</a></span>
-                                            <span class="float-right">1.5MB</span>
-                                        </li>
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="fa fa-play-circle"></i> User interface explained</a></span>
-                                            <span class="float-right">8:31</span>
-                                        </li>
-                                    </ul>
-                                </div><!-- /.content-table -->
+                    <div class="item cat-1">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/4.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                                <div class="content-table">
-                                    <span class="title">Paint Brush Tool</span>
-                                    <ul class="content-list">
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="far fa-file"></i> Photoshop Interface - just the useful stuff!</a></span>
-                                            <span class="float-right">1.5MB</span>
-                                        </li>
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="fa fa-play-circle"></i> User interface explained</a></span>
-                                            <span class="float-right">8:31</span>
-                                        </li>
-                                    </ul>
-                                </div><!-- /.content-table -->
+                    <div class="item cat-2">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/5.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                                <div class="content-table">
-                                    <span class="title">Moving, Resizing & Zooming In</span>
-                                    <ul class="content-list">
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="far fa-file"></i> Photoshop Interface - just the useful stuff!</a></span>
-                                            <span class="float-right">1.5MB</span>
-                                        </li>
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="fa fa-play-circle"></i> User interface explained</a></span>
-                                            <span class="float-right">754kb</span>
-                                        </li>
-                                        <li>
-                                            <span class="float-left"><a href="#"><i class="fa fa-play-circle"></i> User interface explained</a></span>
-                                            <span class="float-right">8:31</span>
-                                        </li>
-                                    </ul>
-                                </div><!-- /.content-table -->
-                            </div><!-- /.curriculum-details -->
+                    <div class="item cat-3">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/6.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
+                    <div class="item cat-1">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/7.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
+                    <div class="item cat-2">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/8.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
 
-                        </div><!-- /.course-single-details -->
+                    <div class="item cat-3">
+                        <div class="item-inner">
+                            <img src="${basePath}static/image/portfolio/9.jpg" alt="Portfolio Image">
+                            <div class="item-details">
+                                <div class="details-inner">
+                                    <h3 class="item-title"><a href="portfolio-single.html">Portfolio Item Title</a></h3><!-- /.item-title -->
+                                    <span class="category-name">Category</span><!-- /.category-name -->
+                                </div><!-- /.details-inner -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item-inner -->
+                    </div><!-- /.item -->
+                </div><!-- /.portfolio-items -->
 
-
-                        <div class="related-courses">
-                            <h2 class="section-title">相关物料推荐</h2>
-                            <div class="course-items">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="item">
-                                            <div class="item-thumb"><img src="${basePath}static/image/popular/1.jpg" alt="Item Thumbnail"></div><!-- /.item-thumb -->
-                                            <div class="item-details">
-                                                <h3 class="item-title"><a href="course-single-01.html">物料名称</a></h3><!-- /.item-title -->
-                                                <span class="instructor"><a href="#">Justin Marks</a></span><!-- /.instructor -->
-                                                <div class="details-bottom">
-                                                    <div class="course-price float-left"><span class="currency">$</span><span class="price">15.99</span></div><!-- /.course-price -->
-                                                    <div class="rating float-right">
-                                                        <input type="hidden" class="rating-tooltip-manual" data-filled="fas fa-star" data-empty="far fa-star" value="4.5" data-fractions="5"/>
-                                                    </div><!-- /.rating -->
-                                                </div><!-- /.details-bottom -->
-                                            </div><!-- /.item-details -->
-                                        </div><!-- /.item -->
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="item">
-                                            <div class="item-thumb"><img src="${basePath}static/image/popular/2.jpg" alt="Item Thumbnail"></div><!-- /.item-thumb -->
-                                            <div class="item-details">
-                                                <h3 class="item-title"><a href="course-single-01.html">物料名称</a></h3><!-- /.item-title -->
-                                                <span class="instructor"><a href="#">Justin Marks</a></span><!-- /.instructor -->
-                                                <div class="details-bottom">
-                                                    <div class="course-price float-left"><span class="currency">$</span><span class="price">15.99</span></div><!-- /.course-price -->
-                                                    <div class="rating float-right">
-                                                        <input type="hidden" class="rating-tooltip-manual" data-filled="fas fa-star" data-empty="far fa-star" value="4.5" data-fractions="5"/>
-                                                    </div><!-- /.rating -->
-                                                </div><!-- /.details-bottom -->
-                                            </div><!-- /.item-details -->
-                                        </div><!-- /.item -->
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="item">
-                                            <div class="item-thumb"><img src="${basePath}static/image/popular/3.jpg" alt="Item Thumbnail"></div><!-- /.item-thumb -->
-                                            <div class="item-details">
-                                                <h3 class="item-title"><a href="course-single-01.html">物料名称</a></h3><!-- /.item-title -->
-                                                <span class="instructor"><a href="#">Justin Marks</a></span><!-- /.instructor -->
-                                                <div class="details-bottom">
-                                                    <div class="course-price float-left"><span class="currency">$</span><span class="price">15.99</span></div><!-- /.course-price -->
-                                                    <div class="rating float-right">
-                                                        <input type="hidden" class="rating-tooltip-manual" data-filled="fas fa-star" data-empty="far fa-star" value="4.5" data-fractions="5"/>
-                                                    </div><!-- /.rating -->
-                                                </div><!-- /.details-bottom -->
-                                            </div><!-- /.item-details -->
-                                        </div><!-- /.item -->
-                                    </div>
-
-                                </div><!-- /.row -->
-                            </div><!-- /.course-items -->
-                        </div><!-- /.related-courses -->
-                    </div>
-
-                    <div class="col-md-4">
-                        <aside class="sidebar">
-                            <button class="btn btn-lg enroll-btn">Enroll now</button>
-                            <button class="btn btn-lg cart-btn">Add to cart</button>
-
-                            <div class="info">
-                                <ul class="info-list">
-                                    <li><span class="price"><span class="current-price">$49.00</span> <span class="previous-price">$150.00</span></span></li>
-                                    <li><span>使用说明</span></li>
-                                    <li><span>租借说明</span></li>
-                                    <li><span>租借说明</span></li>
-                                    <li><span>租借说明</span></li>
-                                    <li><span>租借说明</span></li>
-                                </ul>
-                            </div>
-                        </aside><!-- /.sidebar -->
-                    </div>
-                </div><!-- /.row -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div><!-- /.container -->
         </div><!-- /.section-padding -->
-    </section><!-- /.courses -->
-
+    </section><!-- /.portfolio -->
 
 
     <script src="${basePath}static/assets/js/jquery-3.3.1.min.js"></script>
@@ -404,12 +366,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer__main">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="text-center"><a href="home.html" class="footer__logo"><img src="${basePath}static/assets/media/general/logo.png" alt="Logo" class="img-responsive"/></a></div>
+                        <div class="text-center"><a href="${basePath}index.do" class="footer__logo"><img src="${basePath}static/assets/media/general/logo.png" alt="Logo" class="img-responsive"/></a></div>
                     </div>
                 </div>
                 <div class="row">
@@ -433,7 +410,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> About Dvents</h3>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 关于我们 Dvents</h3>
                             <div class="footer-section__subtitle">The Events Specialists!</div>
                             <div class="footer__info">
                                 <p>Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud lorem psum dolor sit amet sed incididunt.</p>
@@ -467,9 +444,9 @@
                             <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Quick Links</h3>
                             <ul class="footer-list list list-mark-4 list-unstyled">
                                 <li class="footer-list__item"><a href="activity.html" class="footer-list__link">Our Services</a></li>
-                                <li class="footer-list__item"><a href="home.html" class="footer-list__link">Our Team</a></li>
-                                <li class="footer-list__item"><a href="about.html" class="footer-list__link">About Dvents</a></li>
-                                <li class="footer-list__item"><a href="home.html" class="footer-list__link">Clients List</a></li>
+                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Our Team</a></li>
+                                <li class="footer-list__item"><a href="about.html" class="footer-list__link">关于我们 Dvents</a></li>
+                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Clients List</a></li>
                                 <li class="footer-list__item"><a href="blog-main.html" class="footer-list__link">News Blog</a></li>
                                 <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">Brochure</a></li>
                                 <li class="footer-list__item"><a href="contact.html" class="footer-list__link">Get In Touch</a></li>
@@ -522,6 +499,7 @@
 <script src="${basePath}static/assets/plugins/headers/slidebar.js"></script>
 <script src="${basePath}static/assets/plugins/headers/header.js"></script>
 <!-- Mail scripts-->
+
 
 </body>
 </html>
