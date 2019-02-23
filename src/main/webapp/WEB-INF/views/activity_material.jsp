@@ -25,15 +25,15 @@
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <input type="hidden" name="activityId" id="activityId" value="${activity.activityId}">
-            <form id="form" enctype="multipart/form-data">
+            <form id="form" enctype="multipart/form-data" class="form-horizontal">
+                <input type="hidden" name="activityId" id="activityId" value="${activityId}">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel">活动物料信息新增</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="projectName">项目名称</label>
+                        <label class="label" for="projectName">项目名称</label>
                         <input type="text" class="form-control" id="projectName" name="projectName" placeholder="请输入你要新增的物料项目名称">
                     </div>
                     <div class="form-group">
@@ -61,12 +61,12 @@
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="form1" enctype="multipart/form-data">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel1">活动物料信息修改</h4>
                 </div>
                 <div class="modal-body">
+                    <form id="form1" enctype="multipart/form-data" class="form-horizontal">
                     <input type="hidden" id="id" name="id">
                     <div class="form-group">
                         <label for="projectName">项目名称</label>
@@ -84,19 +84,19 @@
                         <label for="unit">单位</label>
                         <input type="text" class="form-control" id="unit1" name="unit" placeholder="单位"/>
                     </div>
+                    </form>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
                         <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
                     </div>
                 </div>
-            </form>
         </div>
     </div>
 </div>
 
 <script>
     $('#table').bootstrapTable({
-        url: basePath + 'activityMaterials/getById.do?activityId='+${activityId},                      //请求后台的URL（*）
+        url: basePath + 'activityMaterials/listById.do?activityId='+${activityId},                      //请求后台的URL（*）
         method: 'GET',                      //请求方式（*）
         dataType: "json",
         pagination: true,
@@ -127,8 +127,8 @@
             align: 'center'
         }, {
             field: 'materialId',
-            title: '活动编号',
-            visible:true,
+            title: '物料编号',
+            visible:false,
             align: 'center'
         }, {
             field: 'projectName',
@@ -179,14 +179,14 @@
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }
     }
-    function materialadd() {
+    function materialAdd() {
         $("#add").modal("show");
         $("#btn_submit").on("click", function () {
             var activityId = $("#activityId").val();
             $.ajax({
                 type: "post",
                 dataType: "json",
-                url: basePath + "material/add.do?activityId=" + activityId,
+                url: basePath + "activityMaterials/add.do?activityId=" + activityId,
                 data: $('#form').serialize(),
                 success: function () {
                     $('#add').modal('hide');
@@ -210,13 +210,7 @@
         } else {
             editInfo();
             $("#btn_update").on("click", function () {
-                var scheduleId = $("#scheduleId").val();
-                var activitySchedule = $("#activitySchedule1").val();
-                var materialName = $("#materialName1").val();
-                var finishTime = $("#finishTime1").val();
-                // var finishTime = $("#finishTime1").data("datetimepicker").getDate()
-                var executor = $("#executor1").val();
-                var content = $("#content1").val();
+
                 $.ajax({
                     type: "post",
                     dataType: "json",
@@ -244,6 +238,7 @@
 
     function editInfo() {
         var a = $("#table").bootstrapTable('getSelections');
+        var id = $("#")
         var projectName = $("#projectName").val();
         var materialName = $("#materialName").val();
         var unit = $("#unit").val();

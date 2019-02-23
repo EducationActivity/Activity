@@ -18,4 +18,9 @@ public class ActivityMaterialsServiceImpl extends AbstractBaseService implements
         super.setBaseDAO(activityMaterialsDAO);
         this.activityMaterialsDAO = activityMaterialsDAO;
     }
+
+    @Override
+    public void removeList(Integer id) {
+        activityMaterialsDAO.removeList(id);
+    }
 }

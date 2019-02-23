@@ -36,19 +36,25 @@
 
     <delete id="removeById" parameterType="java.lang.Integer">
         <![CDATA[
-          delete from t_activity where id = #{id}
+          delete from t_activity_materials where id = #{id}
+        ]]>
+     </delete>
+
+    <delete id="removeList" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_activity_materials where activity_id = #{activityId}
         ]]>
      </delete>
 
     <select id="listAll" resultType="com.tryeverything.entity.ActivityMaterials">
         <![CDATA[
-          select activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials
+          select id,activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials
         ]]>
     </select>
 
     <select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.ActivityMaterials">
         <![CDATA[
-            select activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials where activity_id = #{activityId}
+            select id,activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials where activity_id = #{activityId}
         ]]>
     </select>
 

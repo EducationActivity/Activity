@@ -15,9 +15,11 @@ public class ActivityMaterials implements Serializable {
 
     }
 
-    public ActivityMaterials(String projectName,String materialName) {
+    public ActivityMaterials(String projectName,String materialName,Integer materialCount,String unit) {
         this.projectName = projectName;
         this.materialName = materialName;
+        this.materialCount = materialCount;
+        this.unit = unit;
     }
 
     public Integer getId() {

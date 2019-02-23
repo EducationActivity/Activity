@@ -19,14 +19,4 @@
 	<mapping path="/activityPhotos/franchiseeListPage.do" exclue="true"/>
 
 	<mapping path="/franchisee/account.do" exclue="true"/>
-	<mapping path="/activity_frontPage.do" exclue="true"/>
-	<mapping path="/wupin_frontPage.do" exclue="true"/>
-	<mapping path="/course_frontPage.do" exclue="true"/>
-	<mapping path="/activity_detail.do" exclue="true"/>
-	<mapping path="/wupin_detail.do" exclue="true"/>
-	<mapping path="/course_detail.do" exclue="true"/>
-	<mapping path="/about.do" exclue="true"/>
-	<mapping path="/contact.do" exclue="true"/>
-	<mapping path="/blog_main.do" exclue="true"/>
-	<mapping path="/blog_post.do" exclue="true"/>
 </sitemesh>
