@@ -1,16 +1,0 @@
-
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÈÕû÷
-T
-squid:S106("9Replace this use of System.out or System.err by a logger.(Û¦ù²ùÿÿÿÿ
-csquid:S18711"LThis branch's code block is the same as the block for the branch on line 41.(ýÅ÷ø
-gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-gsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(Žì±„ùÿÿÿÿ
-bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(Âëä
-bsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(£†Íí
-csquid:S1871:"LThis branch's code block is the same as the block for the branch on line 41.(‘™×Õ
-gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(¤‰áˆþÿÿÿÿ
-˜squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆŒ‰Ò
-csquid:S1871"LThis branch's code block is the same as the block for the branch on line 20.(ÿ² ›
-csquid:S1871"LThis branch's code block is the same as the block for the branch on line 20.(Óåõø
-squid:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÌÒ³•øÿÿÿÿ
-gsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(¤§ó·ÿÿÿÿÿ
