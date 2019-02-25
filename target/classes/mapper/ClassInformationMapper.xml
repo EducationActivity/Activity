@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ClassInformationDAO">
+<insert id="save" parameterType="com.tryeverything.entity.ClassInformation" useGeneratedKeys="true" keyProperty="classInformationId" keyColumn="class_information_id">
+        <![CDATA[
+          insert into t_class_information(class_information_id,headcount,number_of_contract,number_of_teachers) values (#{classInformationId},#{headcount},#{numberOfContract},#{numberOfTeachers})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.ClassInformation">
+        <![CDATA[
+          update t_class_information
+        ]]>
+        <set>
+            <if test="headcount != null">
+                headcount = #{headcount},
+            </if>
+            <if test="numberOfContract != null and numberOfContract != ''">
+                number_of_contract = #{numberOfContract},
+            </if>
+            <if test="numberOfTeachers != null">
+                number_of_teachers = #{numberOfTeachers},
+            </if>
+        </set>
+        where class_information_id = #{classInformationId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_class_information where class_information_id = #{classInformationId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.ClassInformation">
+        <![CDATA[
+          select * from t_class_information;
+        ]]>
+    </select>
+</mapper>

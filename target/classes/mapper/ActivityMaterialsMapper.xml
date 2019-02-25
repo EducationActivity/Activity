@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ActivityMaterialsDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.ActivityMaterials">
+        <![CDATA[
+          insert into t_activity_materials(activity_id,material_id,project_name,material_name,material_count,unit) values (#{activityId},#{materialId},#{projectName},#{materialName},#{materialCount},#{unit})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.ActivityMaterials">
+        <![CDATA[
+          update t_activity_materials
+        ]]>
+        <set>
+            <if test="activityId != null">
+                activity_id = #{activityId},
+            </if>
+            <if test="materialId != null">
+                material_id = #{materialId},
+            </if>
+            <if test="projectName != null and projectName != ''">
+                project_name = #{projectName},
+            </if>
+            <if test="materialName != null materialName != ''">
+                materialName = #{materialName},
+            </if>
+            <if test="materialCount != null">
+                activity_leader = #{activityLeader},
+            </if>
+            <if test="unit != null and unit != ''">
+                unit = #{unit},
+            </if>
+        </set>
+        where activity_id = #{activityId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_activity where id = #{id}
+        ]]>
+     </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.ActivityMaterials">
+        <![CDATA[
+          select activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials
+        ]]>
+    </select>
+
+    <select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.ActivityMaterials">
+        <![CDATA[
+            select activity_id,material_id,project_name,material_name,material_count,unit from t_activity_materials where activity_id = #{activityId}
+        ]]>
+    </select>
+
+    <!--<select id="listPagerCriteria" resultType="com.tryeverything.vo.KindergartenActivityVO">-->
+        <!--select a.activity_id,a.activity_name,a.theme_id,a.activityLeader,a.activity_address,a.create_date,a.remark,k.kindergarten_id as huid,h.phone as phone,h.huname as huname,h.email as email,ru.ruid as ruid from t_role r,t_roleuser ru,-->
+        <!--t_huser h where ru.ruid = ruid and ru.rid = r.rid and ru.huid = h.huid-->
+
+        <!--<include refid="roleUserQuery_criteria"/>-->
+        <!--limit #{pager.beginIndex},#{pager.pageSize}-->
+    <!--</select>-->
+
+    <!--<select id="countCriteria" resultType="Long">-->
+<!--&#45;&#45;         select count(ru.ruid) from t_roleuser ru,t_role r,t_huser h where ru.ruid = ruid and ru.rid = r.rid and ru.huid = h.huid-->
+<!--&#45;&#45;         <include refid="roleUserQuery_criteria"/>-->
+    <!--</select>-->
+</mapper>

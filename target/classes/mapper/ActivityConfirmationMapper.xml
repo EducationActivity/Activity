@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ActivityConfirmationDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.ActivityConfirmation" keyProperty="id">
+        <![CDATA[
+          insert into t_activity_confirmation(user_id,kindergarten_id,information_id,class_information_id,ring_description_id,activity_id) values (#{userId},#{kindergartenId},#{informationId},#{classInformationId},#{ringDescriptionId},#{activityId})
+        ]]>
+    </insert>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.ActivityConfirmation">
+        <![CDATA[
+          select user_id,kindergarten_id,information_id,class_information_id,ring_description_id,activity_id from t_activity_confirmation where activity_id = #{activityId}
+        ]]>
+    </select>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_activity_confirmation where id = #{id}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.ActivityConfirmation">
+        <![CDATA[
+          select * from t_activity_confirmation
+        ]]>
+    </select>
+
+</mapper>

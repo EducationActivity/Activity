@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.MaterialsDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Materials">
+        <![CDATA[
+          insert into t_materials(material_id,material_name,theme_id,material_picture,supplier,introduce,material_count,material_price,inventory_quantity,the_delivery,now_the_inventory,unit,remark,create_date) values (#{materialId},#{materialName},#{themeId},#{materialPicture},#{supplier},#{introduce},#{materialCount},#{materialPrice},#{inventoryQuantity},#{theDelivery},#{nowTheInventory},#{unit},#{remark},#{createDate})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Materials">
+        <![CDATA[
+          update t_materials
+        ]]>
+        <set>
+        <if test="materialName != null and materialName != ''">
+            material_name = #{materialName},
+        </if>
+        <if test="themeId != null and themeId != ''">
+            theme_id = #{themeId},
+        </if>
+        <if test="materialPicture != null and materialPicture != ''">
+            material_picture = #{materialPicture},
+        </if>
+        <if test="supplier != null and supplier != ''">
+            supplier = #{supplier},
+        </if>
+        <if test="introduce != null and introduce != ''">
+            introduce = #{introduce},
+        </if>
+        <if test="materialCount != null">
+            material_count = #{materialCount},
+        </if>
+        <if test="materialPrice != null and materialPrice != ''">
+            material_price = #{materialPrice},
+        </if>
+        <if test="inventoryQuantity != null and inventoryQuantity != ''">
+            inventory_quantity = #{inventoryQuantity},
+        </if>
+        <if test="theDelivery != null and theDelivery != ''">
+            theDelivery = #{theDelivery},
+        </if>
+        <if test="nowTheInventory != null and nowTheInventory != ''">
+            now_the_inventory = #{nowTheInventory},
+        </if>
+        <if test="unit != null and unit != ''">
+            unit = #{unit},
+        </if>
+        <if test="remark != null">
+            remark = #{remark},
+        </if>
+        <if test="createDate != null and createDate != ''">
+            create_date = #{createDate}
+        </if>
+    </set>
+        where material_id = #{materialId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_materials where material_id = #{materialId}
+        ]]>
+    </delete>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Materials">
+        <![CDATA[
+          select material_id,material_name,theme_id,material_picture,supplier,introduce,material_count,material_price,inventory_quantity,the_delivery,now_the_inventory,unit,remark,create_date from t_materials where material_id = #{materialId}
+        ]]>
+    </select>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Materials">
+        <![CDATA[
+          select * from t_materials
+        ]]>
+    </select>
+</mapper>
