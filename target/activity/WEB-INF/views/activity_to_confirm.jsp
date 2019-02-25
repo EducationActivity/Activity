@@ -10,6 +10,9 @@
 <head>
     <title>活动信息确认</title>
     <link rel="shortcut icon" href="${basePath}static/images/tryeverything.png" type="image/png">
+    <script>
+        var basePath = "${basePath}";
+    </script>
     <%--<link href="${basePath}static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>--%>
 
     <%--<link href="${basePath}static/css/bootstrap-table.min.css" rel="stylesheet">--%>
@@ -263,7 +266,7 @@
     //加载表格,由于bootstrap的刷新也在这,所以先销毁一下表格在加载表示刷新
     $("#table").bootstrapTable('destroy');
     $('#table').bootstrapTable({
-        url: '${basePath}activityConfirm/listAll.do',                      //请求后台的URL（*）
+        url: '${basePath}activityConfirmation/listAll.do',                      //请求后台的URL（*）
         method: 'GET',                      //请求方式（*）
         dataType: "json",
         pagination: true,

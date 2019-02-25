@@ -1,14 +1,17 @@
 
-osquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(ÓÁ¿žýÿÿÿÿ8Á¶ÏÒŽ-
-Isquid:EmptyStatementUsageCheck"Remove this empty statement.(•Õ¦ªÿÿÿÿÿ
-csquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(Ûö®„
-fsquid:S3027C"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çðºäùÿÿÿÿ
-Ksquid:S1264‘",Replace this "for" loop with a "while" loop.(ƒÖˆÎ8ìÈíÒŽ-
-@squid:S1148²"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Csquid:S1264t",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
-?squid:S1148z"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-psquid:S1450"VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ
-?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Xsquid:S1075A"ARefactor your code to get this URI from a customizable parameter.(¯úÆ
-@squid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Ksquid:S1264",Replace this "for" loop with a "while" loop.(ƒÖˆÎ8ìÈíÒŽ-
+U
+squid:S106?"9Replace this use of System.out or System.err by a logger.(æÑ
+8ÉðöÁ‘-
+@squid:S1148±"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Csquid:S1264s",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
+csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(Ûö®„
+?squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148y"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148—"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+osquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(ÓÁ¿žýÿÿÿÿ8Á¶ÏÒŽ-
+?squid:S1148W"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Rsquid:EmptyStatementUsageCheck""Remove this empty statement.(•Õ¦ªÿÿÿÿÿ8ÉðöÁ‘-
+fsquid:S3027B"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çðºäùÿÿÿÿ
+ysquid:S1450 "VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ8ÉðöÁ‘-
+Xsquid:S1075@"ARefactor your code to get this URI from a customizable parameter.(¯úÆ

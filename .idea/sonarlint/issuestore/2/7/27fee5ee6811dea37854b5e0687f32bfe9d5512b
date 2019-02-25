@@ -1,16 +1,10 @@
 
-zsquid:UselessImportCheck"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ8ŞõÖƒ-
-asquid:S1854"ERemove this useless assignment to local variable "activityMaterials".(µãû¶8Àñï°-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©’°†úÿÿÿÿ8´©ß±-
-Rsquid:S1481"6Remove this unused "activityMaterials" local variable.(µãû¶8Àñï°-
-isquid:UselessImportCheck"@Remove this unused import 'com.tryeverything.vo.ActivityGameVO'.(•Ù‡8ÉÆõª-
-`squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8§üÍƒ-
-qsquid:UselessImportCheck"CRemove this unused import 'com.tryeverything.util.UploadImageUtil'.(¸×Üûÿÿÿÿ8„ºÜƒ-
-Gsquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-
-ksquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8ÃÜƒ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ºû×Êüÿÿÿÿ8´©ß±-
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ç«ƒ‹8´©ß±-
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–©¦°-
+ksquid:S1858l"H"strArray" is an array of strings, there's no need to call "toString()".(ôíØŠúÿÿÿÿ8øáÃÂ‘-
+Gsquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–©¦°-
+Gsquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-
+Ysquid:S1854f"<Remove this useless assignment to local variable "strArray".(üßÎW8øáÃÂ‘-
+?squid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Lsquid:S1481d")Remove this unused "unit" local variable.(øÎµòıÿÿÿÿ8øáÃÂ‘-
+usquid:S00117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ú¬ğşÿÿÿÿ8øáÃÂ‘-
+Gsquid:S1148Ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8øáÃÂ‘-
+Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÈüÉª-

@@ -323,3 +323,5 @@ Z
 *src/main/webapp/WEB-INF/views/headers.html,4\4\44f6552674309d371aa7f5bbc20d8ed5585dd956
 o
 ?src/main/java/com/tryeverything/controller/LoginController.java,a\c\ac4f99dcf763a2686898152e19580dacb34443d6
+~
+Nsrc/main/java/com/tryeverything/controller/ActivityConfirmationController.java,5\b\5b2ca5430ca373478fbbf7a994955314bfa8f53d
