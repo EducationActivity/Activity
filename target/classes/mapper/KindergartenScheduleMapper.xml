@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.KindergartenScheduleDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.KindergartenSchedule">
+        <![CDATA[
+          insert into t_kindergarten_schedule(id,kindergarten_id,schedule_id) values (#{id},#{kindergartenId},#{scheduleId})
+        ]]>
+    </insert>
+
+</mapper>

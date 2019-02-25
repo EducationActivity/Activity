@@ -1,4 +1,3 @@
-/*
 package com.tryeverything.service.impl;
 
 import com.tryeverything.dao.KindergartenScheduleDAO;
@@ -20,4 +19,3 @@ public class KindergartenScheduleServiceImpl extends AbstractBaseService impleme
         this.kindergartenScheduleDAO = kindergartenScheduleDAO;
     }
 }
-*/

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.FranchiseeDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Franchisee">
+        <selectKey keyProperty="franchiseeId" resultType="java.lang.String" order="BEFORE">
+            select REPLACE(UUID(),'-','')
+        </selectKey>
+        <![CDATA[
+          insert into t_franchisee(franchisee_id,login_name,password,franchisee_name,phone,email,locality,`type`,status,create_date) values (#{franchiseeId},#{loginName},#{password},#{franchiseeName},#{phone},#{email},#{locality},#{type},0,CURRENT_TIMESTAMP)
+        ]]>
+    </insert>
+    <update id="update" parameterType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+          update t_franchisee
+        ]]>
+        <set>
+            <if test="loginName != null and loginName != ''">
+                login_name = #{loginName},
+            </if>
+            <if test="franchiseeName != null and franchiseeName != ''">
+                franchisee_name = #{franchiseeName},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="email != null and email != ''">
+              email = #{email},
+            </if>
+            <if test="locality != null and locality != ''">
+                locality = #{locality}
+            </if>
+        </set>
+        where franchisee_id = #{franchiseeId}
+    </update>
+
+    <!--<select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Franchisee">-->
+        <!--<![CDATA[-->
+            <!--select franchisee_id,login_name,franchisee_name,phone,email,locality,`type`,status,create_date from t_franchisee where franchisee_id = #{franchiseeId}-->
+        <!--]]>-->
+    <!--</select>-->
+
+    <select id="listById" parameterType="java.lang.String" resultType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+            select franchisee_id,login_name,franchisee_name,phone,email,locality,`type`,status,create_date from t_franchisee where franchisee_id = #{franchiseeId}
+        ]]>
+    </select>
+    <update id="audit" parameterType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+            update t_franchisee
+        ]]>
+        <set>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </set>
+        where franchisee_id = #{franchiseeId}
+    </update>
+
+    <update id="updatePwd" parameterType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+          update t_franchisee
+        ]]>
+        <set>
+            <if test="password != null and password != ''">
+                password = #{password}
+            </if>
+        </set>
+        where franchisee_id = #{franchiseeId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.String">
+        <![CDATA[
+          delete from t_franchisee where franchisee_id = #{franchiseeId}
+        ]]>
+    </delete>
+
+    <select id="findByFranchisee" resultType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+          select franchisee_id,login_name,password,franchisee_name,phone,email,locality,`type`,status,create_date from t_franchisee f where
+          f.login_name = #{loginName} and f.password = #{password} and f.status = 1
+        ]]>
+    </select>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Franchisee">
+        <![CDATA[
+          select franchisee_id,login_name,franchisee_name,phone,email,locality,`type`,status,create_date from t_franchisee
+        ]]>
+    </select>
+</mapper>

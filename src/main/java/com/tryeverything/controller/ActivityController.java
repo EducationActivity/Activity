@@ -1,7 +1,6 @@
 package com.tryeverything.controller;
 
 import com.tryeverything.entity.Activity;
-import com.tryeverything.entity.Kindergarten;
 import com.tryeverything.service.ActivityService;
 import com.tryeverything.service.GameService;
 import com.tryeverything.util.ControllerStatusEnum;

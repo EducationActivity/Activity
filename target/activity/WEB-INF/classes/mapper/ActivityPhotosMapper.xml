@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.ActivityPhotosDAO">
+
+    <insert id="save" parameterType="com.tryeverything.entity.ActivityPhotos" useGeneratedKeys="true" keyColumn="activityPhotosId" keyProperty="activityPhotosId">
+        <![CDATA[
+          insert into t_activity_photos(activity_photos_id,activity_id,kindergarten_id,`time`) values (#{activityPhotosId},#{activityId},#{kindergartenId},now())
+        ]]>
+    </insert>
+    <update id="update" parameterType="com.tryeverything.entity.ActivityPhotos">
+        <![CDATA[
+          update t_activity_photos
+        ]]>
+        <set>
+            <if test="activityId != null">
+                activity_id = #{activityId},
+            </if>
+            <if test="kindergartenId != null">
+                kindergarten_id = #{kindergartenId},
+            </if>
+            <if test="time != null">
+                `time` = #{time}
+            </if>
+        </set>
+        where activity_photos_id = #{activityPhotosId}
+    </update>
+
+    <select id="listId" parameterType="java.lang.Integer">
+        <![CDATA[
+          select * from t_activity_photos where activity_photos_id = #{activityPhotosId}
+        ]]>
+    </select>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_activity_photos where activity_photos_id = #{activityPhotosId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.vo.ActivityPhotosVO">
+        <![CDATA[
+          select ap.activity_photos_id,ap.activity_id,ap.kindergarten_id,ap.`time`,a.activity_name,a.theme_id,a.activity_leader,a.activity_time,a.activity_address,k.kindergarten_name,k.teaching_features,k.fees from t_activity_photos ap left join t_activity a on ap.activity_id = a.activity_id left join t_kindergarten k on k.kindergarten_id = ap.kindergarten_id;
+        ]]>
+    </select>
+</mapper>

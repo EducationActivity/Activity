@@ -1,0 +1,10 @@
+
+osquid:S1192["SDefine a constant instead of duplicating this literal "redirect:/login.do" 3 times.(Åã‡ýûÿÿÿÿ
+?squid:S1148G"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148^"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148…"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148–"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Ksquid:S1481""/Remove this unused "franchisee" local variable.(š˜É‹ÿÿÿÿÿ
+Zsquid:S1854"">Remove this useless assignment to local variable "franchisee".(š˜É‹ÿÿÿÿÿ
+?squid:S1148w"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

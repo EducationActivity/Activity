@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.TaskDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Task">
+        <![CDATA[
+            insert into t_task(task_id,task,functionary,phone,remark) values (#{taskId},#{task},#{functionary},#{phone},#{remark})
+        ]]>
+    </insert>
+
+    <select id="getById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.Task">
+      <![CDATA[
+        select task,functionary,phone,remark from t_task where task_id = #{taskId}
+      ]]>
+    </select>
+
+    <update id="update" parameterType="com.tryeverything.entity.Task">
+        <![CDATA[
+          update t_task
+        ]]>
+        <set>
+        <if test="task != null and task != ''">
+            task = #{task}
+        </if>
+        <if test="functionary != null and functionary != ''">
+            functionary = #{functionary}
+        </if>
+        <if test="phone != null and phone != ''">
+            phone = #{phone}
+        </if>
+        <if test="remark != null and remark != ''">
+            remark = #{remark}
+        </if>
+    </set>
+        where task_id = #{taskId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_task where task_id = #{taskId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.entity.Task">
+        <![CDATA[
+          select task_id,task,functionary,phone,remark from t_task
+        ]]>
+    </select>
+</mapper>

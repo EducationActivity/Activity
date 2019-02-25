@@ -94,12 +94,11 @@
       <li><a href="${basePath}activity_frontPage.do">活动</a></li>
       <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
       <li><a href="${basePath}course_frontPage.do">课程</a></li>
-      <li><a href="${basePath}service.do">服务</a></li>
       <li><a href="${basePath}about.do">关于我们</a></li>
-      <li><a href="${basePath}blog_main.do">论坛</a></li>
+      <li><a href="${basePath}blog_main.do">咨讯</a></li>
       <li><a href="${basePath}contact.do">联系我们</a></li>
-      <li><a href="${basePath}casePage.do">活动剪影</a></li>
-      <li><a href="${basePath}my_account.do">个人中心</a></li>
+      <li><a href="#">活动剪影</a></li>
+      <li><a href="${basePath}account.do">个人中心</a></li>
 
     </ul>
   </div>
@@ -116,10 +115,9 @@
           <li><a href="${basePath}activity_frontPage.do">活动</a></li>
           <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
           <li><a href="${basePath}course_frontPage.do">课程</a></li>
-          <li><a href="${basePath}service.do">服务</a></li>
           <li><a href="${basePath}about.do">关于我们</a></li>
           <li><a href="${basePath}blog_main.do">咨讯</a></li>
-          <li><a href="${basePath}my_contact.do">联系我们</a></li>
+          <li><a href="${basePath}contact.do">联系我们</a></li>
           <li><a href="${basePath}account.do">个人中心</a></li>
           <li><a href="#">活动剪影</a></li>
           <li><a href="#">论坛</a></li>
@@ -161,18 +159,15 @@
               <li><a href="${basePath}activity_frontPage.do">活动</a></li>
               <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
               <li><a href="${basePath}course_frontPage.do">课程</a></li>
-              <li><a href="${basePath}service.do">服务</a></li>
-              <li><a href="${basePath}my_account.do">个人中心</a></li>
+              <li><a href="${basePath}account.do">个人中心</a></li>
               <li><a href="${basePath}about.do">关于我们</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">论坛<b class="caret"></b></a>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">咨讯<b class="caret"></b></a>
                 <ul role="menu" class="dropdown-menu">
-                  <li><a href="${basePath}blog_main.do" >查看最新</a></li>
+                  <li><a href="${basePath}blog_main.do" >新闻页</a></li>
                   <li><a href="${basePath}blog_post.do" >发表我的看法</a></li>
                 </ul>
               </li>
-              <li><a href="${basePath}casePage.do">案例展示</a></li>
               <li><a href="${basePath}contact.do">联系我们</a></li>
-              <li><a href="${basePath}expect.do">敬请期待</a></li>
               <%--<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages<b class="caret"></b></a>
                   <ul role="menu" class="dropdown-menu">
                       <li><a href="404.html" >Page 404</a></li>
@@ -188,12 +183,8 @@
       </nav>
     </div>
   </header>
-  <%--end header--%>
-
-
-
-
-  <div class="b-title-page area-bg area-bg_dark parallax">
+      
+      <div class="b-title-page area-bg area-bg_dark parallax">
         <div class="area-bg__inner">
           <div class="container">
             <div class="row">

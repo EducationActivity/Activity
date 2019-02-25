@@ -30,152 +30,142 @@ request.setAttribute("basePath", basePath);
     <![endif]-->
   </head>
   <body>
-  <!-- Loader-->
-  <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
-  <!-- Loader end-->
-  <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css">
 
-    <!-- Start Switcher-->
-    <div class="switcher-wrapper">
-      <div class="demo_changer">
-        <div class="demo-icon text-primary"><i class="fa fa-cog fa-spin fa-2x"></i></div>
-        <div class="form_holder">
-          <div class="predefined_styles">
-            <div class="skin-theme-switcher">
-              <h4>Color</h4><a href="javascript:void(0);" data-switchcolor="color1" style="background-color:#fe3e01;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color2" style="background-color:#FFAC3A;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color3" style="background-color:#28af0f;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color4" style="background-color:#e425e9;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color5" style="background-color:#0c02bd;" class="styleswitch"></a>
+
+      <div data-header="sticky" data-header-top="200" data-canvas="container" class="l-theme animated-css">
+
+        <!-- Start Switcher-->
+        <div class="switcher-wrapper">
+          <div class="demo_changer">
+            <div class="demo-icon text-primary"><i class="fa fa-cog fa-spin fa-2x"></i></div>
+            <div class="form_holder">
+              <div class="predefined_styles">
+                <div class="skin-theme-switcher">
+                  <h4>Color</h4><a href="javascript:void(0);" data-switchcolor="color1" style="background-color:#fe3e01;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color2" style="background-color:#FFAC3A;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color3" style="background-color:#28af0f;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color4" style="background-color:#e425e9;" class="styleswitch"></a><a href="javascript:void(0);" data-switchcolor="color5" style="background-color:#0c02bd;" class="styleswitch"></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- end switcher-->
-    <!-- ==========================-->
-    <!-- SEARCH MODAL-->
-    <!-- ==========================-->
-    <div class="header-search open-search">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-            <div class="navbar-search">
-              <form class="search-global">
-                <input type="text" placeholder="Type to search" autocomplete="off" name="s" value="" class="search-global__input"/>
-                <button class="search-global__btn"><i class="icon stroke icon-Search"></i></button>
-                <div class="search-global__note">Begin typing your search above and press return to search.</div>
-              </form>
+        <!-- end switcher-->
+        <!-- ==========================-->
+        <!-- SEARCH MODAL-->
+        <!-- ==========================-->
+        <div class="header-search open-search">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="navbar-search">
+                  <form class="search-global">
+                    <input type="text" placeholder="Type to search" autocomplete="off" name="s" value="" class="search-global__input"/>
+                    <button class="search-global__btn"><i class="icon stroke icon-Search"></i></button>
+                    <div class="search-global__note">Begin typing your search above and press return to search.</div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
+          <button type="button" class="search-close close"><i class="fa fa-times"></i></button>
         </div>
-      </div>
-      <button type="button" class="search-close close"><i class="fa fa-times"></i></button>
-    </div>
-    <!-- ==========================-->
-    <!-- MOBILE MENU-->
-    <!-- ==========================-->
-    <div data-off-canvas="mobile-slidebar left overlay">
-      <ul class="nav navbar-nav">
-        <li><a href="${basePath}index.do" >主页</a></li>
-        <li><a href="${basePath}activity_frontPage.do">活动</a></li>
-        <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
-        <li><a href="${basePath}course_frontPage.do">课程</a></li>
-        <li><a href="${basePath}service.do">服务</a></li>
-        <li><a href="${basePath}about.do">关于我们</a></li>
-        <li><a href="${basePath}blog_main.do">论坛</a></li>
-        <li><a href="${basePath}contact.do">联系我们</a></li>
-        <li><a href="${basePath}casePage.do">活动剪影</a></li>
-        <li><a href="${basePath}my_account.do">个人中心</a></li>
-
-      </ul>
-    </div>
-    <!-- ==========================-->
-    <!-- FULL SCREEN MENU-->
-    <!-- ==========================-->
-    <div class="wrap-fixed-menu" id="fixedMenu">
-      <nav class="fullscreen-center-menu">
-
-        <div class="menu-main-menu-container">
-
+        <!-- ==========================-->
+        <!-- MOBILE MENU-->
+        <!-- ==========================-->
+        <div data-off-canvas="mobile-slidebar left overlay">
           <ul class="nav navbar-nav">
             <li><a href="${basePath}index.do" >主页</a></li>
             <li><a href="${basePath}activity_frontPage.do">活动</a></li>
             <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
             <li><a href="${basePath}course_frontPage.do">课程</a></li>
-            <li><a href="${basePath}service.do">服务</a></li>
             <li><a href="${basePath}about.do">关于我们</a></li>
             <li><a href="${basePath}blog_main.do">咨讯</a></li>
-            <li><a href="${basePath}my_contact.do">联系我们</a></li>
-            <li><a href="${basePath}account.do">个人中心</a></li>
+            <li><a href="${basePath}contact.do">联系我们</a></li>
             <li><a href="#">活动剪影</a></li>
-            <li><a href="#">论坛</a></li>
+            <li><a href="${basePath}account.do">个人中心</a></li>
+
           </ul>
+        </div>
+        <!-- ==========================-->
+        <!-- FULL SCREEN MENU-->
+        <!-- ==========================-->
+        <div class="wrap-fixed-menu" id="fixedMenu">
+          <nav class="fullscreen-center-menu">
 
+            <div class="menu-main-menu-container">
 
-
-        </div>    </nav>
-      <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
-    </div>
-
-
-    <header class="header header-boxed-width header-background-trans header-logo-black header-topbarbox-1-left header-topbarbox-2-right header-navibox-1-left header-navibox-2-right header-navibox-3-right header-navibox-4-right">
-      <div class="container container-boxed-width">
-        <nav id="nav" class="navbar">
-          <div class="container">
-            <div class="header-navibox-1">
-              <!-- Mobile Trigger Start-->
-              <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
-              <!-- Mobile Trigger End--><a href="${basePath}index.do" class="navbar-brand scroll"><img src="${basePath}static/assets/media/general/logo.png" alt="logo" class="normal-logo"/><img src="${basePath}static/assets/media/general/logo.png" alt="logo" class="scroll-logo hidden-xs"/></a>
-            </div>
-            <div class="header-navibox-3">
-              <ul class="nav navbar-nav hidden-xs clearfix vcenter">
-                <li>
-                  <button class="js-toggle-screen toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
-                </li>
-                <li><a href="#" class="btn_header_search"><i class="fa fa-search"></i></a></li>
-              </ul>
-            </div>
-            <div class="header-navibox-2">
-              <ul class="yamm main-menu nav navbar-nav">
-                <%--<li class="dropdown"><a href="${basePath}index.do" data-toggle="dropdown" class="dropdown-toggle">主页<b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="${basePath}index.do" >Home ver 01</a></li>
-                        <li><a href="home-2.html" >Home ver 02</a></li>
-                    </ul>
-                </li>--%>
-                <li><a href="${basePath}index.do">主页</a></li>
+              <ul class="nav navbar-nav">
+                <li><a href="${basePath}index.do" >主页</a></li>
                 <li><a href="${basePath}activity_frontPage.do">活动</a></li>
                 <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
                 <li><a href="${basePath}course_frontPage.do">课程</a></li>
-                <li><a href="${basePath}service.do">服务</a></li>
-                <li><a href="${basePath}my_account.do">个人中心</a></li>
                 <li><a href="${basePath}about.do">关于我们</a></li>
-                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">论坛<b class="caret"></b></a>
-                  <ul role="menu" class="dropdown-menu">
-                    <li><a href="${basePath}blog_main.do" >查看最新</a></li>
-                    <li><a href="${basePath}blog_post.do" >发表我的看法</a></li>
-                  </ul>
-                </li>
-                <li><a href="${basePath}casePage.do">案例展示</a></li>
+                <li><a href="${basePath}blog_main.do">咨讯</a></li>
                 <li><a href="${basePath}contact.do">联系我们</a></li>
-                <li><a href="${basePath}expect.do">敬请期待</a></li>
-                <%--<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages<b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="404.html" >Page 404</a></li>
-                        <li><a href="headers.html" >Headers</a></li>
-                        <li><a href="typography.html" >Typography</a></li>
-                        <li><a href="privacy-policy.html" >Privacy policy</a></li>
-                        <li><a href="terms-of-use.html" >Terms of use</a></li>
-                    </ul>
-                </li>--%>
+                <li><a href="${basePath}account.do">个人中心</a></li>
+                <li><a href="#">活动剪影</a></li>
+                <li><a href="#">论坛</a></li>
               </ul>
-            </div>
+
+
+
+            </div>    </nav>
+          <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
+        </div>
+
+
+        <header class="header header-boxed-width header-background-trans header-logo-black header-topbarbox-1-left header-topbarbox-2-right header-navibox-1-left header-navibox-2-right header-navibox-3-right header-navibox-4-right">
+          <div class="container container-boxed-width">
+            <nav id="nav" class="navbar">
+              <div class="container">
+                <div class="header-navibox-1">
+                  <!-- Mobile Trigger Start-->
+                  <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                  <!-- Mobile Trigger End--><a href="${basePath}index.do" class="navbar-brand scroll"><img src="${basePath}static/assets/media/general/logo.png" alt="logo" class="normal-logo"/><img src="${basePath}static/assets/media/general/logo.png" alt="logo" class="scroll-logo hidden-xs"/></a>
+                </div>
+                <div class="header-navibox-3">
+                  <ul class="nav navbar-nav hidden-xs clearfix vcenter">
+                    <li>
+                      <button class="js-toggle-screen toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                    </li>
+                    <li><a href="#" class="btn_header_search"><i class="fa fa-search"></i></a></li>
+                  </ul>
+                </div>
+                <div class="header-navibox-2">
+                  <ul class="yamm main-menu nav navbar-nav">
+                    <%--<li class="dropdown"><a href="${basePath}index.do" data-toggle="dropdown" class="dropdown-toggle">主页<b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="${basePath}index.do" >Home ver 01</a></li>
+                            <li><a href="home-2.html" >Home ver 02</a></li>
+                        </ul>
+                    </li>--%>
+                    <li><a href="${basePath}index.do">主页</a></li>
+                    <li><a href="${basePath}activity_frontPage.do">活动</a></li>
+                    <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
+                    <li><a href="${basePath}course_frontPage.do">课程</a></li>
+                    <li><a href="${basePath}account.do">个人中心</a></li>
+                    <li><a href="${basePath}about.do">关于我们</a></li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">咨讯<b class="caret"></b></a>
+                      <ul role="menu" class="dropdown-menu">
+                        <li><a href="${basePath}blog_main.do" >新闻页</a></li>
+                        <li><a href="${basePath}blog_post.do" >发表我的看法</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="${basePath}contact.do">联系我们</a></li>
+                    <%--<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages<b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="404.html" >Page 404</a></li>
+                            <li><a href="headers.html" >Headers</a></li>
+                            <li><a href="typography.html" >Typography</a></li>
+                            <li><a href="privacy-policy.html" >Privacy policy</a></li>
+                            <li><a href="terms-of-use.html" >Terms of use</a></li>
+                        </ul>
+                    </li>--%>
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
-        </nav>
-      </div>
-    </header>
-    <%--end header--%>
-
-
-
-    <div class="b-title-page area-bg area-bg_dark parallax">
+        </header>
+      <div class="b-title-page area-bg area-bg_dark parallax">
         <div class="area-bg__inner">
           <div class="container">
             <div class="row">

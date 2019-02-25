@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tryeverything.dao.CourseDAO">
+    <insert id="save" parameterType="com.tryeverything.entity.Course">
+        <![CDATA[
+          insert into t_course(course_id,course_name,institutions,venue,mobile,course_picture,course_price,total_hours,course_details,create_date,type_id) values (#{courseId},#{courseName},#{institutions},#{venue},#{mobile},#{coursePicture},#{coursePrice},#{totalHours},#{courseDetails},#{createDate},#{typeId})
+        ]]>
+    </insert>
+
+    <update id="update" parameterType="com.tryeverything.entity.Course">
+        <![CDATA[
+          update t_course
+        ]]>
+        <set>
+            <if test="courseName != null and courseName != ''">
+                course_name = #{courseName},
+            </if>
+            <if test="institutions != null and institutions != ''">
+                institutions = #{institutions},
+            </if>
+            <if test="venue != null and venue != ''">
+                venue = #{venue},
+            </if>
+            <if test="mobile != null and mobile != ''">
+                mobile = #{mobile},
+            </if>
+            <if test="coursePicture != null and coursePicture != ''">
+                course_picture = #{coursePicture},
+            </if>
+            <if test="coursePrice != null">
+                course_price = #{coursePrice},
+            </if>
+            <if test="totalHours != null">
+                total_hours = #{totalHours},
+            </if>
+            <if test="courseDetails != null and courseDetails != ''">
+                course_details = #{courseDetails},
+            </if>
+            <if test="typeId != null">
+                type_id = #{typeId}
+            </if>
+        </set>
+        where course_id = #{courseId}
+    </update>
+
+    <delete id="removeById" parameterType="java.lang.Integer">
+        <![CDATA[
+          delete from t_course where course_id = #{courseId}
+        ]]>
+    </delete>
+
+    <select id="listAll" resultType="com.tryeverything.vo.CourseType">
+        <![CDATA[
+          select c.*,ct.type_name from t_course c inner join t_course_type ct on c.type_id = ct.type_id
+        ]]>
+    </select>
+</mapper>

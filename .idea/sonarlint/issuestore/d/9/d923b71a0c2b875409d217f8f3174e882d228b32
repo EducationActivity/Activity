@@ -1,0 +1,9 @@
+
+osquid:ModifiersOrderCheck."EReorder the modifiers to comply with the Java Language Specification.(ê£øÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‰üıÓÿÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(„ŠÏã
+zsquid:S1845"^Rename method "md5" to prevent any misunderstanding/clash with field "MD5" defined on line 10.(—Ò•Çüÿÿÿÿ
+?squid:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+:squid:S1148M"#Use a logger to log this exception.(Ç’Çê
+{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¨âàøÿÿÿÿ
+vsquid:S1149Z"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ü±÷ê
