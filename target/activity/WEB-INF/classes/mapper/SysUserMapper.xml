@@ -63,6 +63,12 @@
 		select user_id,login_name,user_name,user_password,phone,email,address,status,`type` from t_sys_user where `type` = '0'
 	</select>
 
+	<select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.SysUser">
+		<![CDATA[
+			select login_name,user_name,phone,email,address from t_sys_user where user_id = #{userId}
+		]]>
+	</select>
+
 	<select id="queryUser" resultType="com.tryeverything.entity.SysUser">
 		<![CDATA[
 			select user_id,login_name,user_name,user_password,phone,email,address,status,`type` from t_sys_user where phone = #{phone} and userPassword = #{userPassword}

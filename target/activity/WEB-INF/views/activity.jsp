@@ -17,7 +17,7 @@
 </head>
 <body>
 <button href="#" class="btn btn-info btn-xs plus" onclick="addSchedule()"><i class="fa fa-plus"></i> 生成进度</button>
-<button href="#" class="btn btn-info btn-xs list" onclick="schedule()"><i class="fa fa-list"></i> 进度</button>
+<button href="#" class="btn btn-info btn-xs list" onclick="schedule()"><i class="fa fa-list"></i> 查看进度</button>
 <button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="game()"><i class="fa fa-edit"></i> 游戏</button>
 <table id="table">
 

@@ -1,0 +1,9 @@
+
+ajavascript:S930¨"E"toInt" declared at line 258 expects 1 argument, but 2 were provided.(Ù–øŸ
+hjavascript:S3403Ë"KRemove this "===" check; it will always be false. Did you mean to use "=="?(¦¬» 
+Šjavascript:S2583Ë"mChange this condition so that it does not always evaluate to "false"; some subsequent code is never executed.(¦¬» 
+javascript:S3923å^"]This conditional operation returns the same value whether the condition is "true" or "false".(Ôûæ°üÿÿÿÿ
+]javascript:UnusedVariableÕ@"7Remove the declaration of the unused 'suffix' variable.(´æÂ¯
+Pjavascript:S1854"4Remove this useless assignment to local variable "k"(”µ§
+jjavascript:S13013"MReplace this "switch" statement with "if" statements to increase readability.(‚ª®
+jjavascript:S1301ÙC"MReplace this "switch" statement with "if" statements to increase readability.(‚ª®

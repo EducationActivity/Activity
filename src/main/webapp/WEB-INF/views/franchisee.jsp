@@ -18,9 +18,49 @@
     <title>加盟商列表</title>
 </head>
 <body>
+<button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
+
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="addForm" method="post">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">加盟商新增</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="loginName">登录名</label>
+                        <input type="text" class="form-control" id="loginName1" name="loginName" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="franchiseeName">性名</label>
+                        <input type="text" class="form-control" id="franchiseeName1" name="franchiseeName" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话</label>
+                        <input type="text" class="form-control" id="phone1" name="phone" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="text" class="form-control" id="email1" name="email" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="locality">所在地</label>
+                        <input type="text" class="form-control" id="locality1" name="locality" readonly/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                        <button type="button" id="submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="audit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -177,6 +217,26 @@
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }
     }
+    function add() {
+            $("#submit").on("click",function(){
+                $.ajax({
+                    url: basePath+"franchisee/add.do",
+                    type:"post",
+                    dataType:"json",
+                    data: $("#form").serialize(),
+                    success: function(data){
+                        $('#table').modal('hide')
+                        window.location.reload();
+                        alert(data.message);
+                    },
+                    error: function(data){
+                        window.location.reload();
+                        alert(data.message);
+                    }
+                });
+            });
+        }
+    };
 
     function audit() {
         var a = $("#table").bootstrapTable('getSelections');

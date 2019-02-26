@@ -62,7 +62,7 @@ public class FranchiseeController {
         ControllerStatusVO statusVO = null;
         try{
             if(franchisee != null){
-                franchisee.setPassword(EncryptUtils.md5(franchisee.getPassword()));
+                franchisee.setPassword(EncryptUtils.md5(String.valueOf(123456)));
                 franchisee.setType(1);
                 franchiseeService.save(franchisee);
                 statusVO = ControllerStatusVO.status(ControllerStatusEnum.FRANCHISEE_ADD_SUCCESS);

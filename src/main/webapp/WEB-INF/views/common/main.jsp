@@ -103,10 +103,12 @@
 				</li>
 				<li class="nav-parent"><a href="#"><i class="fa fa-file-text"></i> <span>活动内容管理</span></a>
                     <ul class="children">
-                        <li class="children"><a href="${basePath}activityTheme/listPage.do"><i class="fa fa-caret-right"></i>活动主题游戏管理</a></li>
+                        <li class="">
+							<a href="${basePath}activityTheme/listPage.do"><i class="fa fa-caret-right"></i>活动主题游戏管理</a>
+						</li>
                     </ul>
                     <ul class="children">
-                        <li class="children"><a href="${basePath}properties/listPage.do"><i class="fa fa-caret-right"></i>游戏属性管理(子菜单)</a></li>
+                        <li class=""><a href="${basePath}properties/listPage.do"><i class="fa fa-caret-right"></i>游戏属性管理(子菜单)</a></li>
                     </ul>
                     <ul class="children">
 						<li class=""><a href="${basePath}scheme/listPage.do"><i class="fa fa-caret-right"></i>活动方案模板管理</a></li>
@@ -126,7 +128,6 @@
 					<ul class="children">
 						<li class=""><a href="${basePath}archway/listPage.do"><i class="fa fa-caret-right"></i>活动拱门管理</a></li>
 					</ul>
-
                 </li>
 
 				<li class="nav-parent"><a href="#"><i class="fa fa-bitcoin"></i> <span>加盟商管理</span></a>
@@ -173,13 +174,18 @@
 				<%--</li>--%>
 				<li class="nav-parent"><a href="#"><i class="fa fa-xing-square"></i> <span>账户管理</span></a>
 					<ul class="children">
-						<li class=""><a href="${basePath}sysUser/listPage.do"><i class="fa fa-caret-right"></i>管理员管理</a></li>
+						<li class=""><a href="#" onclick="update()"><i class="fa fa-caret-right"></i>个人信息</a></li>
 					</ul>
 					<ul class="children">
 						<li class=""><a href="#pwsModal" data-toggle="modal"><i class="fa fa-caret-right"></i>修改密码</a></li>
 					</ul>
 					<ul class="children">
 						<li class=""><a href="${basePath}sysUser/loginOut.do"><i class="fa fa-caret-right"></i>安全退出</a></li>
+					</ul>
+				</li>
+				<li class="nav-parent"><a href="#"><i class="fa fa-youtube-square"></i> <span>后台管理员管理</span></a>
+					<ul class="children">
+						<li class=""><a href="${basePath}sysUser/listPage.do"><i class="fa fa-caret-right"></i>管理员管理</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -253,7 +259,68 @@
             </form>
 		</div>
 	</div>
-	<script type="text/javascript">
+
+	<div class="modal fade" id="updateModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">个人信息修改</h4>
+				</div>
+					<div class="modal-body">
+						<form id="updateForm" enctype="multipart/form-data" class="form-horizontal">
+						<input type="hidden" id="userId1" name="userId" value="${user.userId }"/>
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="loginName">登录名:</label>
+							</div>
+							<div class="col-md-10">
+								<input type="text" name="loginName" id="loginName" class="form-control" placeholder="请输入登录名">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="userName">姓名:</label>
+							</div>
+							<div class="col-md-10">
+								<input type="text" name="userName" id="userName" class="form-control" placeholder="请输入姓名">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="phone">电话:</label>
+							</div>
+							<div class="col-md-10">
+								<input type="text" name="phone" id="phone" class="form-control" placeholder="请输入电话">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="email">邮箱:</label>
+							</div>
+							<div class="col-md-10">
+								<input type="text" name="email" id="email" class="form-control" placeholder="请输入邮箱">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-2">
+								<label class="control-label" for="address">地址:</label>
+							</div>
+							<div class="col-md-10">
+								<input type="text" name="address" id="address" class="form-control" placeholder="请输入地址">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" id="btn_submit" class="btn btn-primary">保存</button>
+				</div>
+
+			</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+	</div>
+<script type="text/javascript">
 function validateForm(){
 	return $("#userPwdForm").validate( {
         rules: {
@@ -296,8 +363,68 @@ function validateForm(){
         }
     } );
 }
+
+function validateUser(){
+    return $("#updateForm").validate( {
+        rules: {
+            loginName: {
+                required:true
+            },
+            userName: {
+                required: true
+            },
+			phone: {
+                required :true,
+                rangelength:[11,11]
+			},
+            email: {
+                required: true,
+                email:true
+            },
+            address :{
+                required:true
+            }
+        },
+        messages: {
+            loginName: {
+                required: "登录账号不能为空"
+            },
+            userName: {
+                required: "用户姓名不能为空"
+            },
+			phone: {
+                required: "电话不能为空",
+				rangelength:"电话的长度为11位"
+			},
+			email: {
+                required: "邮箱不能为空",
+				email:"邮箱的格式不正确"
+			},
+			address: {
+                required: "地址不能为空"
+			}
+        },
+        errorElement: "em",
+        errorPlacement: function ( error, element ) {
+            // Add the `help-block` class to the error element
+            error.addClass( "help-block" );
+            if ( element.prop( "type" ) === "checkbox" ) {
+                error.insertAfter( element.parent( "label" ) );
+            } else {
+                error.insertAfter( element );
+            }
+        },
+        highlight: function ( element, errorClass, validClass ) {
+            $( element ).parents( ".col-md-10" ).addClass( "has-error" ).removeClass( "has-success" );
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $( element ).parents( ".col-md-10" ).addClass( "has-success" ).removeClass( "has-error" );
+        }
+    } );
+}
 //注册表单验证
-$(validateForm())
+$(validateForm());
+$(validateUser());
 
 $("#submit").on("click",function () {
     var userId = $("#userId").val();
@@ -309,20 +436,69 @@ $("#submit").on("click",function () {
             data: $("#userPwdForm").serialize(),
             success: function(data){
                 $('#pwsModal').modal('hide');
-                window.location.reload();
                 alert(data.message);
+                $("#updateModel").bootstrapTable("refresh")
             },
             error: function(data){
-                window.location.reload();
                 alert(data.message);
+                $("#updateModel").bootstrapTable("refresh")
             }
         });
 	}
 })
 
-$('#pwsModal').on('hidden.bs.modal', function () {
-    window.location.reload();
-})
+function update(){
+    var userId = $("#userId").val();
+    selectById(userId);
+	$("#btn_submit").on("click",function () {
+		if(validateUser().form()) {
+			var loginName = $("#loginName").val();
+			var userName = $("#userName").val();
+			var phone = $("#phone").val();
+			var email = $("#email").val();
+			var address = $("#address").val();
+			$.ajax({
+				url: basePath + "sysUser/update.do",
+				type: "post",
+				dataType: "json",
+				data: {
+					userId:userId,
+					loginName: loginName,
+					userName: userName,
+					phone: phone,
+					email: email,
+					address: address
+				},
+				success: function (data) {
+					$('#updateModel').modal('hide');
+					alert(data.message);
+					$("#updateModel").bootstrapTable("refresh")
+				},
+				error: function (data) {
+					alert(data.message);
+                    $("#updateModel").bootstrapTable("refresh")
+				}
+			});
+		}
+	})
+
+}
+
+function selectById(userId){
+    $.ajax({
+        url: "${basePath}sysUser/listById.do?userId="+userId,
+        type:"post",
+        dataType:"json",
+        success:function(data){
+            $("#loginName").val(data[0].loginName);
+            $("#userName").val(data[0].userName);
+            $("#phone").val(data[0].phone);
+            $("#email").val(data[0].email);
+            $("#address").val(data[0].address);
+            $('#updateModel').modal('show');
+        }
+    });
+}
 </script>
 </body>
 </html>

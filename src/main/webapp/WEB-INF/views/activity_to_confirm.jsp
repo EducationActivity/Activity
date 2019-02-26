@@ -1,4 +1,5 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
@@ -10,6 +11,8 @@
 <head>
     <title>活动信息确认</title>
     <link rel="shortcut icon" href="${basePath}static/images/tryeverything.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
     <script>
         var basePath = "${basePath}";
     </script>
@@ -41,7 +44,6 @@
 </head>
 <body>
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
-<button href="#" class="btn btn-info btn-xs plus" onclick="addSchedule()"><i class="fa fa-plus"></i> 生成进度</button>
 <table id="table">
 
 </table>
@@ -261,7 +263,6 @@
         </div>
     </div>
 </div>
-</body>
 <script>
     //加载表格,由于bootstrap的刷新也在这,所以先销毁一下表格在加载表示刷新
     $("#table").bootstrapTable('destroy');
@@ -286,6 +287,11 @@
             checkbox: true,
             visible: true                  //是否显示复选框
         }, {
+            field:'id',
+            title: '编号',
+            visible:true,
+            align: 'center'
+        },{
             field: 'kindergartenId',
             title: '幼儿园编号',
             visible:true,
@@ -296,19 +302,19 @@
             visible:true,
             align: 'center'
         }, {
-           field: 'classInformationId',
+            field: 'classInformationId',
             title: '班级信息编号',
-            visible:false,
+            visible:true,
             align: 'center'
         }, {
             field: 'ringDescriptionId',
             title: '环境创设编号',
-            visible:false,
+            visible:true,
             align: 'center'
         }, {
             field: 'activityId',
             title: '班级编号',
-            visible: false,
+            visible: true,
             align: 'center'
         },
             // ,
@@ -319,66 +325,66 @@
             //         return "私立";
             //     }
             // }
-        // }, {
-        //     field:'teachingFeatures',
-        //     title:'教学特色',
-        //     visible:false,
-        //     align:'center'
-        // },{
-        //     field: 'kindergartenAddress',
-        //     title: '幼儿园地址',
-        //     visible:true,
-        //     align: 'center'
-        // }, {
-        //     field: 'remark',
-        //     title: '备注',
-        //     visible: false,
-        //     align: 'center'
-        // }, {
-        //     field: 'activityLeader',
-        //     title: '负责人',
-        //     visible:true,
-        //     align: 'center'
-        // }, {
-        //     field: 'themeId',
-        //     title: '活动主题',
-        //     visible:true,
-        //     align: 'center'
-        // }, {
-        //     field: 'activityName',
-        //     title: '活动名称',
-        //     visible:true,
-        //     align: 'center'
-        // }, {
-        //     field: 'activityTime',
-        //     title: '活动时间',
-        //     visible:true,
-        //     align: 'center',
-        //     //——修改——获取日期列的值进行转换
-        //     formatter: operateTMSRPFormatter
-        // }, {
-        //     field: 'activityAddress',
-        //     title: '活动地址',
-        //     visible:true,
-        //     align: 'center'
-        // }, {
-        //     field: 'createDate',
-        //     title: '收到活动时间',
-        //     visible:true,
-        //     align: 'center',
-        //     //——修改——获取日期列的值进行转换
-        //     formatter: operateTMSRPFormatter
-        // },
+            // }, {
+            //     field:'teachingFeatures',
+            //     title:'教学特色',
+            //     visible:false,
+            //     align:'center'
+            // },{
+            //     field: 'kindergartenAddress',
+            //     title: '幼儿园地址',
+            //     visible:true,
+            //     align: 'center'
+            // }, {
+            //     field: 'remark',
+            //     title: '备注',
+            //     visible: false,
+            //     align: 'center'
+            // }, {
+            //     field: 'activityLeader',
+            //     title: '负责人',
+            //     visible:true,
+            //     align: 'center'
+            // }, {
+            //     field: 'themeId',
+            //     title: '活动主题',
+            //     visible:true,
+            //     align: 'center'
+            // }, {
+            //     field: 'activityName',
+            //     title: '活动名称',
+            //     visible:true,
+            //     align: 'center'
+            // }, {
+            //     field: 'activityTime',
+            //     title: '活动时间',
+            //     visible:true,
+            //     align: 'center',
+            //     //——修改——获取日期列的值进行转换
+            //     formatter: operateTMSRPFormatter
+            // }, {
+            //     field: 'activityAddress',
+            //     title: '活动地址',
+            //     visible:true,
+            //     align: 'center'
+            // }, {
+            //     field: 'createDate',
+            //     title: '收到活动时间',
+            //     visible:true,
+            //     align: 'center',
+            //     //——修改——获取日期列的值进行转换
+            //     formatter: operateTMSRPFormatter
+            // },
             {
-            field:'ID',
-            title: '操作',
-            visible: true,
-            align: 'center',
-            formatter: operateFormatter()
-        }],
+                field:'ID',
+                title: '操作',
+                visible: true,
+                align: 'center',
+                formatter: operateFormatter()
+            }],
     });
     function operateFormatter(){
-        return '<button href="#" class="btn btn-info btn-xs list" onclick="schedule()"><i class="fa fa-list"></i> 进度</button> <button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
+        return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
     }
     //修改——转换日期格式(时间戳转换为datetime格式)
     //格式化时间
@@ -493,23 +499,7 @@
     function validateForm(){
         return $("#kindergartenForm").validate({
             rules: {
-                kindergartenName: {
-                    required:true
-                },
-                natureOfKindergarten:{
-                    required:true
-                },
-                linkman: {
-                    required:true
-                },
-                phone: {
-                    required:true,
-                    rangelength:[11,11]
-                },
-                kindergartenAddress:{
-                    required:true
-                },
-                fees:{
+                kindergartenId: {
                     required:true
                 },
                 activityLeader:{
@@ -550,21 +540,8 @@
                 }
             },
             messages: {
-                kindergartenName: {
-                    required: "幼儿园名称不能为空"
-                },
-                linkman: {
-                    required: "园方联系人不能为空"
-                },
-                natureOfKindergarten:{
-                    required:"幼儿园性质不能为空"
-                },
-                phone: {
-                    required: "联系人电话不能为空",
-                    rangelength: "手机号码为11位"
-                },
-                kindergartenAddress: {
-                    required: "幼儿园地址不能为空"
+                kindergartenId: {
+                    required: "请选择幼儿园"
                 },
                 activityLeader: {
                     required: "活动负责人不能为空"
@@ -634,10 +611,10 @@
         $("#btn_submit").on("click",function(){
             if(validateForm().form()){
                 var kindergartenId = $("#kindergartenId").val();
-
                 var activityLeader = $("#activityLeader").val();
                 var activityAddress = $("#activityAddress").val();
                 var createDate = $("#createDate").val();
+                var remark = $("#remark").val();
                 var themeId = $("#themeId").selectpicker('val');
                 var activityName = $("#activityName").val();
                 var activityTime = $("#activityTime").val();
@@ -649,7 +626,7 @@
                 var size = $("#size").val();
                 var content = $("#content").val();
                 var additionalPaidItem = $("input[name='additionalPaidItem']:checkbox").val();
-                information.push({"site":site,"rewardType":rewardType,"rewardCount":rewardCount,"rewardContent":rewardContent,"decorate":decorate,"size":size,"content":content,"additionalPaidItem":additionalPaidItem});
+                information.push({"kindergartenId":kindergartenId,"activityLeader":activityLeader,"activityAddress":activityAddress,"createDate":createDate,"remark":remark,"themeId":themeId,"activityName":activityName,"activityTime":activityTime,"site":site,"rewardType":rewardType,"rewardCount":rewardCount,"rewardContent":rewardContent,"decorate":decorate,"size":size,"content":content,"additionalPaidItem":additionalPaidItem});
 
                 var headcount = $('#headcount').val();
                 var numberOfContract = $('#numberOfContract').val();
@@ -667,21 +644,20 @@
                 if(userId == null && userId == ""){
                     userId = "${user.userId}";
                 }
-                jsonStr["kindergarten"] = kindergarten;
                 jsonStr["information"] = information;
                 jsonStr["classInformation"] = classInformation;
                 jsonStr["ringDescription"] = ringDescription;
                 jsonStr["game"] = game;
                 console.log(jsonStr);
                 $.ajax({
-                    url: "${basePath}kindergarten/add.do?userId="+userId,
+                    url: "${basePath}activityConfirmation/add.do?userId="+userId,
                     type: "post",
                     dataType: "json",
                     data: JSON.stringify(jsonStr),
                     contentType : "application/json;charsetset=UTF-8",
                     success: function (data){
                         alert(data.message);
-                        window.location.href = "${basePath}franchisee/activityToConfirm.do";
+                        $("#table").bootstrapTable("refresh");
                     }
                 })
                 return true;
@@ -744,58 +720,42 @@
         $("#gameId").val(name);
     }
 
-    function addSchedule(){
+    function remove() {
         var a = $("#table").bootstrapTable('getSelections');
-        if(a.length<=0){
+        if (a.length <= 0) {
             alert("请选中行")
-        }else if(a.length>1){
+        } else if (a.length > 1) {
             alert("请选中一行");
-        }else{
-            var kindergartenId = a[0].kindergartenId;
+        } else {
             $.ajax({
-                url: "${basePath}kindergarten/addSchedule.do?kindergartenId="+kindergartenId,
-                type: "post",
                 dataType: "json",
-                contentType : "application/json;charsetset=UTF-8",
-                success: function (data){
-                    alert(data.message);
-                }
-            })
-        }
-    }
-
-    function schedule(){
-        var a = $("#table").bootstrapTable('getSelections');
-        if(a.length<=0){
-            alert("请选中行")
-        }else if(a.length>1){
-            alert("请选中一行");
-        }else{
-            var kindergartenId = a[0].kindergartenId;
-            if(data.length>0){
-                window.location.href = "${basePath}kindergarten/schedule1.do?kindergartenId="+kindergartenId;
-            }else{
-                alert("还没有生成活动进度,请先去生成活动进度");
-            }
+                type: "post",
+                url: basePath + "activityConfirmation/remove.do?id=" + a[0].id,
+                context: document.body,
+                success: function () {
+                    alert("删除成功");
+                    $('#table').bootstrapTable("refresh");
+                },
+            });
         }
     }
 
 
 
-
-    function initTableHeight(){
-        //拿到父窗口的centerTabs高度(这是iframe子页面拿到父窗口元素的方法，需要根据自己项目所使用的框架自行修改元素的id)
-        var panelH = $("#mainframe", parent.document).height();
-        //拿到顶部工具栏高度
-        var toolBarH = $(".pull-right").height();
-        //计算表格container该设置的高度
-        var height = panelH - toolBarH - 91;
-        // var height = 15;
-         $(".fixed-table-body").css({"height": height});
-    }
-
-    //初始化表格高度,以保证分页工具栏始终显示
-    initTableHeight();
+    // function initTableHeight(){
+    //     //拿到父窗口的centerTabs高度(这是iframe子页面拿到父窗口元素的方法，需要根据自己项目所使用的框架自行修改元素的id)
+    //     var panelH = $("#mainframe", parent.document).height();
+    //     //拿到顶部工具栏高度
+    //     var toolBarH = $(".pull-right").height();
+    //     //计算表格container该设置的高度
+    //     var height = panelH - toolBarH - 91;
+    //     // var height = 15;
+    //      $(".fixed-table-body").css({"height": height});
+    // }
+    //
+    // //初始化表格高度,以保证分页工具栏始终显示
+    // initTableHeight();
 
 </script>
+</body>
 </html>
