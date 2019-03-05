@@ -1,6 +1,7 @@
 <sitemesh>
 	<mime-type>text/html</mime-type>
-	<mapping path="/*" decorator="/WEB-INF/views/common/main.jsp"></mapping>
+	<!--<mapping path="/*" decorator="/WEB-INF/views/common/main.jsp"></mapping>-->
+	<mapping path="/*" decorator="/WEB-INF/views/sys_user_index.jsp"></mapping>
 	<mapping path="//login.do" exclue="true"/>
 	<mapping path="/login.do" exclue="true"/>
 	<mapping path="/sysUser/login.do" exclue="true"/>
@@ -33,4 +34,7 @@
 	<mapping path="/casePage.do" exclue="true"/>
 	<mapping path="/expect.do" exclue="true"/>
 	<mapping path="/service.do" exclue="true"/>
+
+	<!--<mapping path="/sysUser/register.do" exclue="true"/>-->
+	<mapping path="/sysUser/test.do" exclue="true"/>
 </sitemesh>

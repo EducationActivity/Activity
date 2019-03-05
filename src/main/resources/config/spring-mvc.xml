@@ -26,6 +26,8 @@
         <mvc:exclude-mapping path="/supplier/add.do"/>
         <mvc:exclude-mapping path="/franchisee/myAccount.do"/>
         <mvc:exclude-mapping path="/franchisee/activityToConfirm.do"/>
+        <mvc:exclude-mapping path="/franchisee/getGifCode.do"/>
+        <mvc:exclude-mapping path="/franchisee/verify.do"/>
 
         <!-- 处理拦截的具体实现类 -->
         <bean class="com.tryeverything.util.loginFilter" />

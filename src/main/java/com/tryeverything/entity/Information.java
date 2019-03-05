@@ -6,7 +6,6 @@ import java.io.Serializable;
 
 public class Information implements Serializable {
     private Integer informationId;
-    private String activityAddress;
     private Integer site;
     private Integer rewardType;
     private Integer rewardCount;
@@ -22,14 +21,6 @@ public class Information implements Serializable {
 
     public void setInformationId(Integer informationId) {
         this.informationId = informationId;
-    }
-
-    public String getActivityAddress() {
-        return activityAddress;
-    }
-
-    public void setActivityAddress(String activityAddress) {
-        this.activityAddress = activityAddress;
     }
 
     public Integer getSite() {
@@ -100,7 +91,6 @@ public class Information implements Serializable {
     public String toString() {
         return "Information{" +
                 "informationId=" + informationId +
-                ", activityAddress='" + activityAddress + '\'' +
                 ", site=" + site +
                 ", rewardType=" + rewardType +
                 ", rewardCount=" + rewardCount +

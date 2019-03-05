@@ -18,11 +18,23 @@
     <title>加盟商列表</title>
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        加盟商管理
+        <small>加盟商信息管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">加盟商信息管理</li>
+    </ol>
+
+</section>
+<section class="content">
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
-
+</section>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -34,23 +46,23 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="loginName">登录名</label>
-                        <input type="text" class="form-control" id="loginName1" name="loginName" readonly/>
+                        <input type="text" class="form-control" id="loginName1" name="loginName" placeholder="请输入登录名"/>
                     </div>
                     <div class="form-group">
                         <label for="franchiseeName">性名</label>
-                        <input type="text" class="form-control" id="franchiseeName1" name="franchiseeName" readonly/>
+                        <input type="text" class="form-control" id="franchiseeName1" name="franchiseeName" placeholder="请输入姓名"/>
                     </div>
                     <div class="form-group">
                         <label for="phone">电话</label>
-                        <input type="text" class="form-control" id="phone1" name="phone" readonly/>
+                        <input type="text" class="form-control" id="phone1" name="phone" placeholder="请输入电话"/>
                     </div>
                     <div class="form-group">
                         <label for="email">邮箱</label>
-                        <input type="text" class="form-control" id="email1" name="email" readonly/>
+                        <input type="text" class="form-control" id="email1" name="email" placeholder="请输入邮箱"/>
                     </div>
                     <div class="form-group">
                         <label for="locality">所在地</label>
-                        <input type="text" class="form-control" id="locality1" name="locality" readonly/>
+                        <input type="text" class="form-control" id="locality1" name="locality" placeholder="请输入所在地"/>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
@@ -64,7 +76,7 @@
 <div class="modal fade" id="audit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="form" method="post">
+            <form id="form" enctype="multipart/form-data" class="form-horizontal">
                 <input type="hidden" name="franchiseeId" id="franchiseeId">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -106,10 +118,10 @@
                             <option value="1">启用</option>
                         </select>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
                 </div>
             </form>
         </div>
@@ -218,24 +230,24 @@
         }
     }
     function add() {
-            $("#submit").on("click",function(){
-                $.ajax({
-                    url: basePath+"franchisee/add.do",
-                    type:"post",
-                    dataType:"json",
-                    data: $("#form").serialize(),
-                    success: function(data){
-                        $('#table').modal('hide')
-                        window.location.reload();
-                        alert(data.message);
-                    },
-                    error: function(data){
-                        window.location.reload();
-                        alert(data.message);
-                    }
-                });
+        $("#add").modal("show");
+        $("#submit").on("click",function(){
+            $.ajax({
+                url: basePath+"franchisee/add.do",
+                type:"post",
+                dataType:"json",
+                data: $("#form").serialize(),
+                success: function(data){
+                    $('#add').modal('hide')
+                    alert(data.message);
+                    $("#add").bootstrapTable("refresh");
+                },
+                error: function(data){
+                    window.location.reload();
+                    alert(data.message);
+                }
             });
-        }
+        });
     };
 
     function audit() {

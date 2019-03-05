@@ -9,12 +9,17 @@ public class LoginController {
 
     @RequestMapping("login")
     public String login(){
-        return "franchisee_login";
+        return "login";
     }
 
     @RequestMapping("index")
     public String index(){
         return "index";
+    }
+
+    @RequestMapping("account")
+    public String account(){
+        return "account";
     }
 
     @RequestMapping("activity_frontPage")
@@ -56,6 +61,7 @@ public class LoginController {
     public String blog_post(){
         return "blog_post";
     }
+
     @RequestMapping("about")
     public String about(){
         return "about";

@@ -17,10 +17,22 @@
 
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        幼儿园管理
+        <small>幼儿园信息管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">幼儿园信息管理</li>
+    </ol>
+</section>
+<section class="content">
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
+</section>
 <div class="modal fade" id="kindergartenAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

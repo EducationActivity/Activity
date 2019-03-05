@@ -17,10 +17,23 @@
     <title>方案模板列表</title>
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        活动内容管理
+        <small>活动方案模板管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">活动方案模板管理</li>
+    </ol>
+
+</section>
+<section class="content">
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
+</section>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -55,7 +68,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="schemeUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <form id="form1" enctype="multipart/form-data" class="form-horizontal">
@@ -182,7 +195,7 @@
     //     $("#showImgModal").modal();
     // }
     function operateFormatter(){
-     return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
+     return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="schemeUpdate()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
     };
 
     function validateForm(){
@@ -246,7 +259,7 @@
          });
      };
 
-     function update() {
+     function schemeUpdate() {
         var a = $("#table").bootstrapTable('getSelections');
         if (a.length <= 0) {
             alert("请选中行");
@@ -263,7 +276,7 @@
                     processData: false,
                     contentType: false,
                     success: function(data){
-                        $('#update').modal('hide');
+                        $('#schemeUpdate').modal('hide');
                         window.location.reload();
                         alert(data.message);
                     },
@@ -281,7 +294,7 @@
         var a = $("#table").bootstrapTable('getSelections');
         $('#schemeId').val(a[0].schemeId);
         $('#schemeName1').val(a[0].schemeName);
-        $('#update').modal('show');
+        $('#schemeUpdate').modal('show');
     };
 
      function remove() {

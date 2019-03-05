@@ -174,7 +174,7 @@
 				<%--</li>--%>
 				<li class="nav-parent"><a href="#"><i class="fa fa-xing-square"></i> <span>账户管理</span></a>
 					<ul class="children">
-						<li class=""><a href="#" onclick="update()"><i class="fa fa-caret-right"></i>个人信息</a></li>
+						<li class=""><a href="#" onclick="update()" data-toggle="modal"><i class="fa fa-caret-right"></i>个人信息</a></li>
 					</ul>
 					<ul class="children">
 						<li class=""><a href="#pwsModal" data-toggle="modal"><i class="fa fa-caret-right"></i>修改密码</a></li>
@@ -426,32 +426,34 @@ function validateUser(){
 $(validateForm());
 $(validateUser());
 
-$("#submit").on("click",function () {
-    var userId = $("#userId").val();
-    if(validateForm().form()){
-        $.ajax({
-            url: basePath + "sysUser/updateUserPws.do?userId="+userId,
-            type:"post",
-            dataType:"json",
-            data: $("#userPwdForm").serialize(),
-            success: function(data){
-                $('#pwsModal').modal('hide');
-                alert(data.message);
-                $("#updateModel").bootstrapTable("refresh")
-            },
-            error: function(data){
-                alert(data.message);
-                $("#updateModel").bootstrapTable("refresh")
-            }
-        });
-	}
-})
+// $("#submit").on("click",function () {
+//     var userId = $("#userId").val();
+//     if(validateForm().form()){
+//         $.ajax({
+//             url: basePath + "sysUser/updateUserPws.do?userId="+userId,
+//             type:"post",
+//             dataType:"json",
+//             data: $("#userPwdForm").serialize(),
+//             success: function(data){
+//                 $('#pwsModal').modal('hide');
+//                 alert(data.message);
+//                 $("#updateModel").bootstrapTable("refresh")
+//             },
+//             error: function(data){
+//                 alert(data.message);
+//                 $("#updateModel").bootstrapTable("refresh")
+//             }
+//         });
+// 	}
+// })
 
 function update(){
-    var userId = $("#userId").val();
+    var userId = $("#userId1").val();
+    $('#updateModel').modal('show');
     selectById(userId);
 	$("#btn_submit").on("click",function () {
 		if(validateUser().form()) {
+		    var userId = $("#userId1").val();
 			var loginName = $("#loginName").val();
 			var userName = $("#userName").val();
 			var phone = $("#phone").val();
@@ -490,12 +492,13 @@ function selectById(userId){
         type:"post",
         dataType:"json",
         success:function(data){
+            $("#userId1").val(data[0].userId);
             $("#loginName").val(data[0].loginName);
             $("#userName").val(data[0].userName);
             $("#phone").val(data[0].phone);
             $("#email").val(data[0].email);
             $("#address").val(data[0].address);
-            $('#updateModel').modal('show');
+
         }
     });
 }

@@ -11,6 +11,7 @@ function AjaxPost(Url,JsonData,LodingFun,ReturnFun) {
         success: ReturnFun
     });
 }
+
 //示例
 //AjaxPost("ajax调用路径", ajax传参,
 //                function () {

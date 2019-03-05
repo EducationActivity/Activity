@@ -15,8 +15,8 @@
 %>
 <html>
 <head>
-    <title>活动确认单</title>
-    <link rel="shortcut icon" href="${basePath}static/images/tryeverything.png" type="image/png">
+<title>活动确认单</title>
+<link rel="shortcut icon" href="${basePath}static/images/tryeverything.png" type="image/png">
 <link href="${basePath}static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
 
 <link href="${basePath}static/css/bootstrap-table.min.css" rel="stylesheet">

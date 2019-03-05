@@ -43,10 +43,24 @@
 
 </head>
 <body>
-<button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
-<table id="table">
+<section class="content-header">
+    <h1>
+        活动流程管理
+        <small>幼儿园信息确认管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">幼儿园信息确认管理</li>
+    </ol>
 
-</table>
+</section>
+<section class="content">
+    <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
+    <table id="table">
+
+    </table>
+</section>
+
 <div class="modal fade" id="kindergartenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog" role="document" style="width: 800px;">
         <div class="modal-content">
@@ -250,7 +264,7 @@
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">活动：</label>
-                        <div class="col-sm-10" id="tree">
+                        <div class="col-sm-10" id="tree" name="tree">
 
                         </div>
                     </div>
@@ -259,6 +273,223 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
                 <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateActivityConfirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document" style="width: 800px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel1">幼儿园活动信息修改</h4>
+            </div>
+            <div class="modal-body">
+                <form id="ActivityConfirmForm" role="form" class="form-horizontal">
+                    <h4 align="center">幼儿园信息选择</h4>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="kindergartenId">选择幼儿园</label>
+                        <div class="col-md-10">
+                            <select class="selectpicker show-tick form-control" id="kindergartenId1" name="kindergartenId" placeholder="请选择本次活动的幼儿园" data-live-search="true" required="true">
+
+                            </select>
+                        </div>
+                    </div>
+                    <br/>
+                    <h4 align="center">基础信息描述</h4>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="themeId">活动主题：</label>
+                        <div class="col-md-4">
+                            <select class="selectpicker show-tick form-control" id="themeId1" name="themeId" placeholder="请选择活动主题" data-live-search="true" required="true">
+
+                            </select>
+                        </div>
+
+                        <label class="col-md-2 control-label" for="activityTime">活动时间：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="activityTime1" name="activityTime" placeholder="请选择活动时间"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="activityAddress" class="col-md-2 control-label">活动地址：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="activityAddress1" name="kindergartenName" placeholder="请输入你此次活动的活动地址">
+                        </div>
+                        <label class="col-md-2 control-label" for="activityName">活动名称:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="activityName1" name="activityName" placeholder="请输入活动名称"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">场地：</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="site" id="site2" value="0">室内
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="site" id="site3" value="1">室外
+                            </label>
+                        </div>
+
+                        <label class="col-md-2 control-label" for="rewardType">颁奖类型：</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType3" value="0">奖牌
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType4" value="1">奖杯
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="rewardType" id="rewardType5" value="2">奖状
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="rewardCount">数量：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="rewardCount1" name="rewardCount" placeholder="请输入需要颁发的奖励的数量">
+                        </div>
+
+                        <label for="rewardContent" class="col-md-2 control-label">奖杯或奖牌文字内容：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="rewardContent1" name="rewardContent" placeholder="奖杯或奖牌文字内容">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="decorate" class="col-md-2 control-label">宣传布置：</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline">
+                                <input type="radio" name="decorate" id="decorate2" value="0">喷绘
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="decorate" id="decorate3" value="1">横幅
+                            </label>
+                        </div>
+
+                        <label class="col-md-2 control-label" for="additionalPaidItem">另收费项目:</label>
+                        <div class="col-md-4">
+                            <div class="checkbox">
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem3" value="0"/>摄影</label>
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem4" value="1"/>摄像</label>
+                                <label style="padding-right:30px"><input type="checkbox" name="additionalPaidItem" id="additionalPaidItem5" value="2"/>航拍</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="size">尺寸：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="size1" name="size" placeholder="请输入喷绘的尺寸大小"/>
+                        </div>
+                        <label class="col-md-2 control-label" for="content">内容：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="content1" name="remark" placeholder="请输入喷绘/横幅的内容"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="createDate">收到时间：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="createDate1" name="createDate" placeholder="请选择收到活动时间"/>
+                        </div>
+                        <label class="col-md-2 control-label" for="remark">备注：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="remark1" name="remark" placeholder="请选择要填的备注"/>
+                        </div>
+                    </div>
+                    <br/>
+                    <h4 align="center">班级信息描述</h4>
+                    <%--<div class="form-group">--%>
+                    <%--<label class="col-sm-1 control-label" for="quantity">小班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople" name="numberOfPeople">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="quantity">中班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity1" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople1" name="numberOfPeople">--%>
+                    <%--</div>--%>
+
+                    <%--<label class="col-sm-1 control-label" for="quantity">大班：</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="quantity2" name="quantity">--%>
+                    <%--</div>--%>
+                    <%--<label class="col-sm-1 control-label" for="numberOfPeople">人数</label>--%>
+                    <%--<div class="col-sm-1">--%>
+                    <%--<input type="Number" class="form-control" id="numberOfPeople2" name="numberOfPeople">--%>
+                    <%--</div>--%>
+                    <%--</div>--%>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="activityLeader">活动负责人：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="activityLeader1" name="activityLeader" placeholder="请输入活动负责人">
+                        </div>
+                        <label class="col-md-2 control-label" for="headcount">幼儿园总人数：</label>
+                        <div class="col-md-4">
+                            <input type="Number" class="form-control" id="headcount1" name="headcount" placeholder="请输入幼儿园总人数">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="numberOfContract">合同约定人数：</label>
+                        <div class="col-md-4">
+                            <input type="Number" class="form-control" id="numberOfContract1" name="numberOfContract" placeholder="请输入合同约定人数">
+                        </div>
+                        <label class="col-md-2 control-label" for="numberOfTeachers">教师人数：</label>
+                        <div class="col-md-4">
+                            <input type="Number" class="form-control" id="numberOfTeachers1" name="numberOfTeachers" placeholder="请输入教师人数">
+                        </div>
+                    </div>
+                    <br/>
+                    <h4 align="center">环境创设描述</h4>
+                    <div class="form-group">
+                        <label class="col-md-2" for="archwayId">拱门类型：</label>
+                        <div class="col-md-4">
+                            <select class="selectpicker show-tick form-control" id="archwayId1" name="archwayId" title="请选择拱门类型" data-live-search="true">
+
+                            </select>
+                        </div>
+                        <label class="col-md-2" for="numberOfBalloon">气柱数量：</label>
+                        <div class="col-md-4">
+                            <input type="Number" class="form-control" id="numberOfBalloon1" name="numberOfBalloon" placeholder="请输入气球立柱数量"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="colorOfBalloon">布置气球颜色：</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="colorOfBalloon1" name="colorOfBalloon" placeholder="请输入布置气球颜色"/>
+                        </div>
+                        <label class="col-md-2" for="figureId">人偶类型：</label>
+                        <div class="col-md-4">
+                            <select class="selectpicker show-tick form-control" id="figureId1" name="figureId" title="请选择人偶" data-live-search="true">
+
+                            </select>
+                        </div>
+                    </div>
+                    <br/>
+                    <h4 align="center">活动游戏选择</h4>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">游戏名：</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="gameId1" name="gameId1" placeholder="选择这次活动的游戏" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">活动：</label>
+                        <div class="col-md-10" id="tree1" name="tree">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                <button type="button" id="btn_submit1" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
             </div>
         </div>
     </div>
@@ -292,99 +523,51 @@
             visible:true,
             align: 'center'
         },{
-            field: 'kindergartenId',
-            title: '幼儿园编号',
+            field: 'activityName',
+            title: '活动名称',
             visible:true,
             align: 'center'
         }, {
-            field: 'informationId',
-            title: '信息编号',
+            field: 'activityTime',
+            title: '活动时间',
+            visible:true,
+            align: 'center',
+            formatter:operateTMSRPFormatter
+        }, {
+            field: 'kindergartenName',
+            title: '幼儿园名称',
             visible:true,
             align: 'center'
         }, {
-            field: 'classInformationId',
-            title: '班级信息编号',
+            field: 'kindergartenAddress',
+            title: '幼儿园地址',
             visible:true,
             align: 'center'
         }, {
-            field: 'ringDescriptionId',
-            title: '环境创设编号',
-            visible:true,
-            align: 'center'
-        }, {
-            field: 'activityId',
-            title: '班级编号',
+            field: 'numberOfContract',
+            title: '合同约定人数',
             visible: true,
             align: 'center'
-        },
-            // ,
-            // formatter: function (value, row, index) {
-            //     if (value == 0) {
-            //         return "公立";
-            //     } else {
-            //         return "私立";
-            //     }
-            // }
-            // }, {
-            //     field:'teachingFeatures',
-            //     title:'教学特色',
-            //     visible:false,
-            //     align:'center'
-            // },{
-            //     field: 'kindergartenAddress',
-            //     title: '幼儿园地址',
-            //     visible:true,
-            //     align: 'center'
-            // }, {
-            //     field: 'remark',
-            //     title: '备注',
-            //     visible: false,
-            //     align: 'center'
-            // }, {
-            //     field: 'activityLeader',
-            //     title: '负责人',
-            //     visible:true,
-            //     align: 'center'
-            // }, {
-            //     field: 'themeId',
-            //     title: '活动主题',
-            //     visible:true,
-            //     align: 'center'
-            // }, {
-            //     field: 'activityName',
-            //     title: '活动名称',
-            //     visible:true,
-            //     align: 'center'
-            // }, {
-            //     field: 'activityTime',
-            //     title: '活动时间',
-            //     visible:true,
-            //     align: 'center',
-            //     //——修改——获取日期列的值进行转换
-            //     formatter: operateTMSRPFormatter
-            // }, {
-            //     field: 'activityAddress',
-            //     title: '活动地址',
-            //     visible:true,
-            //     align: 'center'
-            // }, {
-            //     field: 'createDate',
-            //     title: '收到活动时间',
-            //     visible:true,
-            //     align: 'center',
-            //     //——修改——获取日期列的值进行转换
-            //     formatter: operateTMSRPFormatter
-            // },
-            {
-                field:'ID',
-                title: '操作',
-                visible: true,
-                align: 'center',
-                formatter: operateFormatter()
-            }],
+        },{
+            field:"archwayId",
+            title:"拱门编号",
+            visible:false,
+            align:"center"
+        },{
+            field:"figureId",
+            title:"人偶编号",
+            visible:false,
+            align:"center"
+        }, {
+            field:'ID',
+            title: '操作',
+            visible: true,
+            align: 'center',
+            formatter: operateFormatter()
+        }],
     });
     function operateFormatter(){
-        return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
+        return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="updateActivityConfirmModal()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
     }
     //修改——转换日期格式(时间戳转换为datetime格式)
     //格式化时间
@@ -491,8 +674,10 @@
                     h += "<option value='"+data[i].kindergartenId+"'>"+data[i].kindergartenName+"</option>";//用appendTo声明是给谁的值
                 }
                 $("#kindergartenId").append(h);
+                $("#kindergartenId1").append(h);
                 // 缺一不可  
                 $('#kindergartenId').selectpicker('refresh');
+                $('#kindergartenId1').selectpicker('refresh');
             }
         });
     }
@@ -618,7 +803,7 @@
                 var themeId = $("#themeId").selectpicker('val');
                 var activityName = $("#activityName").val();
                 var activityTime = $("#activityTime").val();
-                var site = $("input[name='natureOfKindergarten']:checked").val();
+                var site = $("input[name='site']:checked").val();
                 var rewardType = $("input[name='rewardType']:checked").val();
                 var rewardCount = $("#rewardCount").val();
                 var rewardContent = $("#rewardContent").val();
@@ -666,8 +851,62 @@
             }
         });
     }
+
+    function updateActivityConfirmModal(){
+        var a = $("#table").bootstrapTable('getSelections');
+        if (a.length <= 0) {
+            alert("请选中行")
+        } else if (a.length > 1) {
+            alert("请选中一行");
+        } else {
+            var id = a[0].id;
+            getId(id);
+
+        }
+    }
+    function getId(id){
+        $.ajax({
+            type:"post",
+            url:"${basePath}activityConfirmation/getId.do?id="+id,
+            dataType:"json",
+            success: function(data){
+                console.log(data);
+                $('#kindergartenId1').selectpicker('val', data.kindergartenId);
+                $("#activityLeader1").val(data.activityLeader);
+                $("#activityAddress1").val(data.activityAddress);
+                $("#createDate1").val(operateTMSRPFormatter(data.createDate));
+                $("#remark1").val(data.remark);
+                $('#themeId1').selectpicker('val', data.themeId);
+                $("#activityName1").val(data.activityName);
+                $("#activityTime1").val(operateTMSRPFormatter(data.activityTime));
+                $(":radio[name=site]").val([data.site]);
+                $(":radio[name=rewardType]").val([data.rewardType]);
+
+                $("#rewardCount1").val(data.rewardContent);
+                $("#rewardContent1").val(data.rewardContent);
+                $(":radio[name=decorate]").val([data.decorate]);
+
+                $("#size1").val(data.size);
+                $("#conten1").val(data.content);
+                $(":radio[name=additionalPaidItem]").val([data.additionalPaidItem]);
+
+                $('#headcount1').val(data.headcount);
+                $('#numberOfContract1').val(data.numberOfContract);
+                $('#numberOfTeachers1').val(data.numberOfTeachers);
+
+                $('#archwayId1').selectpicker('val', data.archwayId);
+                $('#numberOfBalloon1').val(data.numberOfBalloon);
+                $('#colorOfBalloon1').val(data.colorOfBalloon);
+                $('#figureId1').selectpicker('val', data.figureId);
+
+
+                $("#updateActivityConfirmModal").modal("show");
+            }
+        })
+    }
     $(function(){
         getTree();
+        getTree1();
     })
     function getTree(){
         $.ajax({
@@ -679,6 +918,45 @@
                 // var tree = data;
                 console.log(data);
                 $('#tree').treeview({
+                            data: data,//数据源
+                            showCheckbox: false,   //是否显示复选框
+                            highlightSelected: true,    //是否高亮选中
+                            multiSelect: true,    //多选
+                            levels : 1,
+                            color: "#010A0E",
+                            // onNodeSelected: function (e, m) { //Treeview 被选中事件
+                            //     var id=m.tags[0];
+                            //     var remark=m.text;
+                            // },
+                            onNodeSelected: function (event, data) {
+                                game.push({"gameId":data.id,"gameName":data.text});
+                                nameValue(name);
+                            },
+                            onNodeUnselected: function (event, data) { //Treeview 取消选中事件
+                                for(var i=0;i<game.length;i++){
+                            if(game[i].gameId==data.id){
+                                game.splice(i,1);
+                            }
+                        }
+                        nameValue(name)
+                    },
+                    error: function () {
+                        alert("菜单加载失败！")
+                    },
+                });
+            }
+        })
+    }
+    function getTree1(){
+        $.ajax({
+            type:"post",
+            url:"${basePath}activityTheme/listTree.do",
+            dataType:"json",
+            success: function (data) {
+                var name = "";
+                // var tree = data;
+                console.log(data);
+                $('#tree1').treeview({
                     data: data,//数据源
                     showCheckbox: false,   //是否显示复选框
                     highlightSelected: true,    //是否高亮选中
@@ -690,16 +968,16 @@
                     //     var remark=m.text;
                     // },
                     onNodeSelected: function (event, data) {
-                        game.push({"gameId":data.id,"gameName":data.text});
-                        nameValue(name);
+                        game.push({"gameId1":data.id,"gameName":data.text});
+                        nameValue1(name);
                     },
                     onNodeUnselected: function (event, data) { //Treeview 取消选中事件
                         for(var i=0;i<game.length;i++){
-                            if(game[i].gameId==data.id){
+                            if(game[i].gameId1==data.id){
                                 game.splice(i,1);
                             }
                         }
-                        nameValue(name)
+                        nameValue1(name)
                     },
                     error: function () {
                         alert("菜单加载失败！")
@@ -718,6 +996,17 @@
             }
         }
         $("#gameId").val(name);
+    }
+
+    function nameValue1(name){
+        for(var i in game){
+            if(name.length==0){
+                name += game[i].gameName;
+            }else{
+                name += ","+game[i].gameName;
+            }
+        }
+        $("#gameId1").val(name);
     }
 
     function remove() {

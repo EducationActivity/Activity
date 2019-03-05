@@ -19,9 +19,16 @@
         ]]>
     </delete>
 
-    <select id="listAll" resultType="com.tryeverything.entity.ActivityConfirmation">
+    <select id="getId" parameterType="java.lang.Integer" resultType="com.tryeverything.vo.ActivityConfirmationVO">
+      <![CDATA[
+            select a.activity_id,a.activity_time,a.theme_id,a.activity_leader,a.activity_time,a.activity_address,a.create_date,a.remark,k.kindergarten_id,i.information_id,i.site,i.reward_type,i.reward_count,i.reward_content,i.decorate,i.size,i.content,i.additional_paid_item,ci.class_information_id,ci.headcount,ci.number_of_contract,ci.number_of_teachers,rd.ring_description_id,rd.archway_id,rd.number_of_balloon,rd.color_of_balloon,rd.figure_id from t_activity_confirmation ac left join
+             t_activity a on ac.activity_id = a.activity_id left join t_kindergarten k on ac.kindergarten_id = k.kindergarten_id left join t_information i on ac.information_id = i.information_id left join t_class_information ci on ac.class_information_id = ci.class_information_id left join t_ring_description rd on ac.ring_description_id = rd.ring_description_id where ac.id = #{id}
+      ]]>
+    </select>
+
+    <select id="listAll" resultType="com.tryeverything.vo.ActivityConfirmationVO">
         <![CDATA[
-          select * from t_activity_confirmation
+          select ac.id,a.activity_name,a.activity_time,k.kindergarten_name,k.kindergarten_address,ci.number_of_contract,rd.archway_id,rd.figure_id from t_activity a,t_kindergarten k,t_class_information ci,t_activity_confirmation ac,t_ring_description rd where ac.activity_id = a.activity_id and ac.kindergarten_id = k.kindergarten_id and ac.class_information_id = ci.class_information_id and ac.ring_description_id = rd.ring_description_id
         ]]>
     </select>
 

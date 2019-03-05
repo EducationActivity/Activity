@@ -17,12 +17,24 @@
     <title>活动游戏列表</title>
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        活动内容管理
+        <small>活动游戏管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">活动游戏管理</li>
+    </ol>
+</section>
+<section class="content">
 
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 游戏新增</button>
 <button href="#" class="btn btn-info btn-xs plus" onclick="addOperation()"><i class="fa fa-plus"></i> 游戏操作新增</button>
 <table id="table">
 
 </table>
+</section>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document" style="width:800px">
         <div class="modal-content">

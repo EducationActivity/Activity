@@ -183,17 +183,42 @@ public class ActivityConfirmationController {
         return statusVO;
     }
 
+    @RequestMapping("update")
+    @ResponseBody
+    public ControllerStatusVO update(@RequestBody JSONObject obj){
+        ControllerStatusVO statusVO = null;
+        String jsonStr = obj.toJSONString();
+        JSONObject json = JSON.parseObject(jsonStr);
+        String information = json.getString("information");
+        String classInformation = json.getString("classInformation");
+        String ringDescription = json.getString("ringDescription");
+        String activityGame = json.getString("game");
+        try{
+            statusVO = ControllerStatusVO.status(ControllerStatusEnum.ACTIVITYCONFIRMATION_UPDATE_SUCCESS);
+        }catch (Exception e){
+            statusVO = ControllerStatusVO.status(ControllerStatusEnum.ACTIVITYCONFIRMATION_UPDATE_FAIL);
+        }
+        return statusVO;
+    }
+
+    @RequestMapping("getId")
+    @ResponseBody
+    public Object getId(Integer id){
+        return activityConfirmationService.getId(id);
+    }
+
     @RequestMapping("remove")
     @ResponseBody
     public ControllerStatusVO remove(Integer id){
         ControllerStatusVO statusVO = null;
         try{
             activityConfirmationService.removeById(id);
-
+            statusVO = ControllerStatusVO.status(ControllerStatusEnum.ACTIVITYCONFIRMATION_REMOVE_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();
+            statusVO = ControllerStatusVO.status(ControllerStatusEnum.ACTIVITYCONFIRMATION_REMOVE_FAIL);
         }
-        return null;
+        return statusVO;
     }
 
 }

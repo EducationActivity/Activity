@@ -21,17 +21,17 @@
             <if test="projectName != null and projectName != ''">
                 project_name = #{projectName},
             </if>
-            <if test="materialName != null materialName != ''">
-                materialName = #{materialName},
+            <if test="materialName != null and materialName != ''">
+                material_name = #{materialName},
             </if>
             <if test="materialCount != null">
-                activity_leader = #{activityLeader},
+                material_count = #{materialCount},
             </if>
             <if test="unit != null and unit != ''">
                 unit = #{unit},
             </if>
         </set>
-        where activity_id = #{activityId}
+        where id = #{id}
     </update>
 
     <delete id="removeById" parameterType="java.lang.Integer">

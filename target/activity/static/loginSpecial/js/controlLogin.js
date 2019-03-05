@@ -1,10 +1,10 @@
 // \lkj20180323
 var canGetCookie = 1;//是否支持存储Cookie 0 不支持 1 支持
-var ajaxmockjax = 1;//是否启用虚拟Ajax的请求响 0 不启用  1 启用
+var ajaxmockjax = 0;//是否启用虚拟Ajax的请求响 0 不启用  1 启用
 //默认账号密码
 
-var truelogin = "admin";
-var truepwd = "admin123";
+// var truelogin = "admin";
+// var truepwd = "admin123";
 
 var CodeVal = 0;
 Code();
@@ -32,12 +32,8 @@ $(document).keypress(function (e) {
         $('input[type="button"]').click();
     }
 });
-//粒子背景特效
-$('body').particleground({
-    dotColor: '#E8DFE8',
-    lineColor: '#1b3273'
-});
-$('input[name="pwd"]').focus(function () {
+
+$('input[name="password"]').focus(function () {
     $(this).attr('type', 'password');
 });
 $('input[type="text"]').focus(function () {
@@ -46,7 +42,7 @@ $('input[type="text"]').focus(function () {
 $('input[type="text"],input[type="password"]').blur(function () {
     $(this).prev().animate({ 'opacity': '.5' }, 200);
 });
-$('input[name="login"],input[name="pwd"]').keyup(function () {
+$('input[name="loginName"],input[name="password"]').keyup(function () {
     var Len = $(this).val().length;
     if (!$(this).val() == '' && Len >= 5) {
         $(this).next().animate({
@@ -63,55 +59,36 @@ $('input[name="login"],input[name="pwd"]').keyup(function () {
 var open = 0;
 layui.use('layer', function () {
     //
-			var msgalert = '默认账号:' + truelogin + '<br/> 默认密码:' + truepwd;
-   		var index = layer.alert(msgalert, { icon: 6, time: 4000, offset: 't', closeBtn: 0, title: '友情提示', btn: [], anim: 2, shade: 0 });
-			layer.style(index, {
-				color: '#777'
-			});
+	// 		var msgalert = '默认账号:' + truelogin + '<br/> 默认密码:' + truepwd;
+       	// 	var index = layer.alert(msgalert, { icon: 6, time: 4000, offset: 't', closeBtn: 0, title: '友情提示', btn: [], anim: 2, shade: 0 });
+    	// 		layer.style(index, {
+    	// 			color: '#777'
+    	// 		});
     //     第一次弹出框
     //非空验证
     $('input[type="button"]').click(function () {
-        var login = $('.username').val();
-        var pwd = $('.passwordNumder').val();
-        var code = $('.ValidateNum').val();
-        if (login == '') {
+        var loginName = $('#loginName').val();
+        var password = $('#password').val();
+        var code = $('#code').val();
+        if (loginName == '') {
             ErroAlert('请输入您的账号');
             return false;
-        } else if (pwd == '') {
-
+        } else if (password == '') {
             ErroAlert('请输入密码');
             return false;
         } else if (code == '' || code.length != 4) {
-            ErroAlert('输入验证码');
+            ErroAlert('请输入验证码');
             return false;
-
-        } else {
-            //认证中..
-            fullscreen();
-            $('.login').addClass('test'); //倾斜特效
-            setTimeout(function () {
-                $('.login').addClass('testtwo'); //平移特效
-            }, 300);
-            setTimeout(function () {
-                $('.authent').show().animate({ right: -320 }, {
-                    easing: 'easeOutQuint',
-                    duration: 600,
-                    queue: false
-                });
-                $('.authent').animate({ opacity: 1 }, {
-                    duration: 200,
-                    queue: false
-                }).addClass('visible');
-            }, 500);
+        }
 
             //登陆
-            var JsonData = { login: login, pwd: pwd, code: code };
+            var JsonData = {loginName: loginName, password: password, code: code};
             //此处做为ajax内部判断
             var url = "";
-            if(JsonData.login == truelogin && JsonData.pwd == truepwd && JsonData.code.toUpperCase() == CodeVal.toUpperCase()){
-                url = "Ajax/Login";
-            }else{
-                url = "Ajax/LoginFalse";
+            if (JsonData.login == loginName && JsonData.pwd == password && JsonData.code.toUpperCase() == CodeVal.toUpperCase()) {
+                url = "${basePath}franchisee/login.do";
+            } else {
+                url = "${basePath}franchisee/login.do";
             }
 
             AjaxPost(url, JsonData,
@@ -152,11 +129,10 @@ layui.use('layer', function () {
                         }
                     }, 2400);
                 })
-
-        }
         return false;
     })
 })
+
 var fullscreen = function () {
     elem = document.body;
     if (elem.webkitRequestFullScreen) {

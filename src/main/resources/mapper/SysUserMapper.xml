@@ -18,9 +18,15 @@
 	</select>
 
     <update id="updateUserPws" parameterType="com.tryeverything.entity.SysUser">
-		update t_sys_user set
-			user_password = #{userPassword}
-		where user_id = #{userId}
+		<![CDATA[
+			update t_sys_user
+		]]>
+		<set>
+			<if test="userPassword != null and userPassword != ''">
+				user_password = #{userPassword}
+			</if>
+			where user_id = #{userId}
+		</set>
 	</update>
 
 	<update id="update">
@@ -53,7 +59,7 @@
 		where user_id = #{userId}
 	</update>
 
-	<delete id="removeById" parameterType="java.lang.Integer">
+	<delete id="removeById" parameterType="java.lang.String">
 		<![CDATA[
 			delete from t_sys_user where user_id = #{userId}
 		]]>
@@ -65,7 +71,7 @@
 
 	<select id="listById" parameterType="java.lang.Integer" resultType="com.tryeverything.entity.SysUser">
 		<![CDATA[
-			select login_name,user_name,phone,email,address from t_sys_user where user_id = #{userId}
+			select user_id,login_name,user_name,phone,email,address from t_sys_user where user_id = #{userId}
 		]]>
 	</select>
 
