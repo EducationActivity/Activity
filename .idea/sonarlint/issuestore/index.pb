@@ -69,8 +69,11 @@ p
 @src/main/java/com/tryeverything/service/AbstractBaseService.java,d\d\dd8cbbf757ec60d5a41b4dc34b736e986962a406
 Z
 *src/main/webapp/WEB-INF/views/activity.jsp,1\a\1a4807a7e6f8a3e2fef9e4b832bd2abfe291441e
+<<<<<<< HEAD
+=======
 i
 9Activity/src/main/webapp/static/js/moment-with-locales.js,e\f\ef4b3d75345a15a508921d59c4cd96fbd283f088
+>>>>>>> dev
 X
 (src/main/webapp/WEB-INF/views/figure.jsp,7\a\7a409053b7aa776de7e178fb65e922d3536122c5
 m
@@ -125,8 +128,11 @@ Hsrc/main/java/com/tryeverything/controller/AttendacneCardController.java,4\3\4
 .src/main/webapp/WEB-INF/views/kindergarten.jsp,0\0\002c74f942e4a72b5253a453c99d51642e985c53
 Y
 )src/main/webapp/WEB-INF/views/account.jsp,f\8\f8f7ba3f355b439a2063b727a404fa16e1869a79
+<<<<<<< HEAD
+=======
 g
 7Activity/src/main/webapp/WEB-INF/views/kindergarten.jsp,c\b\cb3db242482c72512ba81c615daada4ca90ac1aa
+>>>>>>> dev
 e
 5src/main/webapp/WEB-INF/views/activity_to_confirm.jsp,d\f\df4bfa7cdaf9f96fb95e7dbdd6eb012eb895df42
 d
@@ -255,8 +261,11 @@ Esrc/main/java/com/tryeverything/controller/InformationController.java,f\c\fc9b
 0src/main/java/com/tryeverything/dao/GameDAO.java,6\2\6283fbfb9ddb866e05beec7dc0b1aabe8b2c68f7
 h
 8src/main/java/com/tryeverything/service/GameService.java,b\e\be3de1ffeba30c2cc2088faad123716340167de0
+<<<<<<< HEAD
+=======
 {
 KActivity/src/main/java/com/tryeverything/controller/ScheduleController.java,a\9\a940779f57971cb4d7ccfdde8a731a5bfdaf2592
+>>>>>>> dev
 l
 <src/main/java/com/tryeverything/entity/ActivitySchedule.java,e\c\ecd4d3e6a15e6e5bbc75aee3acb6862e0778ae02
 m
@@ -314,4 +323,24 @@ Nsrc/main/java/com/tryeverything/service/impl/ActivityMaterialsServiceImpl.java
 u
 Esrc/main/java/com/tryeverything/service/ActivityMaterialsService.java,f\7\f76978b8263428ad812911f6dc316c564320a2c5
 y
+<<<<<<< HEAD
 Isrc/main/java/com/tryeverything/service/impl/ActivityGameServiceImpl.java,3\c\3c112bcd90eb886eb28b793c99172cbe5bcb0895
+p
+@src/main/java/com/tryeverything/service/KindergartenService.java,c\f\cff130e08e074ce2fe2c78f01f4b6b614f6fc63e
+x
+Hsrc/main/java/com/tryeverything/service/KindergartenScheduleService.java,f\8\f845d5a9e2b590db78e94a46b3a4b7785dbf513c
+
+Qsrc/main/java/com/tryeverything/service/impl/KindergartenScheduleServiceImpl.java,8\9\897a482aa8ce49ff1d1156145ae3c010d2ada0f2
+f
+6src/main/java/com/tryeverything/entity/Franchisee.java,c\2\c27eb60deb5452bc6aa997743434bea4a67bc312
+f
+6src/main/java/com/tryeverything/util/EncryptUtils.java,d\9\d923b71a0c2b875409d217f8f3174e882d228b32
+Z
+*src/main/webapp/WEB-INF/views/headers.html,4\4\44f6552674309d371aa7f5bbc20d8ed5585dd956
+o
+?src/main/java/com/tryeverything/controller/LoginController.java,a\c\ac4f99dcf763a2686898152e19580dacb34443d6
+~
+Nsrc/main/java/com/tryeverything/controller/ActivityConfirmationController.java,5\b\5b2ca5430ca373478fbbf7a994955314bfa8f53d
+=======
+Isrc/main/java/com/tryeverything/service/impl/ActivityGameServiceImpl.java,3\c\3c112bcd90eb886eb28b793c99172cbe5bcb0895
+>>>>>>> dev

@@ -36,7 +36,7 @@ public class SupplierController {
         ControllerStatusVO statusVO = null;
         try{
             if(supplier != null){
-                supplier.setPassword(EncryptUtils.md5(supplier.getPassword()));
+                supplier.setPassword(EncryptUtils.md5(String.valueOf(123456)));
                 supplierService.save(supplier);
                 statusVO = ControllerStatusVO.status(ControllerStatusEnum.SUPPLIER_ADD_SUCCESS);
             }

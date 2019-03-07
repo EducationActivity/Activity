@@ -25,28 +25,36 @@
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <input type="hidden" name="activityId" id="activityId" value="${activity.activityId}">
-            <form id="form" enctype="multipart/form-data">
+            <form id="form" enctype="multipart/form-data" class="form-horizontal">
+                <input type="hidden" name="activityId" id="activityId" value="${activityId}">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel">活动物料信息新增</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="projectName">项目名称</label>
-                        <input type="text" class="form-control" id="projectName" name="projectName" placeholder="请输入你要新增的物料项目名称">
+                        <label class="control-label col-md-2" for="projectName">项目名称</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="projectName" name="projectName" placeholder="请输入你要新增的物料项目名称">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="materialName">物料名称</label>
-                        <input type="text" class="form-control" id="materialName" name="materialName" placeholder="请选择准备的物料名称"/>
+                        <label class="control-label col-md-2" for="materialName">物料名称</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="materialName" name="materialName" placeholder="请选择准备的物料名称"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="materialCount">所需物料数量</label>
-                        <input type="text" class="form-control" id="materialCount" name="materialCount" placeholder="请选择所需物料数量"/>
+                        <label class="control-label col-md-2" for="materialCount">所需物料数量</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="materialCount" name="materialCount" placeholder="请选择所需物料数量"/>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="unit">单位</label>
-                        <input type="text" class="form-control" id="unit" name="unit" placeholder="单位"/>
+                        <label for="unit" class="control-label col-md-2">单位</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="unit" name="unit" placeholder="单位"/>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
@@ -55,48 +63,55 @@
                 </div>
             </form>
         </div>
-
     </div>
 </div>
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="form1" enctype="multipart/form-data">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel1">活动物料信息修改</h4>
                 </div>
                 <div class="modal-body">
+                    <form id="form1" enctype="multipart/form-data" class="form-horizontal">
                     <input type="hidden" id="id" name="id">
-                    <div class="form-group">
-                        <label for="projectName">项目名称</label>
-                        <input type="text" class="form-control" id="projectName1" name="projectName" placeholder="请输入你要新增的物料项目名称">
-                    </div>
-                    <div class="form-group">
-                        <label for="materialName">物料名称</label>
-                        <input type="text" class="form-control" id="materialName1" name="materialName" placeholder="请选择准备的物料名称"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="materialCount">所需物料数量</label>
-                        <input type="text" class="form-control" id="materialCount1" name="materialCount" placeholder="请选择所需物料数量"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="unit">单位</label>
-                        <input type="text" class="form-control" id="unit1" name="unit" placeholder="单位"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
-                    </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="projectName">项目名称</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="projectName1" name="projectName" placeholder="请输入你要新增的物料项目名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="materialName">物料名称</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="materialName1" name="materialName" placeholder="请选择准备的物料名称"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="materialCount">所需物料数量</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="materialCount1" name="materialCount" placeholder="请选择所需物料数量"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="unit" class="control-label col-md-2">单位</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="unit1" name="unit" placeholder="单位"/>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
         </div>
     </div>
 </div>
 
 <script>
     $('#table').bootstrapTable({
-        url: basePath + 'activityMaterials/getById.do?activityId='+${activityId},                      //请求后台的URL（*）
+        url: basePath + 'activityMaterials/listById.do?activityId='+${activityId},                      //请求后台的URL（*）
         method: 'GET',                      //请求方式（*）
         dataType: "json",
         pagination: true,
@@ -127,8 +142,8 @@
             align: 'center'
         }, {
             field: 'materialId',
-            title: '活动编号',
-            visible:true,
+            title: '物料编号',
+            visible:false,
             align: 'center'
         }, {
             field: 'projectName',
@@ -179,14 +194,14 @@
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }
     }
-    function materialadd() {
+    function materialAdd() {
         $("#add").modal("show");
         $("#btn_submit").on("click", function () {
             var activityId = $("#activityId").val();
             $.ajax({
                 type: "post",
                 dataType: "json",
-                url: basePath + "material/add.do?activityId=" + activityId,
+                url: basePath + "activityMaterials/add.do?activityId=" + activityId,
                 data: $('#form').serialize(),
                 success: function () {
                     $('#add').modal('hide');
@@ -210,23 +225,21 @@
         } else {
             editInfo();
             $("#btn_update").on("click", function () {
-                var scheduleId = $("#scheduleId").val();
-                var activitySchedule = $("#activitySchedule1").val();
+                var id = $("#id").val();
+                var projectName = $("#projectName1").val();
                 var materialName = $("#materialName1").val();
-                var finishTime = $("#finishTime1").val();
-                // var finishTime = $("#finishTime1").data("datetimepicker").getDate()
-                var executor = $("#executor1").val();
-                var content = $("#content1").val();
+                var materialCount = $("#materialCount1").val();
+                var unit = $("#unit1").val();
                 $.ajax({
                     type: "post",
                     dataType: "json",
-                    url: basePath + "schedule/update.do?scheduleId=" + scheduleId,
+                    url: basePath + "activityMaterials/update.do?id=" + id,
                     data: {
-                        scheduleId: scheduleId,
-                        activitySchedule: activitySchedule,
-                        finishTime: finishTime,
-                        executor: executor,
-                        content: content
+                        id:id,
+                        projectName: projectName,
+                        materialName: materialName,
+                        materialCount: materialCount,
+                        unit:unit
                     },
                     success: function () {
                         $('#update').modal('hide')
@@ -244,17 +257,11 @@
 
     function editInfo() {
         var a = $("#table").bootstrapTable('getSelections');
-        var projectName = $("#projectName").val();
-        var materialName = $("#materialName").val();
-        var unit = $("#unit").val();
-        var materialId = $("#materialId").val();
-
-        $('#scheduleId').val(a[0].scheduleId);
-        $('#activitySchedule1').val(a[0].activitySchedule);
-        $('#readinessTime1').val(changeDateFormat(a[0].readinessTime));
-        $('#finishTime1').val(changeDateFormat(a[0].finishTime));
-        $('#executor1').val(a[0].executor);
-        $('#content1').val(a[0].content);
+        $('#id').val(a[0].id);
+        $('#projectName1').val(a[0].projectName);
+        $('#materialName1').val(a[0].materialName);
+        $('#materialCount1').val(a[0].materialCount);
+        $('#unit1').val(a[0].unit);
         $('#update').modal('show');
     }
 
@@ -268,7 +275,7 @@
             $.ajax({
                 dataType: "json",
                 type: "post",
-                url: basePath + "schedule/remove.do?scheduleId=" + a[0].scheduleId,
+                url: basePath + "activityMaterials/remove.do?id=" + a[0].scheduleId,
                 context: document.body,
                 success: function () {
                     alert("删除成功");

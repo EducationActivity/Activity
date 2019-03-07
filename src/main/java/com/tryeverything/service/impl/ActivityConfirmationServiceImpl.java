@@ -18,4 +18,9 @@ public class ActivityConfirmationServiceImpl extends AbstractBaseService impleme
         super.setBaseDAO(activityConfirmationDAO);
         this.activityConfirmationDAO = activityConfirmationDAO;
     }
+
+    @Override
+    public Object getId(Integer id) {
+        return activityConfirmationDAO.getId(id);
+    }
 }

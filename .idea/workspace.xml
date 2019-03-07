@@ -6,9 +6,101 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ebe823-1212-4731-8490-3e1980cef121" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Activity/src/main/java/com/tryeverything/controller/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Activity/src/main/java/com/tryeverything/controller/ScheduleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Activity/src/main/java/com/tryeverything/service/impl/KindergartenScheduleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Activity/src/main/java/com/tryeverything/service/impl/KindergartenScheduleServiceImpl.java" afterDir="false" />
+    <list default="true" id="d18b7c53-dd2d-4468-aabf-e13bdb864b01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/activity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/activity.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/db_activity.sql" beforeDir="false" afterPath="$PROJECT_DIR$/documents/db_activity.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityConfirmationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityConfirmationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/FranchiseeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/FranchiseeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SupplierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityConfirmationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityConfirmationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Information.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivityConfirmationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivityConfirmationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_confirmation_added.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_confirmation_added.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_theme.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_theme.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archway.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archway.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attendance_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attendance_card.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course_type.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course_type.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/figure.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/figure.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/franchisee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/franchisee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scheme.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scheme.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/supplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/supplier.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/js/Treatment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/js/Treatment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/js/controlLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/js/controlLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/ActivityConfirmationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/ActivityConfirmationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/FranchiseeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/FranchiseeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/SupplierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/controller/SysUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/dao/ActivityConfirmationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/dao/ActivityConfirmationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/entity/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/entity/Information.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/service/ActivityConfirmationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/service/ActivityConfirmationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/util/ControllerStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/com/tryeverything/util/ControllerStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/config/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/ActivityConfirmationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/ActivityConfirmationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/ActivityMaterialsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/ActivityMaterialsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/classes/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/sitemesh3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/sitemesh3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_confirmation_added.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_confirmation_added.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_material.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_material.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_theme.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_theme.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_to_confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/activity_to_confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/archway.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/archway.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/attendance_card.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/attendance_card.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/common/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/common/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/course_type.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/course_type.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/figure.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/figure.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/franchisee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/franchisee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/game.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/kindergarten.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/kindergarten.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/materials.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/materials.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/properties.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/properties.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/scheme.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/scheme.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/supplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/supplier.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/sys_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/sys_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/WEB-INF/views/sys_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/WEB-INF/views/sys_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/static/loginSpecial/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/static/loginSpecial/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/static/loginSpecial/js/Treatment.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/static/loginSpecial/js/Treatment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/activity/static/loginSpecial/js/controlLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/activity/static/loginSpecial/js/controlLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/ActivityConfirmationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/ActivityConfirmationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/FranchiseeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/FranchiseeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/SupplierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/controller/SysUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/dao/ActivityConfirmationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/dao/ActivityConfirmationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/entity/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/entity/Information.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/service/ActivityConfirmationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/service/ActivityConfirmationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tryeverything/util/ControllerStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tryeverything/util/ControllerStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ActivityConfirmationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ActivityConfirmationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ActivityMaterialsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ActivityMaterialsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,105 +112,87 @@
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-115901726">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.45" value="2" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.59" value="1" />
-          <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.66" value="1" />
-          <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="17" />
-        </counts>
-      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="GameOperationMapper" value="1" />
-          <entry key="class" value="11" />
-          <entry key="css" value="1" />
-          <entry key="java" value="317" />
-          <entry key="jpg" value="10" />
-          <entry key="js" value="4" />
-          <entry key="jsp" value="116" />
-          <entry key="properties" value="3" />
-          <entry key="rnc" value="1" />
+          <entry key="class" value="39" />
+          <entry key="css" value="25" />
+          <entry key="html" value="3" />
+          <entry key="java" value="122" />
+          <entry key="js" value="14" />
+          <entry key="jscsrc" value="1" />
+          <entry key="jsp" value="105" />
+          <entry key="less" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="rnc" value="3" />
           <entry key="sql" value="1" />
-          <entry key="ts" value="1" />
-          <entry key="xml" value="123" />
+          <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="11" />
-          <entry key="CSS" value="1" />
-          <entry key="Image" value="10" />
-          <entry key="JAVA" value="317" />
-          <entry key="JSP" value="116" />
-          <entry key="JavaScript" value="4" />
-          <entry key="Properties" value="3" />
-          <entry key="RNG Compact" value="1" />
+          <entry key="CLASS" value="39" />
+          <entry key="CSS" value="25" />
+          <entry key="HTML" value="3" />
+          <entry key="JAVA" value="122" />
+          <entry key="JSCS" value="1" />
+          <entry key="JSP" value="105" />
+          <entry key="JavaScript" value="14" />
+          <entry key="Less" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="RNG Compact" value="3" />
           <entry key="SQL" value="1" />
-          <entry key="TypeScript" value="1" />
-          <entry key="XML" value="124" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="45" />
-          <entry key="java" value="13484" />
-          <entry key="jsp" value="9777" />
-          <entry key="properties" value="12" />
-          <entry key="txt" value="7" />
-          <entry key="xml" value="10835" />
+          <entry key="css" value="3" />
+          <entry key="java" value="3599" />
+          <entry key="js" value="148" />
+          <entry key="jsp" value="9491" />
+          <entry key="xml" value="2033" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13484" />
-          <entry key="JSP" value="9777" />
-          <entry key="PLAIN_TEXT" value="52" />
-          <entry key="Properties" value="12" />
-          <entry key="SQL" value="101" />
-          <entry key="XML" value="10734" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="3599" />
+          <entry key="JSP" value="9489" />
+          <entry key="JavaScript" value="148" />
+          <entry key="SQL" value="30" />
+          <entry key="XML" value="2003" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.54" value="3" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.67" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityMaterialsController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-              <folding>
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityMaterials.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding>
-                <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="74">
+              <caret line="863" selection-start-line="863" selection-end-line="863" />
             </state>
           </provider>
         </entry>
@@ -126,26 +200,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityGameMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="190">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_materials.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="199" column="17" lean-forward="true" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+            <state relative-caret-position="6289">
+              <caret line="331" column="51" selection-start-line="331" selection-start-column="29" selection-end-line="331" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityConfirmationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+            <state relative-caret-position="2546">
+              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/dao/BaseDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -155,102 +238,105 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn_submit1</find>
-      <find>kindergartenForm1</find>
-      <find>updateForm</find>
-      <find>natureOfKindergarten</find>
-      <find>operationId</find>
-      <find>gamePropertiesId</find>
-      <find>merchant</find>
-      <find>step</find>
-      <find>rule1</find>
-      <find>ac.schedule_id</find>
-      <find>SimpleDateFormat</find>
-      <find>kindergartenId2</find>
-      <find>image_show</find>
-      <find>preList</find>
-      <find>basePath</find>
-      <find>form1</find>
-      <find>activityPhotosId1</find>
-      <find>activityPhotosId</find>
-      <find>img_show</find>
-      <find>classModal</find>
-      <find>kindergartenModal</find>
-      <find>form</find>
-      <find>fees</find>
-      <find>update_submit</find>
       <find>update</find>
-      <find>activityName</find>
-      <find>themeId</find>
-      <find>materialPicture</find>
-      <find>materials</find>
-      <find>activityGame</find>
+      <find>morris</find>
+      <find>activity</find>
+      <find>onclick</find>
+      <find>ul</find>
+      <find>li</find>
+      <find>sys_index</find>
+      <find>tree</find>
+      <find>jquery-migrate-1.2.1.min.js</find>
+      <find>btn_submit</find>
+      <find>updateForm</find>
+      <find>userPwdForm</find>
+      <find>active</find>
+      <find>updatePwd</find>
+      <find>gameId</find>
+      <find>gameId1</find>
+      <find>game</find>
+      <find>figureId1</find>
+      <find>natureOfKindergarten</find>
+      <find>additionlPaidItem</find>
+      <find>additionalPaidItem</find>
+      <find>decorate</find>
+      <find>rewardType</find>
+      <find>changeDateFormat</find>
+      <find>operateTMSRPFormatter</find>
+      <find>createDate</find>
+      <find>site</find>
+      <find>kindergartenId1</find>
+      <find>getId</find>
+      <find>getById</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Activity" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/KindergartenSchedule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/KindergartenScheduleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/KindergartenScheduleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivitySchedule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/KindergartenScheduleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivitySchedule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/SysUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityScheduleMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityScheduleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ScheduleDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/ScheduleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ScheduleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityScheduleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ScheduleController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ScheduleMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/GameController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_game.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityPhotos.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityPhotosController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Kindergarten.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/KindergartenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/vo/KindergartenActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/KindergartenMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/AbstractBaseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Materials.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityPhotosMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityPhotosVO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_photos.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/vo/KindergartenActivityVO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/MaterialsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/MaterialsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityMaterialsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityGameMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityGameVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/util/Quant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/util/Encoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/util/SpecCaptcha.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/loginSpecial/css/demo.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/FranchiseeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Information.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_confirmation_added.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten_activity_plan.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Scheme.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/top-nav.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/top-nav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityMaterials.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_materials.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityMaterialsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_theme.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scheme.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attendance_card.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/figure.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archway.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/franchisee.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/supplier.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course_type.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityConfirmationVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/KindergartenController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityConfirmationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityConfirmationDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivityConfirmationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp" />
       </list>
     </option>
   </component>
@@ -285,9 +371,21 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/src/main/webapp/static/assets/plugins/magnific-popup/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/assets/plugins/stellar/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/bootstrap-datepicker/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/bootstrap-daterangepicker/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery-knob/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery-slimscroll/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery-ui/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/static/bower_components/morris.js/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
-    <option name="y" value="309" />
+    <option name="x" value="44" />
+    <option name="y" value="81" />
     <option name="width" value="768" />
     <option name="height" value="726" />
   </component>
@@ -297,15 +395,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="activity" type="b2602c69:ProjectViewProjectNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="activity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+              <item name="documents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="activity" type="b2602c69:ProjectViewProjectNode" />
@@ -362,49 +462,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="activity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="activity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550321805187" />
-    <property name="last_opened_file_path" value="D:/Worked/huodong/activity" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551700881606" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitWork\activity\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\GitWork\activity\src\main\resources\mapper" />
       <recent name="D:\GitWork\activity\documents" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tryeverything.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitWork\activity\src\main\resources" />
+      <recent name="D:\GitWork\activity\src\main\webapp\static\bower_components" />
+      <recent name="D:\GitWork\activity\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\GitWork\activity\src\main\webapp\static" />
+      <recent name="D:\GitWork\activity\src\main\java\com\tryeverything\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +501,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 8.5.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 8.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -431,7 +512,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_activity_3" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_activity_6" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -439,10 +520,10 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50592" />
+        <option name="DEBUG_PORT" value="51543" />
       </RunnerSettings>
       <RunnerSettings RunnerId="JRebel Debug">
-        <option name="DEBUG_PORT" value="50593" />
+        <option name="DEBUG_PORT" value="51544" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -527,11 +608,11 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40ebe823-1212-4731-8490-3e1980cef121" name="Default Changelist" comment="" />
+      <changelist id="d18b7c53-dd2d-4468-aabf-e13bdb864b01" name="Default Changelist" comment="" />
       <created>1548916066307</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -553,13 +634,20 @@
       <workItem from="1550020722681" duration="76760000" />
       <workItem from="1550193281724" duration="38857000" />
       <workItem from="1550283405984" duration="32735000" />
+      <workItem from="1551143967016" duration="34883000" />
+      <workItem from="1551231525099" duration="34262000" />
+      <workItem from="1551316963529" duration="32970000" />
+      <workItem from="1551403169674" duration="17922000" />
+      <workItem from="1551492541883" duration="26738000" />
+      <workItem from="1551662627185" duration="37960000" />
+      <workItem from="1551749289001" duration="1147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352755000" />
+    <option name="totallyTimeSpent" value="192264000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -570,34 +658,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7" visible="true" weight="0.20272315" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.3" side_tool="true" visible="true" weight="0.20272315" />
+      <window_info id="JRebel" order="3" sideWeight="0.3" side_tool="true" weight="0.20272315" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Web" order="8" sideWeight="0.15040651" side_tool="true" weight="0.23903178" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.552459" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86838126" weight="0.11803278" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.82829046" weight="0.41311476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30983606" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8313162" visible="true" weight="0.25081968" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8260212" weight="0.27540985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.7874433" weight="0.26065573" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49167928" weight="0.32786885" />
-      <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.49016643" weight="0.2" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49016643" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13161875" side_tool="true" weight="0.18688525" />
-      <window_info anchor="bottom" id="SonarLint" order="11" sideWeight="0.49016643" weight="0.24754098" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49016643" weight="0.32786885" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.779879" weight="0.55737704" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.48940998" weight="0.32786885" />
+      <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.48184568" weight="0.2" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48940998" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.16868381" side_tool="true" weight="0.23770492" />
+      <window_info anchor="bottom" id="SonarLint" order="11" sideWeight="0.48260212" weight="0.24754098" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.48940998" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.15506808" side_tool="true" weight="0.18688525" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49319214" weight="0.52131146" />
-      <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.6475038" weight="0.19508196" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4871407" weight="0.16557378" />
+      <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.64674735" weight="0.5114754" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,554 +694,376 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="CDI" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityController.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/figure.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        <state relative-caret-position="266">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Figure.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="-775">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery.form.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/bootstrap/less/carousel.less" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityMaterialsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="1219" column="9" lean-forward="true" selection-start-line="1219" selection-start-column="9" selection-end-line="1219" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityConfirmation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_confirmation_added.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="321" column="53" selection-start-line="321" selection-start-column="53" selection-end-line="321" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="429" column="54" selection-start-line="429" selection-start-column="54" selection-end-line="429" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_theme.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/KindergartenMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="75" column="37" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="75" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Materials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="134" column="4" lean-forward="true" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityPhotos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_photos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/Kindergarten.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityPhotosMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1633">
-          <caret line="41" column="91" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/MaterialsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/KindergartenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="261" column="45" selection-start-line="261" selection-start-column="37" selection-end-line="261" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/vo/KindergartenActivityVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="139" selection-start-line="139" selection-end-line="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/my_account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/vo/CourseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/franchisee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="112" column="15" selection-start-line="112" selection-start-column="15" selection-end-line="112" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityPhotosVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2140#2141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/FranchiseeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="262" column="41" lean-forward="true" selection-start-line="262" selection-start-column="41" selection-end-line="262" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MaterialsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/AbstractBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#1148#1149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="374" column="39" lean-forward="true" selection-start-line="374" selection-start-column="39" selection-end-line="374" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityMaterialsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityMaterialsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivityMaterialsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityGameServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/dao/BaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ScheduleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2720#2721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/util/loginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="65" column="55" lean-forward="true" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="174" column="20" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ScheduleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityGameVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1707#1708#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1821#1822#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityGameMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="-2014">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityMaterialsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="65">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_material.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/dist/js/pages/dashboard2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery-slimscroll/jquery.slimscroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="353" column="52" selection-start-line="353" selection-start-column="52" selection-end-line="353" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/fastclick/lib/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="582" column="72" selection-start-line="582" selection-start-column="66" selection-end-line="582" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery-slimscroll/jquery.slimscroll.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_materials.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="199" column="17" lean-forward="true" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+        <state relative-caret-position="361">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/entity/ActivityMaterials.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/bootstrap-datepicker/js/.jscsrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/bower_components/jquery/src/css/var/swap.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="247">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="87" column="75" lean-forward="true" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="428" selection-start-line="428" selection-end-line="448" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scheme.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/properties.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_theme.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="19" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/supplier.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/franchisee.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/materials.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/archway.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityMaterialsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/figure.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        <state relative-caret-position="104">
+          <caret line="19" selection-start-line="19" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/attendance_card.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/util/ControllerStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="194" column="61" selection-start-line="194" selection-start-column="61" selection-end-line="194" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sys_user_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="1079" column="13" selection-start-line="1079" selection-start-column="13" selection-end-line="1079" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/kindergarten.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course_type.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="208" column="35" lean-forward="true" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_confirmation_added.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/game.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/KindergartenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>activity:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>JRebel</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring|activity</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/vo/ActivityConfirmationVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3325">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/FranchiseeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/AbstractBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/ActivityConfirmationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/dao/ActivityConfirmationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/service/impl/ActivityConfirmationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityConfirmationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ActivityGameMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6289">
+          <caret line="331" column="51" selection-start-line="331" selection-start-column="29" selection-end-line="331" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/controller/ActivityConfirmationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tryeverything/dao/BaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/db_activity.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/activity_to_confirm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="863" selection-start-line="863" selection-end-line="863" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

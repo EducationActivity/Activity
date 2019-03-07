@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50723
 File Encoding         : 65001
 
-Date: 2019-02-17 01:15:57
+Date: 2019-03-05 09:39:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,12 +29,12 @@ CREATE TABLE `t_activity` (
   `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '活动创建时间',
   `remark` varchar(100) DEFAULT NULL COMMENT '活动备注',
   PRIMARY KEY (`activity_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity
 -- ----------------------------
-INSERT INTO `t_activity` VALUES ('29', '金豆豆幼儿园迎新游园会', '2', '伍群斌', '2018-12-28 00:00:00', '上海市普陀区真北路8-099弄52号', '2018-12-04 00:00:00', '要3个冰雪奇缘的人形立牌');
+INSERT INTO `t_activity` VALUES ('1', '曹杨新村幼儿园开学游园会', '2', '伍群斌', '2019-02-20 00:00:00', '曹杨路近花卉市场', '2019-02-24 00:00:00', '');
 
 -- ----------------------------
 -- Table structure for t_activity_confirmation
@@ -49,14 +49,12 @@ CREATE TABLE `t_activity_confirmation` (
   `ring_description_id` int(11) DEFAULT NULL COMMENT '环境创设编号',
   `activity_id` int(11) DEFAULT NULL COMMENT '活动编号',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity_confirmation
 -- ----------------------------
-INSERT INTO `t_activity_confirmation` VALUES ('17', '', '33', '13', '71', '47', '26');
-INSERT INTO `t_activity_confirmation` VALUES ('18', '', '34', '14', '72', '48', '29');
-INSERT INTO `t_activity_confirmation` VALUES ('19', '', '35', '15', '73', '49', '30');
+INSERT INTO `t_activity_confirmation` VALUES ('20', '', '35', '16', '74', '50', '1');
 
 -- ----------------------------
 -- Table structure for t_activity_evaluation
@@ -101,7 +99,7 @@ CREATE TABLE `t_activity_game` (
   `activity_id` int(11) DEFAULT NULL,
   `game_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=162 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=167 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity_game
@@ -118,6 +116,11 @@ INSERT INTO `t_activity_game` VALUES ('158', '29', '5');
 INSERT INTO `t_activity_game` VALUES ('159', '29', '6');
 INSERT INTO `t_activity_game` VALUES ('160', '29', '7');
 INSERT INTO `t_activity_game` VALUES ('161', '29', '8');
+INSERT INTO `t_activity_game` VALUES ('162', '1', '1');
+INSERT INTO `t_activity_game` VALUES ('163', '1', '3');
+INSERT INTO `t_activity_game` VALUES ('164', '1', '7');
+INSERT INTO `t_activity_game` VALUES ('165', '1', '8');
+INSERT INTO `t_activity_game` VALUES ('166', '1', '5');
 
 -- ----------------------------
 -- Table structure for t_activity_materials
@@ -132,26 +135,60 @@ CREATE TABLE `t_activity_materials` (
   `material_count` int(11) DEFAULT NULL COMMENT '所需物料数量',
   `unit` varchar(100) DEFAULT NULL COMMENT '单位',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=321 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity_materials
 -- ----------------------------
-INSERT INTO `t_activity_materials` VALUES ('1', '29', null, '工作人员', '工作服', null, null);
-INSERT INTO `t_activity_materials` VALUES ('2', '29', null, '工作人员', '工作牌', null, null);
-INSERT INTO `t_activity_materials` VALUES ('3', '29', null, '标准物料', '充气拱门+鼓风机', null, null);
-INSERT INTO `t_activity_materials` VALUES ('4', '29', null, '标准物料', '拖线板', null, null);
-INSERT INTO `t_activity_materials` VALUES ('5', '29', null, '标准物料', '黄沙', null, null);
-INSERT INTO `t_activity_materials` VALUES ('6', '29', null, '标准物料', '绳子', null, null);
-INSERT INTO `t_activity_materials` VALUES ('7', '29', null, '标准物料', '地胶', null, null);
-INSERT INTO `t_activity_materials` VALUES ('8', '29', null, '布置物料', '气球', null, null);
-INSERT INTO `t_activity_materials` VALUES ('9', '29', null, '布置物料', '充气泵(气球)', null, null);
-INSERT INTO `t_activity_materials` VALUES ('10', '29', null, '布置物料', '手动打气筒', null, null);
-INSERT INTO `t_activity_materials` VALUES ('11', '29', null, '布置物料', '游园卡', null, null);
-INSERT INTO `t_activity_materials` VALUES ('12', '29', null, '布置物料', '门卡', null, null);
-INSERT INTO `t_activity_materials` VALUES ('13', '29', null, '工具物料', '螺丝刀', null, null);
-INSERT INTO `t_activity_materials` VALUES ('14', '29', null, '工具物料', '剪刀', null, null);
-INSERT INTO `t_activity_materials` VALUES ('15', '29', null, '工具物料', 'PVC管割刀', null, null);
+INSERT INTO `t_activity_materials` VALUES ('272', '29', null, '工作人员', '工作服', null, '件');
+INSERT INTO `t_activity_materials` VALUES ('273', '29', null, '工作人员', '工作牌', null, '块');
+INSERT INTO `t_activity_materials` VALUES ('274', '29', null, '标准物料', '充气拱门+鼓风机', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('275', '29', null, '标准物料', '拖线板', null, '条');
+INSERT INTO `t_activity_materials` VALUES ('276', '29', null, '标准物料', '黄沙', null, '袋');
+INSERT INTO `t_activity_materials` VALUES ('277', '29', null, '标准物料', '绳子', null, '根');
+INSERT INTO `t_activity_materials` VALUES ('278', '29', null, '标准物料', '地胶', null, '卷');
+INSERT INTO `t_activity_materials` VALUES ('279', '29', null, '布置物料', '气球', null, '袋');
+INSERT INTO `t_activity_materials` VALUES ('280', '29', null, '布置物料', '充气泵(气球)', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('281', '29', null, '布置物料', '手动打气筒', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('282', '29', null, '布置物料', '游园卡', null, '张');
+INSERT INTO `t_activity_materials` VALUES ('283', '29', null, '布置物料', '门卡', null, '张');
+INSERT INTO `t_activity_materials` VALUES ('284', '29', null, '工具物料', '螺丝刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('285', '29', null, '工具物料', '剪刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('286', '29', null, '工具物料', 'PVC管割刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('287', '29', null, '同心协力', '脚踏板', null, null);
+INSERT INTO `t_activity_materials` VALUES ('288', '29', null, '奶油打脸机', '奶油', null, null);
+INSERT INTO `t_activity_materials` VALUES ('289', '29', null, '奶油打脸机', '游戏机器', null, null);
+INSERT INTO `t_activity_materials` VALUES ('290', '29', null, '奶油打脸机', '纸巾', null, null);
+INSERT INTO `t_activity_materials` VALUES ('291', '29', null, '奶油打脸机', '湿纸巾', null, null);
+INSERT INTO `t_activity_materials` VALUES ('292', '29', null, '奶油打脸机', '一次性桌布', null, null);
+INSERT INTO `t_activity_materials` VALUES ('293', '29', null, '疯狂垃圾桶', '纸团', null, null);
+INSERT INTO `t_activity_materials` VALUES ('294', '29', null, '疯狂垃圾桶', '电池', null, null);
+INSERT INTO `t_activity_materials` VALUES ('295', '29', null, '疯狂垃圾桶', '垃圾桶小机器人', null, null);
+INSERT INTO `t_activity_materials` VALUES ('296', '29', null, '礼花炮', '一次性杯子', '200', '个');
+INSERT INTO `t_activity_materials` VALUES ('297', '1', null, '工作人员', '工作服', null, '件');
+INSERT INTO `t_activity_materials` VALUES ('298', '1', null, '工作人员', '工作牌', null, '块');
+INSERT INTO `t_activity_materials` VALUES ('299', '1', null, '标准物料', '充气拱门+鼓风机', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('300', '1', null, '标准物料', '拖线板', null, '条');
+INSERT INTO `t_activity_materials` VALUES ('301', '1', null, '标准物料', '黄沙', null, '袋');
+INSERT INTO `t_activity_materials` VALUES ('302', '1', null, '标准物料', '绳子', null, '根');
+INSERT INTO `t_activity_materials` VALUES ('303', '1', null, '标准物料', '地胶', null, '卷');
+INSERT INTO `t_activity_materials` VALUES ('304', '1', null, '布置物料', '气球', null, '袋');
+INSERT INTO `t_activity_materials` VALUES ('305', '1', null, '布置物料', '充气泵(气球)', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('306', '1', null, '布置物料', '手动打气筒', null, '个');
+INSERT INTO `t_activity_materials` VALUES ('307', '1', null, '布置物料', '游园卡', null, '张');
+INSERT INTO `t_activity_materials` VALUES ('308', '1', null, '布置物料', '门卡', null, '张');
+INSERT INTO `t_activity_materials` VALUES ('309', '1', null, '工具物料', '螺丝刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('310', '1', null, '工具物料', '剪刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('311', '1', null, '工具物料', 'PVC管割刀', null, '把');
+INSERT INTO `t_activity_materials` VALUES ('312', '1', null, '无敌风火轮', '无纺布', null, '条');
+INSERT INTO `t_activity_materials` VALUES ('313', '1', null, '疯狂粘球', '粘球', null, null);
+INSERT INTO `t_activity_materials` VALUES ('314', '1', null, '疯狂粘球', '背心', null, null);
+INSERT INTO `t_activity_materials` VALUES ('315', '1', null, '疯狂粘球', '话筒', null, null);
+INSERT INTO `t_activity_materials` VALUES ('316', '1', null, '奶油打脸机', '奶油', null, null);
+INSERT INTO `t_activity_materials` VALUES ('317', '1', null, '奶油打脸机', '游戏机器', null, null);
+INSERT INTO `t_activity_materials` VALUES ('318', '1', null, '奶油打脸机', '纸巾', null, null);
+INSERT INTO `t_activity_materials` VALUES ('319', '1', null, '奶油打脸机', '湿纸巾', null, null);
+INSERT INTO `t_activity_materials` VALUES ('320', '1', null, '奶油打脸机', '一次性桌布', null, null);
 
 -- ----------------------------
 -- Table structure for t_activity_photos
@@ -163,12 +200,11 @@ CREATE TABLE `t_activity_photos` (
   `kindergarten_id` int(11) DEFAULT NULL COMMENT '幼儿园编号',
   `time` datetime DEFAULT NULL COMMENT '活动图片上传时间',
   PRIMARY KEY (`activity_photos_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity_photos
 -- ----------------------------
-INSERT INTO `t_activity_photos` VALUES ('11', '29', '34', '2019-02-15 10:41:01');
 
 -- ----------------------------
 -- Table structure for t_activity_schedule
@@ -179,7 +215,7 @@ CREATE TABLE `t_activity_schedule` (
   `activity_id` int(11) DEFAULT NULL,
   `schedule_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_activity_schedule
@@ -222,6 +258,25 @@ INSERT INTO `t_activity_schedule` VALUES ('35', '29', '1485');
 INSERT INTO `t_activity_schedule` VALUES ('36', '29', '1486');
 INSERT INTO `t_activity_schedule` VALUES ('37', '29', '1487');
 INSERT INTO `t_activity_schedule` VALUES ('38', '29', '1488');
+INSERT INTO `t_activity_schedule` VALUES ('39', '1', '1489');
+INSERT INTO `t_activity_schedule` VALUES ('40', '1', '1490');
+INSERT INTO `t_activity_schedule` VALUES ('41', '1', '1491');
+INSERT INTO `t_activity_schedule` VALUES ('42', '1', '1492');
+INSERT INTO `t_activity_schedule` VALUES ('43', '1', '1493');
+INSERT INTO `t_activity_schedule` VALUES ('44', '1', '1494');
+INSERT INTO `t_activity_schedule` VALUES ('45', '1', '1495');
+INSERT INTO `t_activity_schedule` VALUES ('46', '1', '1496');
+INSERT INTO `t_activity_schedule` VALUES ('47', '1', '1497');
+INSERT INTO `t_activity_schedule` VALUES ('48', '1', '1498');
+INSERT INTO `t_activity_schedule` VALUES ('49', '1', '1499');
+INSERT INTO `t_activity_schedule` VALUES ('50', '1', '1500');
+INSERT INTO `t_activity_schedule` VALUES ('51', '1', '1501');
+INSERT INTO `t_activity_schedule` VALUES ('52', '1', '1502');
+INSERT INTO `t_activity_schedule` VALUES ('53', '1', '1503');
+INSERT INTO `t_activity_schedule` VALUES ('54', '1', '1504');
+INSERT INTO `t_activity_schedule` VALUES ('55', '1', '1505');
+INSERT INTO `t_activity_schedule` VALUES ('56', '1', '1506');
+INSERT INTO `t_activity_schedule` VALUES ('57', '1', '1507');
 
 -- ----------------------------
 -- Table structure for t_activity_scheme
@@ -324,7 +379,7 @@ CREATE TABLE `t_class_information` (
   `number_of_contract` int(11) DEFAULT NULL COMMENT '合同约定人数',
   `number_of_teachers` int(11) DEFAULT NULL COMMENT '教师人数',
   PRIMARY KEY (`class_information_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_class_information
@@ -377,6 +432,7 @@ INSERT INTO `t_class_information` VALUES ('70', '21', '21', '12');
 INSERT INTO `t_class_information` VALUES ('71', '181', '169', '20');
 INSERT INTO `t_class_information` VALUES ('72', '181', '169', '20');
 INSERT INTO `t_class_information` VALUES ('73', null, null, null);
+INSERT INTO `t_class_information` VALUES ('74', '210', '180', '20');
 
 -- ----------------------------
 -- Table structure for t_class_type
@@ -569,6 +625,7 @@ CREATE TABLE `t_franchisee` (
 -- ----------------------------
 -- Records of t_franchisee
 -- ----------------------------
+INSERT INTO `t_franchisee` VALUES ('0d12a8b83a3411e9ab63f01faf06a374', 'Admin', 'e10adc3949ba59abbe56e057f20f883e', '东方闪电', '18721011060', '18721011060@qq.com', '江西省赣州市', '1', '0', '2019-02-27 10:05:48');
 INSERT INTO `t_franchisee` VALUES ('1', 'Admin', 'e10adc3949ba59abbe56e057f20f883e', '李拉', '14763382290', '187384739@qq.com', '江西省赣州市', '1', '1', '2018-11-26 17:18:36');
 INSERT INTO `t_franchisee` VALUES ('5316388c17ce11e996a9f01faf06a374', 'Admin', 'e10adc3949ba59abbe56e057f20f883e', '李拉', '14763382290', '187384739@qq.com', '江西省赣州市', '1', '0', '2019-01-14 15:31:05');
 INSERT INTO `t_franchisee` VALUES ('612b076617c511e996a9f01faf06a374', '韧行', 'e10adc3949ba59abbe56e057f20f883e', '李拉', '14763382290', '187384739@qq.com', '江西省赣州市', '1', '1', '2019-01-14 14:27:03');
@@ -677,7 +734,6 @@ INSERT INTO `t_game_operation` VALUES ('30', '15', '28');
 DROP TABLE IF EXISTS `t_information`;
 CREATE TABLE `t_information` (
   `information_id` int(11) NOT NULL AUTO_INCREMENT,
-  `activity_address` varchar(100) DEFAULT NULL COMMENT '活动地址',
   `site` tinyint(4) DEFAULT NULL COMMENT '场地（0室内，1室外）',
   `reward_type` tinyint(4) DEFAULT NULL COMMENT '0奖牌，1奖杯，2奖状',
   `reward_count` int(11) DEFAULT NULL COMMENT '奖杯数量',
@@ -687,26 +743,27 @@ CREATE TABLE `t_information` (
   `content` varchar(100) DEFAULT NULL COMMENT '内容',
   `additional_paid_item` varchar(100) DEFAULT NULL COMMENT '0(摄影),1(摄像),2(航拍)',
   PRIMARY KEY (`information_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_information
 -- ----------------------------
-INSERT INTO `t_information` VALUES ('1', null, '0', '0', null, null, '0', null, null, '0');
-INSERT INTO `t_information` VALUES ('2', null, '1', null, null, null, null, null, null, '0');
-INSERT INTO `t_information` VALUES ('3', null, '1', '0', null, '', null, '', '', '0');
-INSERT INTO `t_information` VALUES ('4', null, '1', '1', '12', '见到谁打副本', '0', '3x10', '官方公布', '0');
-INSERT INTO `t_information` VALUES ('5', null, '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('6', null, '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('7', null, '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('8', null, '1', null, null, '', '0', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('9', null, '0', '0', '12', '见到谁打副本', '0', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('10', null, '0', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('11', null, '1', null, null, '', null, '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('12', null, '0', null, '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
-INSERT INTO `t_information` VALUES ('13', null, '1', null, null, '', null, '', '', '0');
-INSERT INTO `t_information` VALUES ('14', null, '1', null, null, '', null, '', '', '0');
-INSERT INTO `t_information` VALUES ('15', null, null, null, null, '', null, '', '', '0');
+INSERT INTO `t_information` VALUES ('1', '0', '0', null, null, '0', null, null, '0');
+INSERT INTO `t_information` VALUES ('2', '1', null, null, null, null, null, null, '0');
+INSERT INTO `t_information` VALUES ('3', '1', '0', null, '', null, '', '', '0');
+INSERT INTO `t_information` VALUES ('4', '1', '1', '12', '见到谁打副本', '0', '3x10', '官方公布', '0');
+INSERT INTO `t_information` VALUES ('5', '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('6', '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('7', '1', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('8', '1', null, null, '', '0', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('9', '0', '0', '12', '见到谁打副本', '0', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('10', '0', '0', '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('11', '1', null, null, '', null, '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('12', '0', null, '12', '见到谁打副本', '1', '3x10', '割发代首', '0');
+INSERT INTO `t_information` VALUES ('13', '1', null, null, '', null, '', '', '0');
+INSERT INTO `t_information` VALUES ('14', '1', null, null, '', null, '', '', '0');
+INSERT INTO `t_information` VALUES ('15', null, null, null, '', null, '', '', '0');
+INSERT INTO `t_information` VALUES ('16', null, '0', null, '', '0', '3*10', '曹杨新村开学游园会', '0');
 
 -- ----------------------------
 -- Table structure for t_information_type
@@ -753,12 +810,14 @@ CREATE TABLE `t_kindergarten` (
   `fees` varchar(100) DEFAULT NULL COMMENT '幼儿园收费标准',
   `remark` varchar(100) DEFAULT NULL COMMENT '幼儿园备注',
   PRIMARY KEY (`kindergarten_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_kindergarten
 -- ----------------------------
 INSERT INTO `t_kindergarten` VALUES ('34', '金豆豆幼儿园', '余老师', '14763382290', '1', '思维训练特色', '上海市普陀区真北路8-099弄52号', '300/月', '要3个冰雪奇缘的人形立牌');
+INSERT INTO `t_kindergarten` VALUES ('35', '曹杨新村幼儿园', '张老师', '14763382290', '0', '环境保护特色', '普陀区曹杨路九〇三弄5号(近曹阳花卉市场)', '280/月', '官方公布');
+INSERT INTO `t_kindergarten` VALUES ('37', '长风上和湾幼儿园', '何老师', '14763382290', '0', '科学特色', '长征镇千阳南路88弄70号', '300/月', null);
 
 -- ----------------------------
 -- Table structure for t_materials
@@ -950,20 +1009,19 @@ CREATE TABLE `t_pictures` (
   `activity_photos_id` int(11) DEFAULT NULL,
   `picture` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_pictures
 -- ----------------------------
-INSERT INTO `t_pictures` VALUES ('102', '11', '/static/uploadImage/2019-02-15-10-40-59f15cfe4691a4445ebc778c0bb27aca0a.png');
-INSERT INTO `t_pictures` VALUES ('103', '11', '/static/uploadImage/2019-02-15-10-40-59343b348512c54569b2c6c3432e41bb35.jpg');
-INSERT INTO `t_pictures` VALUES ('104', '11', '/static/uploadImage/2019-02-15-10-40-590b0ab536ff394c10bc9e0ce012458139.png');
-INSERT INTO `t_pictures` VALUES ('105', '11', '/static/uploadImage/2019-02-15-10-40-590a971970162c4645995ee725cc5e4117.jpg');
-INSERT INTO `t_pictures` VALUES ('106', '11', '/static/uploadImage/2019-02-15-10-40-5978927dec934a410eb1fdee5fc1663da8.png');
-INSERT INTO `t_pictures` VALUES ('107', '11', '/static/uploadImage/2019-02-15-10-40-5962419e36c28c43ffab95690afef5c948.png');
-INSERT INTO `t_pictures` VALUES ('108', '11', '/static/uploadImage/2019-02-15-10-40-595a724580019442e78073ecd46cc77eba.jpg');
-INSERT INTO `t_pictures` VALUES ('109', '11', '/static/uploadImage/2019-02-15-10-40-596e78a81a416544eb98fc1e276af384a0.jpg');
-INSERT INTO `t_pictures` VALUES ('110', '11', '/static/uploadImage/2019-02-15-10-40-59ab5f3e69503d43d39a6a0e3ebbd444ec.png');
+INSERT INTO `t_pictures` VALUES ('111', null, '/static/uploadImage/2019-02-19-22-17-04bb6bfa2442454a689abe4ce56ddbc3c3.jpg');
+INSERT INTO `t_pictures` VALUES ('112', null, '/static/uploadImage/2019-02-19-22-17-04f6fb29c61ce444efb4e812b9ee3f8f87.png');
+INSERT INTO `t_pictures` VALUES ('113', null, '/static/uploadImage/2019-02-19-22-27-51599e7c77de0040d6b69e94ca7ac5bc59.jpg');
+INSERT INTO `t_pictures` VALUES ('114', null, '/static/uploadImage/2019-02-19-22-27-515f33c872c2814f329c3e107d0ec501fa.jpg');
+INSERT INTO `t_pictures` VALUES ('115', null, '/static/uploadImage/2019-02-19-22-27-5298f9442477184fe3995167f9cdf15ffd.jpg');
+INSERT INTO `t_pictures` VALUES ('116', null, '/static/uploadImage/2019-02-19-22-35-46c1aa76d99054470eb49b29092d159984.jpg');
+INSERT INTO `t_pictures` VALUES ('117', null, '/static/uploadImage/2019-02-19-22-35-46795d9ce4657d4272abfa24f005f499cd.jpg');
+INSERT INTO `t_pictures` VALUES ('118', null, '/static/uploadImage/2019-02-19-22-35-46e211e820d9794af7baaedb99e908bc23.jpg');
 
 -- ----------------------------
 -- Table structure for t_properties
@@ -997,7 +1055,7 @@ CREATE TABLE `t_ring_description` (
   `color_of_balloon` varchar(100) DEFAULT NULL COMMENT '气球立柱颜色',
   `figure_id` int(11) DEFAULT NULL COMMENT '人偶编号',
   PRIMARY KEY (`ring_description_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_ring_description
@@ -1046,6 +1104,7 @@ INSERT INTO `t_ring_description` VALUES ('46', '5', '12', '粉+提付伲蓝', '3
 INSERT INTO `t_ring_description` VALUES ('47', '3', null, '粉+提付伲蓝', '1');
 INSERT INTO `t_ring_description` VALUES ('48', '3', null, '粉+提付伲蓝', '1');
 INSERT INTO `t_ring_description` VALUES ('49', null, null, '', null);
+INSERT INTO `t_ring_description` VALUES ('50', '3', null, '粉+提付伲蓝', '1');
 
 -- ----------------------------
 -- Table structure for t_role
@@ -1089,7 +1148,7 @@ CREATE TABLE `t_schedule` (
   `executor` varchar(100) DEFAULT NULL,
   `content` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`schedule_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1489 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1508 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_schedule
@@ -1132,6 +1191,25 @@ INSERT INTO `t_schedule` VALUES ('1485', '商家和艺人确定', '2018-12-05 00
 INSERT INTO `t_schedule` VALUES ('1486', '人员培训', '2018-12-11 00:00:00', null, null, null);
 INSERT INTO `t_schedule` VALUES ('1487', '场地布置', '2018-12-11 00:00:00', null, null, null);
 INSERT INTO `t_schedule` VALUES ('1488', '物料回收', '2018-12-12 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1489', '明确活动时间', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1490', '创建活动群', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1491', '方案确定时间', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1492', '查看场地/接洽时间', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1493', '教师培训', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1494', '会前会/内部培训', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1495', '出物料清单', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1496', '物料清单审核', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1497', '物料采购时间', '2019-02-28 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1498', '物料准备时间', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1499', '物料审核时间', '2019-02-28 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1500', '游园卡', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1501', '邀请函', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1502', '门卡', '2019-02-27 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1503', '确定工作人员数', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1504', '商家和艺人确定', '2019-02-25 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1505', '人员培训', '2019-03-03 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1506', '场地布置', '2019-03-03 00:00:00', null, null, null);
+INSERT INTO `t_schedule` VALUES ('1507', '物料回收', '2019-03-04 00:00:00', null, null, null);
 
 -- ----------------------------
 -- Table structure for t_scheme
@@ -1241,12 +1319,13 @@ CREATE TABLE `t_supplier` (
   `status` tinyint(4) DEFAULT '0' COMMENT '状态0表示未审核，1表示已审核',
   `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '申请时间',
   PRIMARY KEY (`supplier_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_supplier
 -- ----------------------------
 INSERT INTO `t_supplier` VALUES ('1', '发发呆', 'user', 'e10adc3949ba59abbe56e057f20f883e', '14763382290', '187384739@qq.com', '上海市静安区', null, '1', '2018-11-28 11:18:35');
+INSERT INTO `t_supplier` VALUES ('2', '发发呆', 'Admin', 'e10adc3949ba59abbe56e057f20f883e', '14763382290', '187384739@qq.com', '上海市静安区', null, '0', '2019-02-27 12:52:56');
 
 -- ----------------------------
 -- Table structure for t_supplier_materials
@@ -1283,9 +1362,10 @@ CREATE TABLE `t_sys_user` (
 -- ----------------------------
 -- Records of t_sys_user
 -- ----------------------------
-INSERT INTO `t_sys_user` VALUES ('1', 'Admin', '总管理员', 'e10adc3949ba59abbe56e057f20f883e', null, null, '上海市', '1', '0');
+INSERT INTO `t_sys_user` VALUES ('1', 'Admin', '总管理员', 'e10adc3949ba59abbe56e057f20f883e', '14763382290', '187384739@qq.com', '上海市静安区彭浦镇高平路', '1', '0');
 INSERT INTO `t_sys_user` VALUES ('2', 'user', '任性', 'e10adc3949ba59abbe56e057f20f883e', '18721011060', 'm18816485440@163.com', '上海市静安区彭浦镇高平路永和家园', '0', '0');
-INSERT INTO `t_sys_user` VALUES ('968edf6131ba11e9baf4f01faf06a374', '发电房', '发电房', 'e10adc3949ba59abbe56e057f20f883e', '发电房', '发电房', '发电房', '0', '0');
+INSERT INTO `t_sys_user` VALUES ('26483dd7398711e9ab63f01faf06a374', 'mikkle', 'qq', 'e10adc3949ba59abbe56e057f20f883e', '14763382290', 'qq', '发电房', '0', '0');
+INSERT INTO `t_sys_user` VALUES ('6021e3ef3a3e11e9ab63f01faf06a374', '任性', '发电房', 'e10adc3949ba59abbe56e057f20f883e', '14763382290', '187384739@qq.com', '上海市静安区', '0', '0');
 
 -- ----------------------------
 -- Table structure for t_task

@@ -17,38 +17,61 @@
     <title>管理员列表</title>
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        后台管理员管理
+        <small>管理员管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">管理员管理</li>
+    </ol>
+
+</section>
+<section class="content">
 <button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
+</section>
 <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="form" enctype="multipart/form-data">
+            <form id="form" enctype="multipart/form-data" class="form-horizontal">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel">子管理员新增</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="loginName">登录账号</label>
-                        <input type="text" class="form-control" id="loginName" name="loginName" placeholder="请输入登录名称">
+                        <label for="loginName" class="col-md-2">登录账号</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="loginName" name="loginName" placeholder="请输入登录名称">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="userName">用户姓名</label>
+                        <label for="userName" class="col-md-2">用户姓名</label>
+                        <div class="col-md-10">
                         <input type="text" class="form-control" id="userName" name="userName" placeholder="请输入用户姓名">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone">联系电话</label>
+                        <label for="phone" class="col-md-2">联系电话</label>
+                        <div class="col-md-10">
                         <input type="text" class="form-control" id="phone" name="phone" placeholder="请输入联系电话">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">邮箱地址</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="请输入邮箱地址">
+                        <label for="email" class="col-md-2">邮箱地址</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="请输入邮箱地址">
+                        </div>
                     </div>
                     <div class="form-group">
-                    <label for="address">联系地址</label>
-                    <input type="text" class="form-control" id="address" name="address" placeholder="请输入联系地址">
+                        <label for="address" class="col-md-2">联系地址</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="address" name="address" placeholder="请输入联系地址">
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
@@ -62,39 +85,49 @@
 <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="form1">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <h4 class="modal-title" id="myModalLabel1">管理员信息修改</h4>
                 </div>
                 <div class="modal-body">
+                    <form id="form1" class="form-horizontal" enctype="multipart/form-data">
                     <input type="hidden" id="userId1" name="userId">
-                    <div class="form-group">
-                        <label for="loginName">登录账号</label>
-                        <input type="text" class="form-control" id="loginName1" name="loginName" placeholder="请输入课程类型名称">
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">用户姓名</label>
-                        <input type="text" class="form-control" id="userName1" name="userName" placeholder="请输入用户姓名">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">联系电话</label>
-                        <input type="text" class="form-control" id="phone1" name="phone" placeholder="请输入联系电话">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">邮箱地址</label>
-                        <input type="text" class="form-control" id="email1" name="email" placeholder="请输入邮箱地址">
-                    </div>
-                    <div class="form-group">
-                        <label for="address">联系地址</label>
-                        <input type="text" class="form-control" id="address1" name="address" placeholder="请输入联系地址">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
-                        <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
-                    </div>
+                        <div class="form-group">
+                            <label for="loginName" class="col-md-2">登录账号</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="loginName1" name="loginName" placeholder="请输入登录名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="userName" class="col-md-2">用户姓名</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="userName1" name="userName" placeholder="请输入用户姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-md-2">联系电话</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="phone1" name="phone" placeholder="请输入联系电话">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-2">邮箱地址</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="email1" name="email" placeholder="请输入邮箱地址">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="col-md-2">联系地址</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="address1" name="address" placeholder="请输入联系地址">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_update" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
         </div>
     </div>
 </div>
@@ -160,7 +193,7 @@
         },],
     })
     function operateFormatter(){
-        return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="update()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
+        return '<button href="#" class="btn btn-info btn-xs edit" data-toggle="modal" onclick="updateSysUser()"><i class="fa fa-edit"></i> 修改</button> <button href="#" class="btn btn-danger btn-xs delete" onclick="remove()"><i class="fa fa-trash-o"></i> 删除</button>'
     };
     //修改——转换日期格式(时间戳转换为datetime格式)
     //格式化时间
@@ -192,19 +225,18 @@
                 data: $("#form").serialize(),
                 success: function(data) {
                     $('#add').modal('hide');
-                    window.location.reload();
                     alert(data.message);
+                    $("#table").bootstrapTable("refresh");
                 },
                 fail: function (data) {
-                    $('#table').bootstrapTable("refresh");
-                    window.location.reload();
                     alert(data.message);
+                    $('#table').bootstrapTable("refresh");
                 }
             });
         });
     };
 
-    function update() {
+    function updateSysUser() {
         var a = $("#table").bootstrapTable('getSelections');
         if (a.length <= 0) {
             alert("请选中行");
@@ -213,11 +245,24 @@
         }else{
             editInfo();
             $("#btn_update").on("click",function(){
+                var userId = $("#userId1").val();
+                var loginName = $("#loginName1").val();
+                var userName = $("#userName1").val();
+                var phone = $("#phone1").val();
+                var email = $("#email1").val();
+                var address = $("#address1").val();
                 $.ajax({
                     url: basePath + "sysUser/update.do",
                     type:"post",
                     dataType:"json",
-                    data: $("#form1").serialize(),
+                    data: {
+                        userId:userId,
+                        loginName: loginName,
+                        userName: userName,
+                        phone: phone,
+                        email: email,
+                        address: address
+                    },
                     success: function(data){
                         $('#update').modal('hide');
                         window.location.reload();

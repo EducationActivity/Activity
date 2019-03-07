@@ -1,4 +1,22 @@
 
+<<<<<<< HEAD
+Ksquid:S1264",Replace this "for" loop with a "while" loop.(ƒÖˆÎ8ìÈíÒ-
+U
+squid:S106?"9Replace this use of System.out or System.err by a logger.(æÑ
+8ÉğöÁ‘-
+@squid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Csquid:S1264s",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
+csquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(Ûö®„
+?squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(ÓÁ¿ıÿÿÿÿ8Á¶ÏÒ-
+?squid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Rsquid:EmptyStatementUsageCheck""Remove this empty statement.(•Õ¦ªÿÿÿÿÿ8ÉğöÁ‘-
+fsquid:S3027B"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çğºäùÿÿÿÿ
+ysquid:S1450 "VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ8ÉğöÁ‘-
+Xsquid:S1075@"ARefactor your code to get this URI from a customizable parameter.(¯úÆ
+=======
 Xsquid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú
 Ksquid:S1264‘",Replace this "for" loop with a "while" loop.(ƒÖˆÎ8ìÈíÒ-
 fsquid:S3027C"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Çğºäùÿÿÿÿ
@@ -14,3 +32,4 @@ Csquid:S1264t",Replace this "for" loop with a "while" loop.(ƒÖˆÎ
 Ksquid:EmptyStatementUsageCheck%"Remove this empty statement.(•Õ¦ªÿÿÿÿÿ
 rsquid:S1450#"VRemove the "fodders" field and declare it as a local variable in the relevant methods.(æ¡ºŠøÿÿÿÿ
 csquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(Ûö®„
+>>>>>>> dev

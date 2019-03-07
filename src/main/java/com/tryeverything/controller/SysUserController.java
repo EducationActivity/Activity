@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 
@@ -62,16 +63,20 @@ public class SysUserController {
         return "sys_index";
     }
 
+    @RequestMapping("test")
+    public String test(){
+        return "top-nav";
+    }
+
     @RequestMapping("loginOut")
     public String loginOut(HttpServletRequest request){
         request.getSession().removeAttribute("user");//清空session信息
-        request.getSession().invalidate();//清除 session 中的所有信息
         return "sys_login";
     }
 
     @RequestMapping("updateUserPws")
     @ResponseBody
-    public ControllerStatusVO updataUserPws(String userPassword,String userId, HttpServletRequest request) throws Exception{
+    public ControllerStatusVO updataUserPws(String userPassword,String userId) throws Exception{
         ControllerStatusVO statusVO = null;
         try {
             SysUser sysUser = new SysUser();
@@ -105,9 +110,15 @@ public class SysUserController {
         return statusVO;
     }
 
+    @RequestMapping("listById")
+    @ResponseBody
+    public List<Object> listById(Integer userId){
+        return sysUserService.listById(userId);
+    }
+
     @RequestMapping("update")
     @ResponseBody
-    public ControllerStatusVO update(SysUser sysUser,Integer userId){
+    public ControllerStatusVO update(SysUser sysUser){
         ControllerStatusVO statusVO = null;
         try{
             sysUserService.update(sysUser);
@@ -121,7 +132,7 @@ public class SysUserController {
 
     @RequestMapping("remove")
     @ResponseBody
-    public ControllerStatusVO remove(Integer userId){
+    public ControllerStatusVO remove(String userId){
         ControllerStatusVO statusVO = null;
         try{
             sysUserService.removeById(userId);

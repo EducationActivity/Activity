@@ -18,9 +18,72 @@
     <title>供应商列表</title>
 </head>
 <body>
+<section class="content-header">
+    <h1>
+        供应商管理
+        <small>供应商管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 后台首页</a></li>
+        <li class="active">供应商管理</li>
+    </ol>
+
+</section>
+<section class="content">
+<button href="#" class="btn btn-info btn-xs plus" onclick="add()"><i class="fa fa-plus"></i> 新增</button>
 <table id="table">
 
 </table>
+</section>
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="addForm" enctype="multipart/form-data" class="form-horizontal">
+                <input type="hidden" name="supplierId" id="supplierId1">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">供应商账号新增</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="supplierName" class="col-md-2">供应商姓名</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="supplierName1" name="supplierName" placeholder="请输入供应商姓名"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginName" class="col-md-2">登录名</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="loginName1" name="loginName" placeholder="请输入登录名"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-md-2">电话</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="phone1" name="phone" placeholder="请输入电话"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-md-2">邮箱</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="email1" name="email" placeholder="请输入邮箱"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="col-md-2">所在地</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="address1" name="address" placeholder="请输入所在地"/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                        <button type="button" id="submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="audit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -177,6 +240,27 @@
             return date.getFullYear() + "-" + month + "-" + currentDate;
         }
     }
+
+    function add() {
+        $("#add").modal("show");
+        $("#submit").on("click",function(){
+            $.ajax({
+                url: basePath+"supplier/add.do",
+                type:"post",
+                dataType:"json",
+                data: $("#addForm").serialize(),
+                success: function(data){
+                    $('#add').modal('hide');
+                    alert(data.message);
+                    $("#table").bootstrapTable("refresh");
+                },
+                error: function(data){
+                    window.location.reload();
+                    alert(data.message);
+                }
+            });
+        });
+    };
 
     function audit() {
         var a = $("#table").bootstrapTable('getSelections');

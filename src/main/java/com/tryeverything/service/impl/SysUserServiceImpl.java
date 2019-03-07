@@ -36,7 +36,4 @@ public class SysUserServiceImpl extends AbstractBaseService implements SysUserSe
 		return sysUserDao.queryUser(phone,userPassword);
 	}
 
-
-
-
 }

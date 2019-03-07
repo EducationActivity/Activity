@@ -116,18 +116,18 @@ public enum ControllerStatusEnum {
     RING_DESCRIPTION_REMOVE_SUCCESS(93,"success","环境创设删除成功"),
     RING_DESCRIPTION_REMOVE_FAIL(94,"fail","环境创设删除失败"),
 
-    SYS_USER_ADD_SUCCESS(95,"success","子管理员新增成功"),
+    SYS_USER_ADD_SUCCESS(95,"success","子管理员新增成功,初始化密码为123456"),
     SYS_USER_ADD_FAIL(96,"fail","子管理员新增失败"),
     SYS_USER_UPDATE_SUCCESS(97,"success","子管理员修改成功"),
     SYS_USER_UPDATE_FAIL(98,"fail","子管理员修改失败"),
     SYS_USER_REMOVE_SUCCESS(99,"success","子管理员删除成功"),
     SYS_USER_REMOVE_FAIL(100,"fail","子管理员删除失败"),
 
-    SYS_USER_PASSWORD_SUCCESS(101,"success","子管理员密码修改成功"),
-    SYS_USER_PASSWORD_FAIL(102,"fail","子管理员密码修改失败"),
+    SYS_USER_PASSWORD_SUCCESS(101,"success","管理员密码修改成功"),
+    SYS_USER_PASSWORD_FAIL(102,"fail","管理员密码修改失败"),
 
-    FRANCHISEE_ADD_SUCCESS(103,"success","加盟商账号注册成功，待后台管理员审核通过后才能登陆"),
-    FRANCHISEE_ADD_FAIL(104,"fail","加盟商账号注册失败"),
+    FRANCHISEE_ADD_SUCCESS(103,"success","加盟商账号新增成功，初始化密码为123456"),
+    FRANCHISEE_ADD_FAIL(104,"fail","加盟商账号新增失败"),
     FRANCHISEE_REMOVE_SUCCESS(105,"success","加盟商删除成功"),
     FRANCHISEE_REMOVE_FAIL(106,"fail","加盟商删除失败"),
     FRANCHISEE_AUDIT_SUCCESS(107,"success","加盟商审核通过"),
@@ -138,7 +138,7 @@ public enum ControllerStatusEnum {
     FRANCHISEE_LOGIN_FAIL(112,"fail","加盟商登陆失败"),
     FRANCHISEE_LOGIN_ERROR(113,"error","加盟商账号未启封，不能登录"),
 
-    SUPPLIER_ADD_SUCCESS(113,"success","供应商账号注册成功，待后台管理员启用后才能登陆"),
+    SUPPLIER_ADD_SUCCESS(113,"success","供应商账号注册成功，初始化密码是123456"),
     SUPPLIER_ADD_FAIL(114,"fail","供应商账号注册失败"),
     SUPPLIER_REMOVE_SUCCESS(115,"success","供应商删除成功"),
     SUPPLIER_REMOVE_FAIL(116,"fail","供应商删除失败"),
@@ -182,7 +182,17 @@ public enum ControllerStatusEnum {
     OPERATION_UPDATE_SUCCESS(149,"success","游戏操作修改成功"),
     OPERATION_UPDATE_FAIL(150,"fail","游戏操作修改失败"),
     OPERATION_REMOVE_SUCCESS(151,"success","游戏操作删除成功"),
-    OPERATION_REMOVE_FAIL(152,"fail","游戏操作删除失败");
+    OPERATION_REMOVE_FAIL(152,"fail","游戏操作删除失败"),
+
+    FRANCHISEE_CODE_ADD(153,"fail","请输入验证码！"),
+    FRANCHISEE_CODE_ERROR(154,"error","验证码输入错误"),
+    FRANCHISEE_CODE_TIMEOUT(155,"timeout","验证码已失效，请点击验证码刷新并重新输入！"),
+    FRANCHISEE_CODE_SUCCESS(156,"success","验证码输入正确"),
+
+    ACTIVITYCONFIRMATION_UPDATE_SUCCESS(157,"success","活动确认信息修改成功"),
+    ACTIVITYCONFIRMATION_UPDATE_FAIL(158,"fail","活动确认信息修改失败"),
+    ACTIVITYCONFIRMATION_REMOVE_SUCCESS(159,"success","活动确认信息删除成功"),
+    ACTIVITYCONFIRMATION_REMOVE_FAIL(160,"fail","活动确认信息删除失败");
 
 
     private Integer code;
