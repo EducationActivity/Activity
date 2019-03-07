@@ -3,7 +3,7 @@
 <mapper namespace="com.tryeverything.dao.InformationDAO">
     <insert id="save" parameterType="com.tryeverything.entity.Information" useGeneratedKeys="true" keyProperty="informationId">
         <![CDATA[
-          insert into t_information(information_id,activity_address,site,reward_type,reward_count,reward_content,decorate,`size`,content,additional_paid_item) values (#{informationId},#{activityAddress},#{site},#{rewardType},#{rewardCount},#{rewardContent},#{decorate},#{size},#{content},#{additionalPaidItem})
+          insert into t_information(information_id,site,reward_type,reward_count,reward_content,decorate,`size`,content,additional_paid_item) values (#{informationId},#{site},#{rewardType},#{rewardCount},#{rewardContent},#{decorate},#{size},#{content},#{additionalPaidItem})
         ]]>
     </insert>
 
