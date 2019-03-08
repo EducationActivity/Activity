@@ -110,7 +110,7 @@
             <li><a href="${basePath}blog_main.do">论坛</a></li>
             <li><a href="${basePath}contact.do">联系我们</a></li>
             <li><a href="${basePath}casePage.do">活动剪影</a></li>
-            <li><a href="${basePath}my_account.do">个人中心</a></li>
+            <li><a href="${basePath}account.do">个人中心</a></li>
 
         </ul>
     </div>
@@ -173,7 +173,7 @@
                             <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
                             <li><a href="${basePath}course_frontPage.do">课程</a></li>
                             <li><a href="${basePath}service.do">服务</a></li>
-                            <li><a href="${basePath}my_account.do">个人中心</a></li>
+                            <li><a href="${basePath}account.do">个人中心</a></li>
                             <li><a href="${basePath}about.do">关于我们</a></li>
                             <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">论坛<b class="caret"></b></a>
                                 <ul role="menu" class="dropdown-menu">
@@ -189,8 +189,8 @@
                                     <li><a href="404.html" >Page 404</a></li>
                                     <li><a href="headers.html" >Headers</a></li>
                                     <li><a href="typography.html" >Typography</a></li>
-                                    <li><a href="privacy-policy.html" >Privacy policy</a></li>
-                                    <li><a href="terms-of-use.html" >Terms of use</a></li>
+                                    <li><a href="privacy-policy.html" >隐私政策</a></li>
+                                    <li><a href="terms-of-use.html" >使用条款</a></li>
                                 </ul>
                             </li>--%>
                         </ul>
@@ -205,10 +205,10 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                        <h1 class="b-title-page__title">Who We Are</h1>
+                        <h1 class="b-title-page__title">关于稷星</h1>
                         <ol class="breadcrumb">
-                            <li><a href="${basePath}index.do">Home</a></li>
-                            <li class="active">About</li>
+                            <li><a href="${basePath}index.do">主页</a></li>
+                            <li class="active">关于我们</li>
                         </ol>
                         <!-- end breadcrumb-->
                     </div>
@@ -224,8 +224,12 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="ui-decor-1"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor" class="center-block"></div>
                     <div class="text-center">
-                        <h2 class="ui-title-block ui-title-block_weight_normal">We<span class="text-primary"> Create Events</span> That Lasts</h2>
-                        <div class="ui-subtitle-block">From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions, We offer full range of Events Management Services that scale to your needs & budget.</div>
+                        <h2 class="ui-title-block ui-title-block_weight_normal">我们致力打造<span class="text-primary"> 亲子益智健康成长</span> 平台</h2>
+                        <div class="ui-subtitle-block">我们打造知名儿童校园活动品牌，
+                            为幼儿学校提供丰富家长与孩子互动沟通的平台，
+                            为社会提供儿童教育、学习指导和家园共育等服务，
+                            让孩子更快乐、更健康、更优秀的成长，
+                            我们一起努力，让孩子的明天更美好！</div>
                     </div>
                 </div>
             </div>
@@ -236,10 +240,13 @@
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="services.html">Our Vision</a></h2>
+                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="${basePath}service.do">我们的特色</a></h2>
                             </div>
                             <div class="entry-content">
-                                <p>Aorem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation</p>
+                                <p>
+                                    凭借游戏教育的形式，
+                                    为幼儿辅助教学活动增添新的动力。我们专业开发地亲子互动游戏，
+                                    可让孩子通过游戏体验达到玩中学，学中玩的目的。</p>
                             </div>
                         </div>
                     </section>
@@ -252,10 +259,12 @@
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="services.html">Our Approach</a></h2>
+                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="${basePath}service.do">我们的团队</a></h2>
                             </div>
                             <div class="entry-content">
-                                <p>Corem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation</p>
+                                <p>团队成员包括从事0-7岁幼儿教育教学达10年以上的教育机构管理层人员，
+                                    专业开发亲子互动游戏的亲子互动游戏专家以及华师大幼儿教育专家，
+                                    </p>
                             </div>
                         </div>
                     </section>
@@ -268,10 +277,12 @@
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="services.html">Our Goals</a></h2>
+                                <h2 class="entry-title entry-title_spacing ui-title-inner"><a href="${basePath}service.do">我们的目标</a></h2>
                             </div>
                             <div class="entry-content">
-                                <p>Eorem ipsum dolor sit amet consectetur elit sed tempor incididunt ut labore etua dolore mag aliqua minim veniam quis nostrud exercitation</p>
+                                <p>更充分地利用互联网+思维，通过游戏教育形式为中国
+                                    家庭提供科学的幼儿个体与集体的亲子活动，
+                                    提升孩子身体素质与头脑开发，让孩子更优秀地成长</p>
                             </div>
                         </div>
                     </section>
@@ -285,26 +296,26 @@
         <div class="block-table__cell col-lg-6">
             <section class="section-type-2 bg-grey">
                 <div class="ui-decor-1"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor"></div>
-                <h2 class="ui-title-block">Why Choose<span class="text-primary"> Dvents</span></h2>
-                <div class="ui-subtitle-block">Corem ipsum dolor sit amet elit sed do eiusmod tempor incididunt labore.</div>
+                <h2 class="ui-title-block">为什么选择<span class="text-primary"> 稷星</span></h2>
+                <div class="ui-subtitle-block">稷星，值得信赖.</div>
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-people"></i>
                     <div class="b-advantages-2__inner">
-                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">The Events Specialists</h3>
-                        <div class="b-advantages-2__info">Sit amet consectetur elit sed lusm tempor incidant temdore labore dolore lorem ipsum consectetur adipisicing elit sed do eiusmod tempor incididunt.</div>
+                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">专业化的团队</h3>
+                        <div class="b-advantages-2__info">团队成员都是拥有多年策划经验的专家，我们还有专业化的游戏设计师，游戏体验师</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-firework"></i>
                     <div class="b-advantages-2__inner">
-                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">Dedicated Venues &amp; Arrangements</h3>
-                        <div class="b-advantages-2__info">Sit amet consectetur elit sed lusm tempor incidant temdore labore dolore lorem ipsum consectetur adipisicing elit sed do eiusmod tempor incididunt.</div>
+                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">物料 &amp; 课程</h3>
+                        <div class="b-advantages-2__info">我们还可以提供高性价比的活动物料以及优质的培训课程，一条龙服务.</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-technology"></i>
                     <div class="b-advantages-2__inner">
-                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">All Types of Events</h3>
-                        <div class="b-advantages-2__info">Sit amet consectetur elit sed lusm tempor incidant temdore labore dolore lorem ipsum consectetur adipisicing elit sed do eiusmod tempor incididunt.</div>
+                        <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">多样化的解决方案</h3>
+                        <div class="b-advantages-2__info">我们可以根据您的要求提供多样化的解决方案，让活动更加具有特色.</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->
@@ -317,16 +328,16 @@
         <div class="area-bg__inner">
             <ul class="b-progress-list b-progress-list_no-icon list-unstyled clearfix">
                 <li class="b-progress-list__item">
-                    <div class="b-progress-list__label"></div><span data-percent="320" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">Featured Events</span>
+                    <div class="b-progress-list__label"></div><span data-percent="320" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">合作伙伴</span>
                 </li>
                 <li class="b-progress-list__item">
-                    <div class="b-progress-list__label"></div><span data-percent="156" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">Loyal Customers</span>
+                    <div class="b-progress-list__label"></div><span data-percent="1560" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">游戏研发</span>
                 </li>
                 <li class="b-progress-list__item">
-                    <div class="b-progress-list__label"></div><span data-percent="594" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">Good Comments</span>
+                    <div class="b-progress-list__label"></div><span data-percent="593" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">课程研发</span>
                 </li>
                 <li class="b-progress-list__item">
-                    <div class="b-progress-list__label"></div><span data-percent="167" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">Trophies Won</span>
+                    <div class="b-progress-list__label"></div><span data-percent="634" class="b-progress-list__percent js-chart"><span class="js-percent"></span></span><span class="b-progress-list__name">物料类别</span>
                 </li>
             </ul>
         </div>
@@ -338,8 +349,8 @@
                 <div class="col-xs-12">
                     <div class="ui-decor-1"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor" class="center-block"></div>
                     <div class="text-center">
-                        <h2 class="ui-title-block"><span class="text-primary"> Dvents</span> Team Members</h2>
-                        <div class="ui-subtitle-block">We make your events smart & impactful by personalised event management services</div>
+                        <h2 class="ui-title-block"><span class="text-primary"> 亲为亲子</span> 团队成员</h2>
+                        <div class="ui-subtitle-block">我们通过个性化的活动管理服务 & 让您的活动更完美更具有影响力 </div>
                     </div>
                 </div>
             </div>
@@ -349,15 +360,15 @@
                         <div class="b-team__media"><img src="${basePath}static/assets/media/components/b-team/1.jpg" alt="Foto" class="img-responsive"/></div>
                         <div class="b-team__inner">
                             <div class="ui-decor-2 bg-primary"></div>
-                            <h3 class="b-team__name ui-title-inner">Charles Hasman</h3>
-                            <div class="b-team__category">Founder &amp; Director</div>
-                            <div class="b-team__description">Eorem ipsum dolor sit ame adipisicn elit sed do eiusmod tempor incidida labore dolor magna</div>
-                            <ul class="social-net list-inline">
+                            <h3 class="b-team__name ui-title-inner">窦正娅</h3>
+                            <div class="b-team__category">创始人 &amp; 企业法人</div>
+                            <div class="b-team__description">公司CEO，自主创业，如今公司在窦女士的带领下蒸蒸日上，业务范围迅速扩张</div>
+                            <%--<ul class="social-net list-inline">
                                 <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
                                 <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
                                 <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
                                 <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                            </ul>
+                            </ul>--%>
                             <!-- end social-list-->
                         </div>
                     </section>
@@ -366,15 +377,15 @@
                         <div class="b-team__media"><img src="${basePath}static/assets/media/components/b-team/2.jpg" alt="Foto" class="img-responsive"/></div>
                         <div class="b-team__inner">
                             <div class="ui-decor-2 bg-primary"></div>
-                            <h3 class="b-team__name ui-title-inner">Kethy Hilton</h3>
-                            <div class="b-team__category">Events Manager</div>
-                            <div class="b-team__description">Corem ipsum dolor sit ame adipisicn elit sed do eiusmod tempor incidida labore dolor aliqua</div>
-                            <ul class="social-net list-inline">
+                            <h3 class="b-team__name ui-title-inner">王小二</h3>
+                            <div class="b-team__category">总经理</div>
+                            <div class="b-team__description">总经理兼游戏活动设计师，10年以上从业经验，自主研发千余款游戏</div>
+                            <%--<ul class="social-net list-inline">
                                 <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
                                 <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
                                 <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
                                 <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                            </ul>
+                            </ul>--%>
                             <!-- end social-list-->
                         </div>
                     </section>
@@ -383,15 +394,15 @@
                         <div class="b-team__media"><img src="${basePath}static/assets/media/components/b-team/3.jpg" alt="Foto" class="img-responsive"/></div>
                         <div class="b-team__inner">
                             <div class="ui-decor-2 bg-primary"></div>
-                            <h3 class="b-team__name ui-title-inner">Anna Sydney</h3>
-                            <div class="b-team__category">Events Manager</div>
-                            <div class="b-team__description">Eorem ipsum dolor sit ame adipisicn elit sed do eiusmod tempor incidida labore dolor magna</div>
-                            <ul class="social-net list-inline">
+                            <h3 class="b-team__name ui-title-inner">李小五</h3>
+                            <div class="b-team__category">活动策划经理</div>
+                            <div class="b-team__description">专门为客户定制解决方案，设计活动策划</div>
+                            <%--<ul class="social-net list-inline">
                                 <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
                                 <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
                                 <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
                                 <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                            </ul>
+                            </ul>--%>
                             <!-- end social-list-->
                         </div>
                     </section>
@@ -400,15 +411,15 @@
                         <div class="b-team__media"><img src="${basePath}static/assets/media/components/b-team/4.jpg" alt="Foto" class="img-responsive"/></div>
                         <div class="b-team__inner">
                             <div class="ui-decor-2 bg-primary"></div>
-                            <h3 class="b-team__name ui-title-inner">Ava Taylor</h3>
-                            <div class="b-team__category">Supervisor</div>
-                            <div class="b-team__description">Corem ipsum dolor sit ame adipisicn elit sed do eiusmod tempor incidida labore dolor aliqua</div>
-                            <ul class="social-net list-inline">
+                            <h3 class="b-team__name ui-title-inner">张小六</h3>
+                            <div class="b-team__category">课程研发</div>
+                            <div class="b-team__description">研发课程，整理相关信息文档，从业经验丰富，获得业界最高奖"金狮奖"</div>
+                            <%--<ul class="social-net list-inline">
                                 <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
                                 <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
                                 <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
                                 <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                            </ul>
+                            </ul>--%>
                             <!-- end social-list-->
                         </div>
                     </section>
@@ -422,47 +433,47 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="ui-decor-1"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor"></div>
-                    <h2 class="ui-title-block"><span class="text-primary"> Dvents</span> Skills</h2>
-                    <p>Consectetur elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquled enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip volputate consequat aute irure dolor in reprehenderit in velit..</p>
+                    <h2 class="ui-title-block">客户眼中的<span class="text-primary">稷星</span> </h2>
+                    <p>稷星可以帮您做很多事..</p>
                     <ul class="list list-mark-5 list_icon_color-primary list_bold">
-                        <li>Excepteur sint occaecat cupidata non proident sunt</li>
-                        <li>Qui officia deserunt anim labor tempore laboris volputate</li>
-                        <li>Tempor incididunt uet labore dolore magna aliqua</li>
-                        <li>Enim lanim veniam quis nostrud exercitation ullamco</li>
+                        <li>专业能力极强</li>
+                        <li>服务贴心，十分热情</li>
+                        <li>价格实惠，性价比高</li>
+                        <li>善于创新，研发和推广能力极强</li>
                     </ul>
                 </div>
                 <div class="col-sm-6">
                     <div class="progress-block-group">
                         <div class="progress-block">
-                            <div class="progress__title">Birthday Parties</div>
+                            <div class="progress__title">课程研发</div>
                             <div class="progress progress-w-number">
                                 <div style="width: 80%" class="progress-bar bg-primary"><span class="progress-bar__number">80%</span></div>
                             </div>
                         </div>
                         <div class="progress-block">
-                            <div class="progress__title">Wedding Events</div>
+                            <div class="progress__title">活动设计</div>
                             <div class="progress progress-w-number">
                                 <div style="width: 90%" class="progress-bar bg-primary"><span class="progress-bar__number">90%</span></div>
                             </div>
                         </div>
                         <div class="progress-block">
-                            <div class="progress__title">Corporate Events</div>
+                            <div class="progress__title">游戏研发</div>
                             <div class="progress progress-w-number">
-                                <div style="width: 55%" class="progress-bar bg-primary"><span class="progress-bar__number">55%</span></div>
+                                <div style="width: 99%" class="progress-bar bg-primary"><span class="progress-bar__number">99%</span></div>
                             </div>
                         </div>
                         <div class="progress-block">
-                            <div class="progress__title">Proposal Arrange</div>
+                            <div class="progress__title">物料供应</div>
                             <div class="progress progress-w-number">
-                                <div style="width: 65%" class="progress-bar bg-primary"><span class="progress-bar__number">65%</span></div>
+                                <div style="width: 97%" class="progress-bar bg-primary"><span class="progress-bar__number">97%</span></div>
                             </div>
                         </div>
-                        <div class="progress-block">
+                       <%-- <div class="progress-block">
                             <div class="progress__title">Social Seminars</div>
                             <div class="progress progress-w-number">
                                 <div style="width: 85%" class="progress-bar bg-primary"><span class="progress-bar__number">85%</span></div>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
             </div>
@@ -470,9 +481,9 @@
     </section>
     <section class="b-advertisement area-bg area-bg_dark area-bg_op_70 parallax">
         <div class="area-bg__inner">
-            <div class="b-advertisement__label bg-primary">Celebrate with<strong> Dvents</strong></div>
-            <h2 class="b-advertisement__title ui-title-block">Plan your Birthday Celebration with us!</h2>
-            <div class="b-advertisement__info">We will distribute FREE GIFTS to every single kid - That’s Our Promise!</div>
+            <div class="b-advertisement__label bg-primary"><strong>稷星教育科技</strong>-提供多样化的服务</div>
+            <h2 class="b-advertisement__title ui-title-block">让稷星来帮您策划您的活动</h2>
+            <div class="b-advertisement__info">传递快乐，传递爱</div>
         </div>
     </section>
     <!-- end b-advertisement-->
@@ -482,28 +493,28 @@
                 <div class="col-sm-11">
                     <div data-pagination="true" data-navigation="false" data-single-item="true" data-auto-play="7000" data-transition-style="fade" data-main-text-animation="true" data-after-init-delay="3000" data-after-move-delay="1000" data-stop-on-hover="true" class="owl-carousel owl-theme owl-theme_mod-a enable-owl-carousel">
                         <blockquote class="b-blockquote b-blockquote-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
+                            <p>我们的愿景是通过有趣的活动形式能够让孩子学到更多的知识和经验，让孩子在玩中学，在欢乐中开扩眼界</p>
                             <footer class="b-blockquote__footer">
                                 <div class="b-blockquote__face"><img src="${basePath}static/assets/media/components/b-blockquote/face-1.jpg" alt="face" class="img-responsive"/></div>
-                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">Adam Milney</span><span class="b-blockquote__category">California, USA</span></cite>
+                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">王小二</span><span class="b-blockquote__category">上海，中国</span></cite>
                             </footer>
                         </blockquote>
                         <!-- end .b-blockquote-->
 
                         <blockquote class="b-blockquote b-blockquote-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
+                            <p>我们的愿景是通过有趣的活动形式能够让孩子学到更多的知识和经验，让孩子在玩中学，在欢乐中开扩眼界</p>
                             <footer class="b-blockquote__footer">
                                 <div class="b-blockquote__face"><img src="${basePath}static/assets/media/components/b-blockquote/face-1.jpg" alt="face" class="img-responsive"/></div>
-                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">Adam Milney</span><span class="b-blockquote__category">California, USA</span></cite>
+                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">王小二</span><span class="b-blockquote__category">上海，中国</span></cite>
                             </footer>
                         </blockquote>
                         <!-- end .b-blockquote-->
 
                         <blockquote class="b-blockquote b-blockquote-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
+                            <p>我们的愿景是通过有趣的活动形式能够让孩子学到更多的知识和经验，让孩子在玩中学，在欢乐中开扩眼界</p>
                             <footer class="b-blockquote__footer">
                                 <div class="b-blockquote__face"><img src="${basePath}static/assets/media/components/b-blockquote/face-1.jpg" alt="face" class="img-responsive"/></div>
-                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">Adam Milney</span><span class="b-blockquote__category">California, USA</span></cite>
+                                <cite title="Blockquote Title" class="b-blockquote__cite"><span class="b-blockquote__author">王小二</span><span class="b-blockquote__category">上海，中国</span></cite>
                             </footer>
                         </blockquote>
                         <!-- end .b-blockquote-->
@@ -531,12 +542,12 @@
                         <form class="footer-form">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <h3 class="footer-form__title">Get the FREE Newsletter</h3>
-                                    <div class="footer-form__info">Sign up to get the updates about new events</div>
+                                    <h3 class="footer-form__title">获取免费邮件服务</h3>
+                                    <div class="footer-form__info">注册登录后获得最新活动资讯</div>
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input type="email" placeholder="Your email address ..." class="footer-form__input"/>
+                                        <input type="email" placeholder="请输入你的邮箱地址." class="footer-form__input"/>
                                         <button class="footer-form__btn form-control-feedback"><i class="icon icon-envelope-open text-primary_h"></i></button>
                                     </div>
                                 </div>
@@ -547,25 +558,25 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> About Dvents</h3>
-                            <div class="footer-section__subtitle">The Events Specialists!</div>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 关于 亲为亲子</h3>
+                            <div class="footer-section__subtitle">高质量的活动策划与教育培训课程</div>
                             <div class="footer__info">
-                                <p>Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud lorem psum dolor sit amet sed incididunt.</p>
-                            </div><a href="about.html" class="btn btn-default btn-xs"><i class="icon"></i> Read More</a>
+                                <p>我们是国内专业的亲子益智健康成长平台，我们凭借互联网+思维，及游戏教育形式为中国家庭提供科学的幼儿个体与集体的亲子活动，提升孩子身体素质与头脑开发</p>
+                            </div><a href="${basePath}about.do" class="btn btn-default btn-xs"><i class="icon"></i> 查看详情</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Keep In Touch</h3>
-                            <div class="footer__contact"><i class="icon icon-map"></i> 38-2 Hilton Street, California, USA</div>
-                            <div class="footer__contact"><i class="icon icon-call-in"></i> (+01) 123 456 7890</div>
-                            <div class="footer__contact"><i class="icon icon-envelope-open"></i> info@dvents.org</div>
-                            <div class="footer__contact"><i class="icon icon-clock"></i> Mon - Fri 9.00 am - 6.00 pm</div>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 联系我们</h3>
+                            <div class="footer__contact"><i class="icon icon-map"></i> 上海市嘉定区南翔镇惠平路1228号5幢203室</div>
+                            <div class="footer__contact"><i class="icon icon-call-in"></i> 13127781606</div>
+                            <div class="footer__contact"><i class="icon icon-envelope-open"></i> 1170538717@qq.com</div>
+                            <div class="footer__contact"><i class="icon icon-clock"></i> 周一到周五 9.00 am - 6.00 pm</div>
                         </section>
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Events Gallery</h3>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 活动剪影</h3>
                             <ul class="footer-gallery list-unstyled js-zoom-gallery clearfix">
                                 <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-1.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-1.jpg" alt="foto" class="img-responsive"/></a></li>
                                 <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-2.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-2.jpg" alt="foto" class="img-responsive"/></a></li>
@@ -578,15 +589,15 @@
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Quick Links</h3>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 快速访问</h3>
                             <ul class="footer-list list list-mark-4 list-unstyled">
-                                <li class="footer-list__item"><a href="activity.html" class="footer-list__link">Our Services</a></li>
-                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Our Team</a></li>
-                                <li class="footer-list__item"><a href="about.html" class="footer-list__link">About Dvents</a></li>
-                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Clients List</a></li>
-                                <li class="footer-list__item"><a href="blog-main.html" class="footer-list__link">News Blog</a></li>
-                                <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">Brochure</a></li>
-                                <li class="footer-list__item"><a href="contact.html" class="footer-list__link">Get In Touch</a></li>
+                                <li class="footer-list__item"><a href="${basePath}service.do" class="footer-list__link">我们的服务</a></li>
+                                <li class="footer-list__item"><a href="${basePath}casePage.do" class="footer-list__link">案例展示</a></li>
+                                <li class="footer-list__item"><a href="${basePath}about.do" class="footer-list__link">关于亲为亲子</a></li>
+                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">合作伙伴</a></li>
+                                <li class="footer-list__item"><a href="${basePath}blog_main.do" class="footer-list__link">资讯</a></li>
+                                <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">分公司</a></li>
+                                <li class="footer-list__item"><a href="${basePath}contact.do" class="footer-list__link">联系我们</a></li>
                             </ul>
                         </section>
                     </div>
@@ -597,14 +608,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="copyright pull-left">© 2019<strong> Dvents</strong> - The Events Specialists All Rights Reserved.<a href="terms-of-use.html" class="copyright__link"> Terms of Use</a><a href="privacy-policy.html" class="copyright__link">Privacy Policy</a></div>
-                        <ul class="social-net list-inline pull-right">
-                            <li class="social-net__item"><a href="youtube.com" class="social-net__link text-primary_h"><i class="icon fa fa-youtube"></i></a></li>
-                            <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
-                            <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
-                            <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
-                            <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                        </ul>
+                        <div class="copyright pull-left">Copyright © 2016-2019 -<strong>稷星教育科技</strong> - 粤ICP备12079258号<a href="terms-of-use.html" class="copyright__link"> 使用条款</a><a href="privacy-policy.html" class="copyright__link">隐私政策</a></div>
+
                         <!-- end social-list-->
                     </div>
                 </div>

@@ -99,7 +99,7 @@
       <li><a href="${basePath}blog_main.do">论坛</a></li>
       <li><a href="${basePath}contact.do">联系我们</a></li>
       <li><a href="${basePath}casePage.do">活动剪影</a></li>
-      <li><a href="${basePath}my_account.do">个人中心</a></li>
+      <li><a href="${basePath}account.do">个人中心</a></li>
 
     </ul>
   </div>
@@ -162,7 +162,7 @@
               <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
               <li><a href="${basePath}course_frontPage.do">课程</a></li>
               <li><a href="${basePath}service.do">服务</a></li>
-              <li><a href="${basePath}my_account.do">个人中心</a></li>
+              <li><a href="${basePath}account.do">个人中心</a></li>
               <li><a href="${basePath}about.do">关于我们</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">论坛<b class="caret"></b></a>                <ul role="menu" class="dropdown-menu">
                   <li><a href="${basePath}blog_main.do" >查看最新</a></li>
@@ -177,8 +177,8 @@
                       <li><a href="404.html" >Page 404</a></li>
                       <li><a href="headers.html" >Headers</a></li>
                       <li><a href="typography.html" >Typography</a></li>
-                      <li><a href="privacy-policy.html" >Privacy policy</a></li>
-                      <li><a href="terms-of-use.html" >Terms of use</a></li>
+                      <li><a href="privacy-policy.html" >隐私政策</a></li>
+                      <li><a href="terms-of-use.html" >使用条款</a></li>
                   </ul>
               </li>--%>
             </ul>
@@ -196,11 +196,11 @@
             <div class="row">
               <div class="col-xs-12">
                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                <h1 class="b-title-page__title">News Detail</h1>
+                <h1 class="b-title-page__title">资讯详情</h1>
                 <ol class="breadcrumb">
-                  <li><a href="${basePath}index.do">Home</a></li>
-                  <li><a href="${basePath}blog_main.do">News</a></li>
-                  <li class="active">Details</li>
+                  <li><a href="${basePath}index.do">主页</a></li>
+                  <li><a href="${basePath}blog_main.do">资讯详情</a></li>
+                  <li class="active">喜迎国庆节</li>
                 </ol>
                 <!-- end breadcrumb-->
                 <div class="ui-decor-1"></div>
@@ -221,30 +221,41 @@
                   <div class="entry-header">
                     <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
                     <div class="entry-meta"><span class="entry-meta__item"><i class="entry-meta__icon icon-calendar text-primary"></i><a href="${basePath}blog_post.do" class="entry-meta__link">25th August 2016</a></span><span class="entry-meta__item"><i class="entry-meta__icon icon-grid text-primary"></i><a href="${basePath}blog_post.do" class="entry-meta__link">Birthday Parties</a></span></div>
-                    <h2 class="entry-title">Labore sed dolore magna aliqua enim volputate</h2>
+                    <h2 class="entry-title">欢天喜地迎新年——金豆豆幼儿园亲子游园会</h2>
                   </div>
                   <div class="entry-content">
-                    <p>Corem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur enim ad minim veniam ua quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accu antium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                    <p> 通过亲子活动，加强家园沟通与合作，密切幼儿、教师、家长三者的关系，增进亲子间的情感交流，促进幼儿身心的全面发展，促进家长教育观念的更新与科学育儿水平的提升。.</p>
+
+                    <p><strong>活动目的：</strong>乐意参加各种亲子活动，体验与家长共同活动的乐趣。
+                      乐于与家长、同伴交往互动，学会协商，合作。
+                      理解并遵守亲子活动的基本规则。</p>
+
                     <blockquote class="b-blockquote b-blockquote-1 text-primary_a">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolre magna aliquat enim ad minim veniam quis nostrud exercitation sed ipsum ullamco laboris.</p>
-                    </blockquote>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur enim ad minim veniam ua quis nostrud exercitation ullamco.</p>
-                    <h3>Wedding Events</h3>
-                    <p>Enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur enim ad minim veniam ua quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse dolore at fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
-                  </div>
+                      <p>理解幼儿园的教育内容和特点，与幼儿园教育保持一致。
+                        学会观察孩子的行为，了解孩子的发展和需求。
+                        把握多种亲子互动的方式。
+                        增进亲子之间的情感交流，提高亲子沟通的有效性。</p></blockquote>
+                    <p><strong>球类大运动</strong>
+                      这是身体协调、肢体运动
+
+                      1、活动以家庭为单位进行，每轮活动20-30组家庭同时参加。
+                      2、小朋友跟着我们的教练进行热身运动，一起体验简单的热身游戏。
+                      3、孩子跟着外教一起来体验橄榄球的快乐，了解身体的协调性和成长。
+                      温馨提示：家长无须协助。</p>
+                    <h3>迎新春游园会</h3>
+                    <p>正值元旦，为庆祝新年，金豆豆幼儿园举办迎新春新年游园会。幼儿园的老师们准备了各种各样的有趣的活动，像手工，龙凤字，脸谱等等。希望通过本次活动，能够激发小朋友对于传统文化习俗的热爱</p></div>
                   <div class="ui-decor-1 ui-decor-1_full-width"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor" class="center-block"/></div>
                   <div class="entry-footer">
-                    <div class="entry-footer__social-links"><span class="social-net__title bg-primary_a">Share Post:</span>
-                      <ul class="social-net list-inline">
+                    <div class="entry-footer__social-links"><span class="social-net__title bg-primary_a">话题标签:</span>
+                      <%--<ul class="social-net list-inline">
                         <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
                         <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
                         <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
                         <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                      </ul>
+                      </ul>--%>
                       <!-- end social-list-->
                     </div>
-                    <div class="post-tags"><a href="${basePath}blog_post.do" class="post-tags__link">wedding,</a><a href="${basePath}blog_post.do" class="post-tags__link">bridal,</a><a href="${basePath}blog_post.do" class="post-tags__link">birthday,</a><a href="${basePath}blog_post.do" class="post-tags__link">event</a></div>
+                    <div class="post-tags"><a href="${basePath}blog_post.do" class="post-tags__link">新春,</a><a href="${basePath}blog_post.do" class="post-tags__link">幼儿园,</a><a href="${basePath}blog_post.do" class="post-tags__link">亲子,</a><a href="${basePath}blog_post.do" class="post-tags__link">活动</a></div>
                   </div>
                 </div>
               </article>
@@ -253,25 +264,25 @@
               <article class="about-author bg-grey clearfix">
                 <div class="about-author__img"><img src="${basePath}static/assets/media/content/posts/about-author/1.jpg" alt="foto" class="img-responsive"/></div>
                 <div class="about-author__inner">
-                  <div class="about-author__header"><span class="about-author__title">Adam Milney</span><span class="about-author__category">Admin : Dvents</span></div>
-                  <div class="about-author__description">Wonsectetur elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquled tempor enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea volputate consequat aute irure dolor sed ipsum duial reprehenderit.</div>
+                  <div class="about-author__header"><span class="about-author__title">欧阳夏丹</span><span class="about-author__category">Admin : Dvents</span></div>
+                  <div class="about-author__description">金豆豆幼儿园迎新春活动圆满成功！小朋友们都玩的很开心，祝愿小朋友在新的一年能够学习更上一层楼.</div>
                 </div>
               </article>
-              <!-- end about-author-->
+              <!-- end aboAdam Milneyut-author-->
               
               <section class="section-comment">
-                <h2 class="ui-subtitle-block"><span class="ui-decor-2 bg-primary"></span>COMMENTS</h2>
+                <h2 class="ui-subtitle-block"><span class="ui-decor-2 bg-primary"></span>大家的评论</h2>
                 <ul class="comments-list list-unstyled">
                   <li>
                     <article class="comment clearfix">
                       <div class="comment-avatar"><img src="${basePath}static/assets/media/content/posts/face/1.jpg" alt="face" class="img-responsive"/></div>
                       <div class="comment-inner">
                         <header class="comment-header">
-                          <cite class="comment-author">William Smith</cite>
-                          <time datetime="2012-10-27" class="comment-datetime">5 hours ago</time><a href="${basePath}blog_post.do" class="comment-btn text-primary"><i class="icon icon-action-undo"></i>reply</a>
+                          <cite class="comment-author">李小二</cite>
+                          <time datetime="2012-10-27" class="comment-datetime">5 hours ago</time><a href="${basePath}blog_post.do" class="comment-btn text-primary"><i class="icon icon-action-undo"></i>回复</a>
                         </header>
                         <div class="comment-body">
-                          <p>Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqul enimd minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <p>这个活动是一个倍儿棒的活动，大人小孩子都玩的特别开心，这段回忆真美！</p>
                         </div>
                       </div>
                     </article>
@@ -281,11 +292,11 @@
                           <div class="comment-avatar"><img src="${basePath}static/assets/media/content/posts/face/2.jpg" alt="face" class="img-responsive"/></div>
                           <div class="comment-inner">
                             <header class="comment-header">
-                              <cite class="comment-author">Scott Irvine</cite>
-                              <time datetime="2012-10-27" class="comment-datetime">5 hours ago</time><a href="${basePath}blog_post.do" class="comment-btn text-primary"><i class="icon icon-action-undo"></i>reply</a>
+                              <cite class="comment-author">王小六</cite>
+                              <time datetime="2012-10-27" class="comment-datetime">5 hours ago</time><a href="${basePath}blog_post.do" class="comment-btn text-primary"><i class="icon icon-action-undo"></i>回复</a>
                             </header>
                             <div class="comment-body">
-                              <p>Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqul enimd minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <p>喜气洋洋迎新春啦，hhhh.</p>
                             </div>
                           </div>
                         </article>
@@ -297,27 +308,27 @@
               <!-- end section-comment-->
               
               <section id="section-reply-form" class="section-reply-form">
-                <h2 class="ui-subtitle-block"><span class="ui-decor-2 bg-primary"></span>LEAVE A COMMENT</h2>
+                <h2 class="ui-subtitle-block"><span class="ui-decor-2 bg-primary"></span>发表你的看法</h2>
                 <form action="#" method="post" class="form-reply ui-form ui-form-1 typography-last-elem">
                   <div class="row">
                     <div class="col-xs-12">
-                      <textarea rows="2" placeholder="Your Message ..." class="form-control"></textarea>
+                      <textarea rows="2" placeholder="内容 ..." class="form-control"></textarea>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-4">
-                      <input type="text" placeholder="Your Name" class="form-control"/>
+                      <input type="text" placeholder="昵称" class="form-control"/>
                     </div>
                     <div class="col-md-4">
-                      <input type="email" placeholder="Your Email" class="form-control"/>
+                      <input type="email" placeholder="邮箱" class="form-control"/>
                     </div>
                     <div class="col-md-4">
-                      <input type="url" placeholder="Your Website" class="form-control"/>
+                      <input type="url" placeholder="个人主页" class="form-control"/>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-xs-12">
-                      <button class="ui-form__btn btn btn-primary">send  comment</button>
+                      <button class="ui-form__btn btn btn-default">发表评论</button>
                     </div>
                   </div>
                 </form>
@@ -328,55 +339,54 @@
           <div class="col-md-3">
             <aside class="l-sidebar l-sidebar_right">
               <div data-stellar-background-ratio="0.4" class="widget widget-searce section-texture section-texture_blue stellar">
-                <h3 class="widget-title"><i class="ui-decor-2"></i>search blog</h3>
+                <h3 class="widget-title"><i class="ui-decor-2"></i>搜一搜</h3>
                 <form id="search-global-form" class="form-sidebar">
                   <input type="text" class="form-sidebar__input"/>
                   <button class="form-sidebar__btn"><i class="icon icon-magnifier"></i></button>
                 </form>
               </div>
               <!-- end .widget-->
-              
               <section class="widget section-sidebar">
-                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>blog Services</h3>
+                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>导航栏</h3>
                 <div class="widget-content">
                   <ul class="widget-list list list-mark-5">
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Wedding Events</a></li>
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Birthday Parties</a></li>
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Corporate Seminars</a></li>
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Special Day Celebrations</a></li>
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Live Concerts</a></li>
-                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">Fashion Shows</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新活动</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新课程</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新周边</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新服务</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新策划</a></li>
+                    <li class="widget-list__item"><a href="${basePath}blog_post.do" class="widget-list__link text-primary_h">最新解决方案</a></li>
                   </ul>
                 </div>
               </section>
               <!-- end .widget-->
-              
+
               <section class="widget section-sidebar">
-                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>recent posts</h3>
+                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>近期资讯</h3>
                 <div class="widget-content">
                   <div class="post-widget clearfix">
                     <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/1.jpg" alt="foto" class="img-responsive"/></a></div>
-                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">Corem ipsum dolor amets minium laboris ...</a>
+                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">遇事不掉泪，摔倒再爬起，人人都是小战狼...</a>
                       <div class="post-widget__date">
-                        <time datetime="2012-10-27 15:20" class="text-primary">August  25, 2016</time>
+                        <time datetime="2019-03-25 15:20" class="text-primary">March  25, 2019</time>
                       </div>
                     </div>
                     <!-- end .widget-post-->
                   </div>
                   <div class="post-widget clearfix">
                     <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/2.jpg" alt="foto" class="img-responsive"/></a></div>
-                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">Enim ad minim veniam quis fugiat ullamaco ...</a>
+                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">环保节创意大比拼 ...</a>
                       <div class="post-widget__date">
-                        <time datetime="2012-10-27 15:20" class="text-primary">September 23,  2016</time>
+                        <time datetime="2019-03-23 15:20" class="text-primary">March 23,  2019</time>
                       </div>
                     </div>
                     <!-- end .widget-post-->
                   </div>
                   <div class="post-widget clearfix">
                     <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/3.jpg" alt="foto" class="img-responsive"/></a></div>
-                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">Daboris nisi ut aliquip ex ea esae volputate ...</a>
+                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">新村路幼儿园为迎新年，举行爱心义卖活动...</a>
                       <div class="post-widget__date">
-                        <time datetime="2012-10-27 15:20" class="text-primary">December 17, 2016</time>
+                        <time datetime="2019-01-01 15:20" class="text-primary">January 17, 2019</time>
                       </div>
                     </div>
                     <!-- end .widget-post-->
@@ -384,38 +394,38 @@
                 </div>
               </section>
               <!-- end .widget-->
-              
+
               <section class="widget widget-best-post section-sidebar">
-                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>featured post</h3>
+                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>每日经典</h3>
                 <div class="widget-content">
                   <div class="post-widget-2 clearfix">
                     <div class="post-widget-2__media area-bg area-bg_dark area-bg_op_60"><img src="${basePath}static/assets/media/content/posts/292x300/1.jpg" alt="foto" class="img-responsive"/></div>
                     <div class="post-widget-2__inner area-bg__inner">
                       <div class="post-widget-2__date">
-                        <time datetime="2012-10-27 15:20" class="text-primary">December 17, 2016</time>
-                      </div><a href="${basePath}blog_post.do" class="post-widget-2__title">Daboris nisi ut aliquip exdsea esae volputate ...</a>
+                        <time datetime="2012-10-27 15:20" class="text-primary">December 17, 2019</time>
+                      </div><a href="${basePath}blog_post.do" class="post-widget-2__title">少年易老学难成，一寸光阴不可轻...</a>
                     </div>
                     <!-- end .widget-post-->
-                    
+
                   </div>
                 </div>
               </section>
               <!-- end .widget-->
-              
+
               <section class="widget section-sidebar">
-                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>tags cloud</h3>
+                <h3 class="widget-title"><i class="ui-decor-2 bg-primary"></i>话题标签</h3>
                 <div class="widget-content">
                   <ul class="list-tags list-unstyled">
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">aniversary</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">party</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">kids</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">birthday</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">wedding</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">lunch</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">corporate meeting</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">engagement</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">proposal</a></li>
-                    <li class="list-tags__item"><a href="${basePath}activity_detail.do" class="list-tags__link bg-primary_h">seminars</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">游园会</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">水世界</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">运动会</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">篮球课程</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">舞蹈课程</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">捏泥人</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">绘画</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">龙凤字</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">爱心义卖</a></li>
+                    <li class="list-tags__item"><a href="services.html" class="list-tags__link bg-primary_h">绘画</a></li>
                   </ul>
                 </div>
               </section>
@@ -438,12 +448,12 @@
                 <form class="footer-form">
                   <div class="row">
                     <div class="col-sm-5">
-                      <h3 class="footer-form__title">Get the FREE Newsletter</h3>
-                      <div class="footer-form__info">Sign up to get the updates about new events</div>
+                      <h3 class="footer-form__title">获取免费邮件服务</h3>
+                      <div class="footer-form__info">注册登录后获得最新活动资讯</div>
                     </div>
                     <div class="col-sm-7">
                       <div class="form-group">
-                        <input type="email" placeholder="Your email address ..." class="footer-form__input"/>
+                        <input type="email" placeholder="请输入你的邮箱地址." class="footer-form__input"/>
                         <button class="footer-form__btn form-control-feedback"><i class="icon icon-envelope-open text-primary_h"></i></button>
                       </div>
                     </div>
@@ -454,25 +464,25 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="footer-section">
-                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> About Dvents</h3>
-                  <div class="footer-section__subtitle">The Events Specialists!</div>
+                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 关于 亲为亲子</h3>
+                  <div class="footer-section__subtitle">高质量的活动策划与教育培训课程</div>
                   <div class="footer__info">
-                    <p>Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud lorem psum dolor sit amet sed incididunt.</p>
-                  </div><a href="${basePath}about.do" class="btn btn-default btn-xs"><i class="icon"></i> Read More</a>
+                    <p>我们是国内专业的亲子益智健康成长平台，我们凭借互联网+思维，及游戏教育形式为中国家庭提供科学的幼儿个体与集体的亲子活动，提升孩子身体素质与头脑开发</p>
+                  </div><a href="${basePath}about.do" class="btn btn-default btn-xs"><i class="icon"></i> 查看详情</a>
                 </div>
               </div>
               <div class="col-md-3">
                 <section class="footer-section">
-                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Keep In Touch</h3>
-                  <div class="footer__contact"><i class="icon icon-map"></i> 38-2 Hilton Street, California, USA</div>
-                  <div class="footer__contact"><i class="icon icon-call-in"></i> (+01) 123 456 7890</div>
-                  <div class="footer__contact"><i class="icon icon-envelope-open"></i> info@dvents.org</div>
-                  <div class="footer__contact"><i class="icon icon-clock"></i> Mon - Fri 9.00 am - 6.00 pm</div>
+                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 联系我们</h3>
+                  <div class="footer__contact"><i class="icon icon-map"></i> 上海市嘉定区南翔镇惠平路1228号5幢203室</div>
+                  <div class="footer__contact"><i class="icon icon-call-in"></i> 13127781606</div>
+                  <div class="footer__contact"><i class="icon icon-envelope-open"></i> 1170538717@qq.com</div>
+                  <div class="footer__contact"><i class="icon icon-clock"></i> 周一到周五 9.00 am - 6.00 pm</div>
                 </section>
               </div>
               <div class="col-md-3">
                 <section class="footer-section">
-                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Events Gallery</h3>
+                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 活动剪影</h3>
                   <ul class="footer-gallery list-unstyled js-zoom-gallery clearfix">
                     <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-1.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-1.jpg" alt="foto" class="img-responsive"/></a></li>
                     <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-2.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-2.jpg" alt="foto" class="img-responsive"/></a></li>
@@ -485,15 +495,15 @@
               </div>
               <div class="col-md-3">
                 <section class="footer-section">
-                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Quick Links</h3>
+                  <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 快速访问</h3>
                   <ul class="footer-list list list-mark-4 list-unstyled">
-                    <li class="footer-list__item"><a href="${basePath}activity_detail.do" class="footer-list__link">Our Services</a></li>
-                    <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Our Team</a></li>
-                    <li class="footer-list__item"><a href="${basePath}about.do" class="footer-list__link">About Dvents</a></li>
-                    <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">Clients List</a></li>
-                    <li class="footer-list__item"><a href="${basePath}blog_main.do" class="footer-list__link">News Blog</a></li>
-                    <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">Brochure</a></li>
-                    <li class="footer-list__item"><a href="${basePath}contact.do" class="footer-list__link">Get In Touch</a></li>
+                    <li class="footer-list__item"><a href="${basePath}activity_detail.do" class="footer-list__link">我们的服务</a></li>
+                    <li class="footer-list__item"><a href="${basePath}casePage.do" class="footer-list__link">案例展示</a></li>
+                    <li class="footer-list__item"><a href="${basePath}about.do" class="footer-list__link">关于亲为亲子</a></li>
+                    <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">合作伙伴</a></li>
+                    <li class="footer-list__item"><a href="${basePath}blog_main.do" class="footer-list__link">资讯</a></li>
+                    <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">分公司</a></li>
+                    <li class="footer-list__item"><a href="${basePath}contact.do" class="footer-list__link">联系我们</a></li>
                   </ul>
                 </section>
               </div>
@@ -504,14 +514,8 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
-                <div class="copyright pull-left">© 2016<strong> Dvents</strong> - The Events Specialists All Rights Reserved.<a href="terms-of-use.html" class="copyright__link"> Terms of Use</a><a href="privacy-policy.html" class="copyright__link">Privacy Policy</a></div>
-                <ul class="social-net list-inline pull-right">
-                  <li class="social-net__item"><a href="youtube.com" class="social-net__link text-primary_h"><i class="icon fa fa-youtube"></i></a></li>
-                  <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
-                  <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
-                  <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
-                  <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                </ul>
+                <div class="copyright pull-left">© 2016-<strong>稷星教育科技</strong> - 粤ICP备12079258号<a href="terms-of-use.html" class="copyright__link"> 使用条款</a><a href="privacy-policy.html" class="copyright__link">隐私政策</a></div>
+
                 <!-- end social-list-->
               </div>
             </div>

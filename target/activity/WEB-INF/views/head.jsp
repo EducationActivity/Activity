@@ -130,7 +130,7 @@
                     <li><a href="${basePath}wupin.do">物料</a></li>
                     <li><a href="${basePath}course1.do">课程</a></li>
                     <li><a href="${basePath}about.do">About</a></li>
-                    <li><a href="${basePath}blog-main.html">News</a></li>
+                    <li><a href="${basePath}${basePath}blog_main.do">News</a></li>
                     <li><a href="${basePath}Contact.do">Contact</a></li>
                     <li><a href="#">活动剪影</a></li>
                     <li><a href="#">论坛</a></li>
