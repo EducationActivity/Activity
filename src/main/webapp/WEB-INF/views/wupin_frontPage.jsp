@@ -106,7 +106,7 @@
             <li><a href="${basePath}blog_main.do">论坛</a></li>
             <li><a href="${basePath}contact.do">联系我们</a></li>
             <li><a href="${basePath}casePage.do">活动剪影</a></li>
-            <li><a href="${basePath}my_account.do">个人中心</a></li>
+            <li><a href="${basePath}account.do">个人中心</a></li>
 
         </ul>
     </div>
@@ -169,7 +169,7 @@
                             <li><a href="${basePath}wupin_frontPage.do">物料</a></li>
                             <li><a href="${basePath}course_frontPage.do">课程</a></li>
                                 <li><a href="${basePath}service.do">服务</a></li>
-                                <li><a href="${basePath}my_account.do">个人中心</a></li>
+                                <li><a href="${basePath}account.do">个人中心</a></li>
                             <li><a href="${basePath}about.do">关于我们</a></li>
                                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">论坛<b class="caret"></b></a>
                                     <ul role="menu" class="dropdown-menu">
@@ -185,8 +185,8 @@
                                     <li><a href="404.html" >Page 404</a></li>
                                     <li><a href="headers.html" >Headers</a></li>
                                     <li><a href="typography.html" >Typography</a></li>
-                                    <li><a href="privacy-policy.html" >Privacy policy</a></li>
-                                    <li><a href="terms-of-use.html" >Terms of use</a></li>
+                                    <li><a href="privacy-policy.html" >隐私政策</a></li>
+                                    <li><a href="terms-of-use.html" >使用条款</a></li>
                                 </ul>
                             </li>--%>
                         </ul>
@@ -825,7 +825,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="text-center"><a href="home.html" class="footer__logo"><img src="${basePath}static/assets/media/general/logo.png" alt="Logo" class="img-responsive"/></a></div>
+                        <div class="text-center"><a href="${basePath}index.do" class="footer__logo"><img src="${basePath}static/assets/media/general/logo.png" alt="Logo" class="img-responsive"/></a></div>
                     </div>
                 </div>
                 <div class="row">
@@ -833,12 +833,12 @@
                         <form class="footer-form">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <h3 class="footer-form__title">Get the FREE Newsletter</h3>
-                                    <div class="footer-form__info">Sign up to get the updates about new events</div>
+                                    <h3 class="footer-form__title">获取免费邮件服务</h3>
+                                    <div class="footer-form__info">注册登录后获得最新活动资讯</div>
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input type="email" placeholder="Your email address ..." class="footer-form__input"/>
+                                        <input type="email" placeholder="请输入你的邮箱地址." class="footer-form__input"/>
                                         <button class="footer-form__btn form-control-feedback"><i class="icon icon-envelope-open text-primary_h"></i></button>
                                     </div>
                                 </div>
@@ -849,25 +849,25 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> About Dvents</h3>
-                            <div class="footer-section__subtitle">The Events Specialists!</div>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 关于 亲为亲子</h3>
+                            <div class="footer-section__subtitle">高质量的活动策划与教育培训课程</div>
                             <div class="footer__info">
-                                <p>Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud lorem psum dolor sit amet sed incididunt.</p>
-                            </div><a href="about.html" class="btn btn-default btn-xs"><i class="icon"></i> Read More</a>
+                                <p>我们是国内专业的亲子益智健康成长平台，我们凭借互联网+思维，及游戏教育形式为中国家庭提供科学的幼儿个体与集体的亲子活动，提升孩子身体素质与头脑开发</p>
+                            </div><a href="${basePath}about.do" class="btn btn-default btn-xs"><i class="icon"></i> 查看详情</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Keep In Touch</h3>
-                            <div class="footer__contact"><i class="icon icon-map"></i> 38-2 Hilton Street, California, USA</div>
-                            <div class="footer__contact"><i class="icon icon-call-in"></i> (+01) 123 456 7890</div>
-                            <div class="footer__contact"><i class="icon icon-envelope-open"></i> info@dvents.org</div>
-                            <div class="footer__contact"><i class="icon icon-clock"></i> Mon - Fri 9.00 am - 6.00 pm</div>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 联系我们</h3>
+                            <div class="footer__contact"><i class="icon icon-map"></i> 上海市嘉定区南翔镇惠平路1228号5幢203室</div>
+                            <div class="footer__contact"><i class="icon icon-call-in"></i> 13127781606</div>
+                            <div class="footer__contact"><i class="icon icon-envelope-open"></i> 1170538717@qq.com</div>
+                            <div class="footer__contact"><i class="icon icon-clock"></i> 周一到周五 9.00 am - 6.00 pm</div>
                         </section>
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Events Gallery</h3>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 活动剪影</h3>
                             <ul class="footer-gallery list-unstyled js-zoom-gallery clearfix">
                                 <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-1.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-1.jpg" alt="foto" class="img-responsive"/></a></li>
                                 <li class="footer-gallery__item"><a href="${basePath}static/assets/media/components/footer/gallery-2.jpg" class="footer-gallery__link js-zoom-gallery__item"><img src="${basePath}static/assets/media/components/footer/gallery-2.jpg" alt="foto" class="img-responsive"/></a></li>
@@ -880,15 +880,15 @@
                     </div>
                     <div class="col-md-3">
                         <section class="footer-section">
-                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> Quick Links</h3>
+                            <h3 class="footer-section__title ui-title-inner"><i class="ui-decor-2 bg-primary"></i> 快速访问</h3>
                             <ul class="footer-list list list-mark-4 list-unstyled">
-                                <li class="footer-list__item"><a href="activity.html" class="footer-list__link">Our Services</a></li>
-                                <li class="footer-list__item"><a href="home.html" class="footer-list__link">Our Team</a></li>
-                                <li class="footer-list__item"><a href="about.html" class="footer-list__link">About Dvents</a></li>
-                                <li class="footer-list__item"><a href="home.html" class="footer-list__link">Clients List</a></li>
-                                <li class="footer-list__item"><a href="blog-main.html" class="footer-list__link">News Blog</a></li>
-                                <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">Brochure</a></li>
-                                <li class="footer-list__item"><a href="contact.html" class="footer-list__link">Get In Touch</a></li>
+                                <li class="footer-list__item"><a href="${basePath}service.do" class="footer-list__link">我们的服务</a></li>
+                                <li class="footer-list__item"><a href="${basePath}casePage.do" class="footer-list__link">案例展示</a></li>
+                                <li class="footer-list__item"><a href="${basePath}about.do" class="footer-list__link">关于亲为亲子</a></li>
+                                <li class="footer-list__item"><a href="${basePath}index.do" class="footer-list__link">合作伙伴</a></li>
+                                <li class="footer-list__item"><a href="${basePath}blog_main.do" class="footer-list__link">资讯</a></li>
+                                <li class="footer-list__item"><a href="${basePath}static/assets/downloads/doc-2.pdf" class="footer-list__link">分公司</a></li>
+                                <li class="footer-list__item"><a href="${basePath}contact.do" class="footer-list__link">联系我们</a></li>
                             </ul>
                         </section>
                     </div>
@@ -899,14 +899,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="copyright pull-left">© 2019<strong> Dvents</strong> - The Events Specialists All Rights Reserved.<a href="terms-of-use.html" class="copyright__link"> Terms of Use</a><a href="privacy-policy.html" class="copyright__link">Privacy Policy</a></div>
-                        <ul class="social-net list-inline pull-right">
-                            <li class="social-net__item"><a href="youtube.com" class="social-net__link text-primary_h"><i class="icon fa fa-youtube"></i></a></li>
-                            <li class="social-net__item"><a href="twitter.com" class="social-net__link text-primary_h"><i class="icon fa fa-twitter"></i></a></li>
-                            <li class="social-net__item"><a href="facebook.com" class="social-net__link text-primary_h"><i class="icon fa fa-facebook"></i></a></li>
-                            <li class="social-net__item"><a href="plus.google.com" class="social-net__link text-primary_h"><i class="icon fa fa-google-plus"></i></a></li>
-                            <li class="social-net__item"><a href="instagram.com" class="social-net__link text-primary_h"><i class="icon fa fa-instagram"></i></a></li>
-                        </ul>
+                        <div class="copyright pull-left">Copyright © 2016-2019 -<strong>稷星教育科技</strong> - 粤ICP备12079258号<a href="terms-of-use.html" class="copyright__link"> 使用条款</a><a href="privacy-policy.html" class="copyright__link">隐私政策</a></div>
+
                         <!-- end social-list-->
                     </div>
                 </div>

@@ -1251,7 +1251,7 @@ input:-ms-input-placeholder {
 
 .label-vertical {
   margin-top: 54px;
-  background: url(../media/general/label-vertical.png) no-repeat 0 0;
+  /*background: url(../media/general/label-vertical.png) no-repeat 0 0;*/
   background-size: contain;
 }
 
@@ -1833,13 +1833,15 @@ input:-ms-input-placeholder {
 
 .b-contact__name {
   margin-bottom: -2px;
+  margin-top:-2em;
   font-family: Poppins;
   font-size: 16px;
 }
 
 .b-contact__info {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
+  margin-top:2em;
 }
 
 .b-contact__icon {

@@ -84,4 +84,9 @@ public class LoginController {
     public String expect(){
         return "expect";
     }
+    @RequestMapping("accountPage")
+    public String accountPage(){
+        return "accountPage";
+    }
+
 }
