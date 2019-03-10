@@ -38,5 +38,6 @@
 	<!--<mapping path="/sysUser/register.do" exclue="true"/>-->
 	<mapping path="/sysUser/test.do" exclue="true"/>
 	<mapping path="/accountPage.do" exclue="true"/>
+	<mapping path="/newUserHelp.do" exclue="true"/>
 
 </sitemesh>

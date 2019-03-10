@@ -382,29 +382,77 @@
 							<li><a href="" data-filter="*" class="current">所有活动</a></li>
 							<li><a href="" data-filter=".corporate">游园会</a></li>
 							<li><a href="" data-filter=".birthday">水世界</a></li>
-							<li><a href="" data-filter=".wedding">环保节</a></li>
 							<li><a href="" data-filter=".product">运动会</a></li>
-							<li><a href="" data-filter=".social">茶话会</a></li>
-							<li><a href="" data-filter=".proposal">春游</a></li>
+							<li><a href="" data-filter=".social">DIY</a></li>
+							<li><a href="" data-filter=".proposal">表演</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<ul class="b-isotope-grid grid list-unstyled js-zoom-gallery">
 				<li class="grid-sizer"></li>
-				<li class="b-isotope-grid__item grid-item corporate product"><a href="${basePath}static/assets/media/content/gallery/480x290/1.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/1.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item corporate proposal"><a href="${basePath}static/assets/media/content/gallery/480x290/2.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/2.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item birthday product social proposal"><a href="${basePath}static/assets/media/content/gallery/480x290/3.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/3.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item wedding"><a href="${basePath}static/assets/media/content/gallery/480x290/4.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/4.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item corporate product social proposal"><a href="${basePath}static/assets/media/content/gallery/480x290/5.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/5.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item birthday"><a href="${basePath}static/assets/media/content/gallery/480x290/6.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/6.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item wedding social"><a href="${basePath}static/assets/media/content/gallery/480x290/7.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/7.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
-				<li class="b-isotope-grid__item grid-item corporate birthday"><a href="${basePath}static/assets/media/content/gallery/480x290/8.jpg" class="b-isotope-grid__inner js-zoom-gallery__item"><img src="${basePath}static/assets/media/content/gallery/480x290/8.jpg" alt="foto"/><span class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item corporate product"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/1.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/1.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item corporate proposal"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/2.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/2.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item birthday product social proposal"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/3.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/3.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item wedding"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/4.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/4.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item corporate product social proposal"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/5.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/5.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item birthday"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/6.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/6.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item wedding social"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/7.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/7.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
+				<li class="b-isotope-grid__item grid-item corporate birthday"><a
+						href="${basePath}static/assets/media/content/gallery/480x290/8.jpg"
+						class="b-isotope-grid__inner js-zoom-gallery__item"><img
+						src="${basePath}static/assets/media/content/gallery/480x290/8.jpg" alt="foto"/><span
+						class="b-isotope-grid__wrap-info"><span class="b-isotope-grid__info"><span
+						class="b-isotope-grid__title">Kids at Party</span><span class="b-isotope-grid__categorie">Birthday Parties</span></span><i
+						class="icon icon-magnifier-add text-primary"></i></span></a></li>
 			</ul>
 		</div>
 		<!-- end .b-isotope-->
 		<div class="text-center"><span class="b-isotope__info">查看所有的活动图片</span><a href="${basePath}index.do" class="b-isotope__btn btn btn-primary">查看完整图片</a></div>
 	</section>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
@@ -462,7 +510,7 @@
 						<section class="b-events">
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="b-events__media"><img src="${basePath}static/assets/media/components/b-events/555x390_1.jpg" alt="foto" class="img-responsive"/></div>
+									<div class="b-events__media"><img src="${basePath}static/assets/media/components/b-events/555x390_2.jpg" alt="foto" class="img-responsive"/></div>
 									<div class="text-center">
 										<div class="b-events-calendar bg-primary">
 											<div class="b-events-calendar__item"><span class="b-events-calendar__number">25</span><span class="b-events-calendar__title">days</span></div>
@@ -480,7 +528,7 @@
 											乐于与家长、同伴交往互动，学会协商，合作。
 											理解并遵守亲子活动的基本规则。</p>
 										<h4 class="b-events__subtitle">更多详情</h4>
-										<div class="b-events__details"><i class="icon icon-map"></i> 新村路小学, 宝山区, 上海, 中国</div>
+										<div class="b-events__details"><i class="icon icon-map"></i> 金豆豆幼儿园, 宝山区, 上海, 中国</div>
 										<div class="b-events__details"><i class="icon icon-calendar"></i> March 31, 2019  ,  8:00 am to 5:00 pm</div>
 									</div>
 								</div>
@@ -491,7 +539,7 @@
 						<section class="b-events">
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="b-events__media"><img src="${basePath}static/assets/media/components/b-events/555x390_1.jpg" alt="foto" class="img-responsive"/></div>
+									<div class="b-events__media"><img src="${basePath}static/assets/media/components/b-events/555x390_3.jpg" alt="foto" class="img-responsive"/></div>
 									<div class="text-center">
 										<div class="b-events-calendar bg-primary">
 											<div class="b-events-calendar__item"><span class="b-events-calendar__number">25</span><span class="b-events-calendar__title">days</span></div>
@@ -567,19 +615,14 @@
 				<div class="col-xs-12">
 					<div data-min480="1" data-min768="3" data-min992="5" data-min1200="5" data-pagination="false" data-navigation="false" data-auto-play="4000" data-stop-on-hover="true" class="b-brands owl-carousel owl-theme enable-owl-carousel">
 						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-2.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-3.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-4.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-5.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-3.png" alt="foto" class="img-responsive center-block"/></div>
-						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-4.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+						<div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
 					</div>
 					<!-- end b-brands-->
-
-
-
-
-
 
 				</div>
 			</div>
@@ -646,7 +689,7 @@
 							<div class="entry-main">
 								<div class="entry-header">
 									<div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-									<h2 class="entry-title entry-title_spacing ui-title-inner"><a href="${basePath}service.do">上大路幼儿园爱心义卖活动即将举行！！</a></h2>
+									<h2 class="entry-title entry-title_spacing ui-title-inner"><a href="${basePath}service.do">上大路幼儿园民俗游园会即火热举行！！</a></h2>
 								</div>
 								<div class="entry-footer">
 									<div class="entry-meta"><span class="entry-meta__item"><i class="icon icon-calendar"></i>Posted<a href="${basePath}blog_post.do" class="entry-meta__link"> 25th August 2019</a></span></div>

@@ -1,5 +1,12 @@
 <%--
   Created by IntelliJ IDEA.
+  User: 60913
+  Date: 2019/3/9
+  Time: 22:53
+  To change this template use File | Settings | File Templates.
+--%>
+<%--
+  Created by IntelliJ IDEA.
   User: Administrator
   Date: 2019/2/23
   Time: 20:44
@@ -49,8 +56,6 @@
     <link rel="stylesheet" href="${basePath}static/assets/css1/selectric.css">
 
     <!-- Import Template's CSS Files -->
-
-    <link rel="stylesheet" href="${basePath}static/assets/css1/style.css">
 
 </head>
 <body>
@@ -196,188 +201,139 @@
         </div>
     </header>
     <%--end header--%>
-    <div class="b-title-page area-bg area-bg_dark parallax">
-        <div class="area-bg__inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                        <h1 class="b-title-page__title">活动剪影--案例展示</h1>
-                        <ol class="breadcrumb">
-                            <li><a href="${basePath}index.do">主页</a></li>
-                            <li class="active">活动剪影</li>
-                        </ol>
-                        <!-- end breadcrumb-->
+
+    <!-- end b-title-page-->
+    <%--新手展示页面--%>
+    <section class="section-default" >
+        <div class="container" style="margin-top:-5em">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="ui-decor-1"><img src="${basePath}static/assets/media/general/ui-decor-1.png" alt="decor"></div>
+                    <h2 class="ui-title-block">欢迎来到<span class="text-primary">稷星</span> 这是一个新手指导页面</h2>
+                    <div class="ui-subtitle-block">您可以了解如何开展一次活动.</div>
+                    <div data-pagination="true" data-navigation="false" data-single-item="true" data-auto-play="3000" data-transition-style="fade" data-main-text-animation="true" data-after-init-delay="3000" data-after-move-delay="1000" data-stop-on-hover="true" class="owl-carousel owl-theme enable-owl-carousel">
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/1.jpg" alt="foto" class="img-responsive"/></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>①选择多种好玩的游戏</h3>
+                                        <p>您可以去相关的页面了解具体信息。我们有很多已经成熟的活动，每一种活动下都有众多好玩的小游戏可供选择</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i><a href="${basePath}activity_frontPage.do">查看活动</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i> 您可以通过左侧的<span class="text-primary">活动确认单</span>选择您感兴趣的游戏，当然您可以定制自己喜欢的一套游戏</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
+
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/2.jpg" alt="foto" class="img-responsive"/></div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>②我们会自动帮您勾选您的活动所需物料</h3>
+                                        <p>我们与物料供应商有商业合作关系，我们严格筛选了物料供应商，我们可以提供更实惠的物料</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i> <a href="${basePath}wupin_frontPage.do">查看物料</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i>您可以通过<span class="text-primary">游戏详情页</span>查看小游戏所需物料，并通过活动确认单查看</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
+
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/3.jpg" alt="foto" class="img-responsive"/></div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>③在选择好您感兴趣的活动之后，您可以在个人中心填写相关表单</h3>
+                                        <p>比如活动确认单，活动确认单上清晰地列出了活动和物料，您可以在个人中心找到这个单子</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i> <a href="${basePath}accountPage.do">前去个人中心</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i> 在<span class="text-primary">个人中心</span>您可以更好的对业务情况有所了解</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/4.jpg" alt="foto" class="img-responsive"/></div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>④个人中心记录了各种各样的信息</h3>
+                                        <p>个人中心是一个简单的小后台，在里面您可以查看到更多的业务信息，比如活动管理，物料，课程管理，账户管理等</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i> <a href="${basePath}accountPage.do">前去个人中心</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i> 在<span class="text-primary">个人中心</span>您可以更好的对业务情况有所了解</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/5.jpg" alt="foto" class="img-responsive"/></div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>⑤我们还提供了一个小型的论坛</h3>
+                                        <p>我们会在论坛上发布我们的最新资讯，您可以随时查看，并发表您的看法</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i> <a href="${basePath}blog_main.do">前去论坛首页</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i> 在这里您可以分享您的想法，同大家进行思维的碰撞，了解最新的幼儿活动等</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
+
+                        <section class="b-events">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="b-events__media"><img src="${basePath}static/assets/media/components/b-help/6.jpg" alt="foto" class="img-responsive"/></div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="b-events__inner">
+                                        <h3 class="b-events__title"><span class="ui-decor-2 bg-primary"></span>⑥您的反馈，会让我们变得更好</h3>
+                                        <p>我们会认真地听取您的意见和想法，改善并提升我们的服务</p>
+                                        <div class="b-events__details"><i class="icon icon-map"></i> <a href="${basePath}accountPage.do">前去个人中心</a></div>
+                                        <div class="b-events__details"><i class="icon icon-star"></i> 您的意见和建议对我们十分重要</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end b-events-->
                     </div>
+                    <!-- end slider-->
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end b-title-page-->
+    </section>
 
-    <section class="portfolio text-center">
-        <div class="section-padding">
-            <div class="container">
 
-                <ul class="filter">
-                    <li><a class="active" href="#" data-filter="*">所有案例</a></li>
-                    <li><a href="#" data-filter=".cat-1">活动</a></li>
-                    <li><a href="#" data-filter=".cat-2">课程</a></li>
-                    <li><a href="#" data-filter=".cat-3">物料</a></li>
-                </ul>
 
-                <div class="portfolio-items">
-                    <div class="item cat-1">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/1.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">欢乐夏日</a></h3><!-- /.item-title -->
-                                    <span class="category-name">水世界</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
 
-                    <div class="item cat-2">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/2.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">欢乐夏日</a></h3><!-- /.item-title -->
-                                    <span class="category-name">水世界</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
 
-                    <div class="item cat-3">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/3.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">欢乐夏日</a></h3><!-- /.item-title -->
-                                    <span class="category-name">水世界</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-1">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/4.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">骑毛毛虫</a></h3><!-- /.item-title -->
-                                    <span class="category-name">运动会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-2">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/5.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">新年游园会</a></h3><!-- /.item-title -->
-                                    <span class="category-name">游园会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-3">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/6.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">糖画</a></h3><!-- /.item-title -->
-                                    <span class="category-name">游园会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-1">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/7.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">爸爸加油</a></h3><!-- /.item-title -->
-                                    <span class="category-name">运动会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-2">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/8.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">冲啊</a></h3><!-- /.item-title -->
-                                    <span class="category-name">运动会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-
-                    <div class="item cat-3">
-                        <div class="item-inner">
-                            <img src="${basePath}static/image/portfolio/9.jpg" alt="Portfolio Image">
-                            <div class="item-details">
-                                <div class="details-inner">
-                                    <h3 class="item-title"><a href="portfolio-single.html">迎春运动会</a></h3><!-- /.item-title -->
-                                    <span class="category-name">运动会</span><!-- /.category-name -->
-                                </div><!-- /.details-inner -->
-                            </div><!-- /.item-details -->
-                        </div><!-- /.item-inner -->
-                    </div><!-- /.item -->
-                </div><!-- /.portfolio-items -->
-
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div><!-- /.container -->
-        </div><!-- /.section-padding -->
-    </section><!-- /.portfolio -->
 
 
     <script src="${basePath}static/assets/js/jquery-3.3.1.min.js"></script>
     <script src="${basePath}static/assets/js/plugins.js"></script>
     <script src="${basePath}static/assets/js/main.js"></script>
     <script src="${basePath}static/assets/js/jquery.selectric.js"></script>
-
-    <script>
-        $(function() {
-            $('.filter-select').selectric();
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -477,8 +433,10 @@
 <!-- ++++++++++++-->
 <!-- MAIN SCRIPTS-->
 <!-- ++++++++++++-->
+<script src="${basePath}static/assets/libs/jquery-1.12.4.min.js"></script>
+<script src="${basePath}static/assets/libs/jquery-migrate-1.2.1.js"></script>
 <!-- Bootstrap-->
-
+<script src="${basePath}static/assets/libs/bootstrap/bootstrap.min.js"></script>
 <!-- User customization-->
 <script src="${basePath}static/assets/js/custom.js"></script>
 <!---->
@@ -486,13 +444,32 @@
 <script src="${basePath}static/assets/plugins/switcher/js/dmss.js"></script>
 <!-- Select customization & Color scheme-->
 <script src="${basePath}static/assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
-
+<!-- Slider 1-->
+<script src="${basePath}static/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+<!-- Slider 2-->
+<script src="${basePath}static/assets/plugins/bxslider/vendor/jquery.easing.1.3.js"></script>
+<script src="${basePath}static/assets/plugins/bxslider/vendor/jquery.fitvids.js"></script>
+<script src="${basePath}static/assets/plugins/bxslider/jquery.bxslider.min.js"></script>
 <!-- Pop-up window-->
 <script src="${basePath}static/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <!-- Headers scripts-->
 <script src="${basePath}static/assets/plugins/headers/slidebar.js"></script>
 <script src="${basePath}static/assets/plugins/headers/header.js"></script>
 <!-- Mail scripts-->
+<script src="${basePath}static/assets/plugins/jqBootstrapValidation.js"></script>
+<script src="${basePath}static/assets/plugins/contact_me.js"></script>
+<!-- Parallax-->
+<script src="${basePath}static/assets/plugins/stellar/jquery.stellar.min.js"></script>
+<!-- Filter and sorting images-->
+<script src="${basePath}static/assets/plugins/isotope/isotope.pkgd.min.js"></script>
+<script src="${basePath}static/assets/plugins/isotope/imagesLoaded.js"></script>
+<!-- Progress numbers-->
+<script src="${basePath}static/assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="${basePath}static/assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
+<!-- Animations-->
+<script src="${basePath}static/assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+<!-- Main slider-->
+<script src="${basePath}static/assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
 
 
 </body>

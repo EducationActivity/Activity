@@ -26,7 +26,7 @@ request.setAttribute("basePath", basePath);
     <link href="${basePath}static/assets/plugins/switcher/css/color4.css" rel="alternate stylesheet" title="color4"/>
     <link href="${basePath}static/assets/plugins/switcher/css/color5.css" rel="alternate stylesheet" title="color5"/>
     <link rel="icon" type="image/x-icon" href="${basePath}static/image/favicon.ico"/><!--[if lt IE 9 ]>
-    <script src="/${basePath}static/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
+    <script src="${basePath}static/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
   </head>
   <body>
@@ -319,7 +319,7 @@ request.setAttribute("basePath", basePath);
               <div class="widget-content">
                 <div class="post-widget clearfix">
                   <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/1.jpg" alt="foto" class="img-responsive"/></a></div>
-                  <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">遇事不掉泪，摔倒再爬起，人人都是小战狼...</a>
+                  <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">欢天喜地过新年...</a>
                     <div class="post-widget__date">
                       <time datetime="2019-03-25 15:20" class="text-primary">March  25, 2019</time>
                     </div>
@@ -337,7 +337,7 @@ request.setAttribute("basePath", basePath);
                 </div>
                 <div class="post-widget clearfix">
                   <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/3.jpg" alt="foto" class="img-responsive"/></a></div>
-                  <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">新村路幼儿园为迎新年，举行爱心义卖活动...</a>
+                  <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">新村路幼儿园|冬日暖阳下，一起来运动...</a>
                     <div class="post-widget__date">
                       <time datetime="2019-01-01 15:20" class="text-primary">January 17, 2019</time>
                     </div>

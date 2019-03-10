@@ -11,7 +11,7 @@ request.setAttribute("basePath", basePath);
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Template / Dvents</title>
+    <title>稷星/亲为亲子</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -242,8 +242,8 @@ request.setAttribute("basePath", basePath);
             <div class="col-md-4 col-sm-6">
               <section class="b-advantages b-advantages-1"><i class="b-advantages__icon text-primary icon-magic-wand"></i>
                 <div class="b-advantages__inner">
-                  <h3 class="b-advantages__title ui-title-inner">Fashion Concerts</h3>
-                  <div class="b-advantages__info">Aorem ipsum dolor sit amet consectetur elit sed lusm tempor incididunt ut labore et dolore mag aliqua enima minim veniam quis nostrud exercitation</div>
+                  <h3 class="b-advantages__title ui-title-inner">论坛</h3>
+                  <div class="b-advantages__info">通过我们的论坛，您可以了解到幼儿园最新的动态，也可以交流相关的育儿经验</div>
                 </div>
               </section>
               <!-- end .b-advantages-->
@@ -252,8 +252,8 @@ request.setAttribute("basePath", basePath);
             <div class="col-md-4 col-sm-6">
               <section class="b-advantages b-advantages-1"><i class="b-advantages__icon text-primary icon-eyeglasses"></i>
                 <div class="b-advantages__inner">
-                  <h3 class="b-advantages__title ui-title-inner">Conference Planning</h3>
-                  <div class="b-advantages__info">Corem ipsum dolor sit amet consectetur elit sed lusm tempor incididunt ut labore et dolore mag aliqua enima minim veniam quis nostrud exercitation</div>
+                  <h3 class="b-advantages__title ui-title-inner">回忆存储</h3>
+                  <div class="b-advantages__info"> 利用强大的云存储能力，帮你记好随时光消散的记忆</div>
                 </div>
               </section>
               <!-- end .b-advantages-->
@@ -262,8 +262,8 @@ request.setAttribute("basePath", basePath);
             <div class="col-md-4 col-sm-6">
               <section class="b-advantages b-advantages-1"><i class="b-advantages__icon text-primary icon-diamond"></i>
                 <div class="b-advantages__inner">
-                  <h3 class="b-advantages__title ui-title-inner">Stage Decorations</h3>
-                  <div class="b-advantages__info">Eorem ipsum dolor sit amet consectetur elit sed lusm tempor incididunt ut labore et dolore mag aliqua enima minim veniam quis nostrud exercitation</div>
+                  <h3 class="b-advantages__title ui-title-inner">线上教育</h3>
+                  <div class="b-advantages__info">后期将推出线上教育平台，将开设丰富的课程供学习，敬请期待哦！</div>
                 </div>
               </section>
               <!-- end .b-advantages-->
@@ -401,7 +401,7 @@ request.setAttribute("basePath", basePath);
                     </div>
                   </div>
                   <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                  <h3 class="b-events-2__title">毕业舞会</h3>
+                  <h3 class="b-events-2__title">运动会</h3>
                   <div class="b-events__details"><i class="icon icon-map"></i> 金兜兜幼儿园，上海</div>
                 </section>
                 <section class="b-events-2 text-center">
@@ -416,7 +416,7 @@ request.setAttribute("basePath", basePath);
                     </div>
                   </div>
                   <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                  <h3 class="b-events-2__title">双旦晚会</h3>
+                  <h3 class="b-events-2__title">手工课</h3>
                   <div class="b-events__details"><i class="icon icon-map"></i> 甘泉路幼儿园，北京</div>
                 </section>
                 <section class="b-events-2 text-center">
@@ -431,7 +431,7 @@ request.setAttribute("basePath", basePath);
                     </div>
                   </div>
                   <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                  <h3 class="b-events-2__title">环保节</h3>
+                  <h3 class="b-events-2__title">游园会</h3>
                   <div class="b-events__details"><i class="icon icon-map"></i> 新村路幼儿园，天津</div>
                 </section>
                 <section class="b-events-2 text-center">
@@ -446,7 +446,7 @@ request.setAttribute("basePath", basePath);
                     </div>
                   </div>
                   <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
-                  <h3 class="b-events-2__title">六一儿童节-音乐会</h3>
+                  <h3 class="b-events-2__title">游园会</h3>
                   <div class="b-events__details"><i class="icon icon-map"></i> 新村路幼儿园，北京</div>
                 </section>
               </div>
@@ -548,12 +548,12 @@ request.setAttribute("basePath", basePath);
             <div class="col-xs-12">
               <div data-min480="1" data-min768="3" data-min992="5" data-min1200="5" data-pagination="false" data-navigation="false" data-auto-play="4000" data-stop-on-hover="true" class="b-brands owl-carousel owl-theme enable-owl-carousel">
                 <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-2.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-3.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-4.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-5.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-3.png" alt="foto" class="img-responsive center-block"/></div>
-                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-4.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
+                <div class="b-brands__item"><img src="${basePath}static/assets/media/components/b-brands/logo-1.png" alt="foto" class="img-responsive center-block"/></div>
               </div>
               <!-- end b-brands-->
               

@@ -236,7 +236,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <section class="b-post-sm b-post-sm-1 b-post-sm-1_align_center clearfix">
-                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/5.jpg" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/5.jpg" alt="Foto" class="img-responsive"/></a></div>
+                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/5.png" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/5.png" alt="Foto" class="img-responsive"/></a></div>
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
@@ -255,7 +255,7 @@
                 </div>
                 <div class="col-sm-4">
                     <section class="b-post-sm b-post-sm-1 b-post-sm-1_align_center clearfix">
-                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/6.jpg" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/6.jpg" alt="Foto" class="img-responsive"/></a></div>
+                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/6.png" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/6.png" alt="Foto" class="img-responsive"/></a></div>
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
@@ -273,7 +273,7 @@
                 </div>
                 <div class="col-sm-4">
                     <section class="b-post-sm b-post-sm-1 b-post-sm-1_align_center clearfix">
-                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/7.jpg" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/7.jpg" alt="Foto" class="img-responsive"/></a></div>
+                        <div class="entry-media"><a href="${basePath}static/assets/media/content/posts/322x180/7.png" class="js-zoom-images"><img src="${basePath}static/assets/media/content/posts/322x180/7.png" alt="Foto" class="img-responsive"/></a></div>
                         <div class="entry-main">
                             <div class="entry-header">
                                 <div class="ui-decor-2 ui-decor-2_vert bg-primary"></div>
@@ -301,21 +301,21 @@
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-people"></i>
                     <div class="b-advantages-2__inner">
                         <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">专业化的团队</h3>
-                        <div class="b-advantages-2__info">团队成员都是拥有多年策划经验的专家，我们还有专业化的游戏设计师，游戏体验师</div>
+                        <div class="b-advantages-2__info">我们拥有经验丰富的策划师，游戏设计师和游戏体验师</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-firework"></i>
                     <div class="b-advantages-2__inner">
                         <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">物料 &amp; 课程</h3>
-                        <div class="b-advantages-2__info">我们还可以提供高性价比的活动物料以及优质的培训课程，一条龙服务.</div>
+                        <div class="b-advantages-2__info">我们还可以提供高性价比的活动物料以及培训课程.</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->
                 <section class="b-advantages-2 b-advantages-2_mod-a"><i class="b-advantages-2__icon flaticon-technology"></i>
                     <div class="b-advantages-2__inner">
                         <h3 class="b-advantages-2__title ui-title-inner bg-primary_b">多样化的解决方案</h3>
-                        <div class="b-advantages-2__info">我们可以根据您的要求提供多样化的解决方案，让活动更加具有特色.</div>
+                        <div class="b-advantages-2__info">我们可以根据您的要求提供具有特色的解决方案.</div>
                     </div>
                 </section>
                 <!-- end .b-advantages-->

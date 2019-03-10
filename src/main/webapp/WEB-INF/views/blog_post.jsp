@@ -366,7 +366,7 @@
                 <div class="widget-content">
                   <div class="post-widget clearfix">
                     <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/1.jpg" alt="foto" class="img-responsive"/></a></div>
-                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">遇事不掉泪，摔倒再爬起，人人都是小战狼...</a>
+                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">欢天喜地迎新年...</a>
                       <div class="post-widget__date">
                         <time datetime="2019-03-25 15:20" class="text-primary">March  25, 2019</time>
                       </div>
@@ -384,7 +384,7 @@
                   </div>
                   <div class="post-widget clearfix">
                     <div class="post-widget__media"><a href="${basePath}blog_post.do"><img src="${basePath}static/assets/media/content/posts/90x80/3.jpg" alt="foto" class="img-responsive"/></a></div>
-                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">新村路幼儿园为迎新年，举行爱心义卖活动...</a>
+                    <div class="post-widget__inner"><a href="${basePath}blog_post.do" class="post-widget__title">新村路幼儿园|冬日暖阳，一起运动...</a>
                       <div class="post-widget__date">
                         <time datetime="2019-01-01 15:20" class="text-primary">January 17, 2019</time>
                       </div>

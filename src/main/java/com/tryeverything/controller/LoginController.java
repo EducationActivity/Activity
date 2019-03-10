@@ -88,5 +88,9 @@ public class LoginController {
     public String accountPage(){
         return "accountPage";
     }
+    @RequestMapping("newUserHelp")
+    public String newUserHelp(){
+        return "newUserHelp";
+    }
 
 }
